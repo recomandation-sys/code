@@ -1,0 +1,28 @@
+# Initial engineering defaults. Not calibrated on labeled board text.
+# A high-confidence English hit is one fastText call. It does not prove
+# every sentence is English.
+
+high_confidence_en: 0.95
+chunk_confidence_en: 0.80
+min_description_words: 60
+chunk_words: 80
+min_substantive_chunk_words: 30
+# Same bound as the extraction API. Over this, the offer is refused.
+# The description is never truncated and then accepted.
+max_description_chars: 50000
+cleaning_version: preprocess_clean_v1
+
+# Official lid.176.bin. Override with PREPROCESS_LID_MODEL.
+# Download: https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
+language_model_path: models/lid.176.bin
+
+# Full-page HTML only. Empty until a selector is checked on a real stored page.
+# A missing or unmatched selector refuses the offer. The whole page is never used.
+description_selectors: {}
+
+# CSS selectors removed inside the isolated description, per source. Empty.
+unwanted_selectors: {}
+
+# Exact description lines to drop, per source, after whitespace collapse.
+# Matched case-insensitively. Empty until verified on a real page.
+boilerplate_lines: {}

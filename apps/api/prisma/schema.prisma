@@ -1,0 +1,297 @@
+// Persistence model (README_CV_UPLOAD_REVIEW_WEB_ARCHITECTURE.md sections 38-48).
+//
+// Two halves, deliberately different shapes (section 72):
+// - CvParseDraft: flexible JSONB parser snapshot + reloadable UI draft.
+// - Everything else: the relational "verified truth" written only once a
+//   human confirms (section 61), never populated straight from the parser.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum DraftStatus {
+  PARSED
+  EDITING
+  CONFIRMED
+  EXPIRED
+  DISCARDED
+}
+
+enum ExperienceType {
+  PROFESSIONAL
+  INTERNSHIP
+  ALTERNANCE
+  FREELANCE
+  UNKNOWN
+}
+
+enum ContractType {
+  CDI
+  CDD
+  INTERNSHIP
+  ALTERNANCE
+  FREELANCE
+  OTHER
+}
+
+enum WorkMode {
+  REMOTE
+  HYBRID
+  ONSITE
+}
+
+enum PreferenceType {
+  CONTRACT_TYPE
+  WORK_MODE
+  MOBILITY
+  PREFERRED_COUNTRY
+  GOAL
+}
+
+enum LanguageLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+  NATIVE
+  FLUENT
+  ADVANCED
+  INTERMEDIATE
+  BASIC
+  UNKNOWN
+}
+
+enum SkillEvidenceSource {
+  SKILLS_SECTION
+  PROFESSIONAL_EXPERIENCE
+  INTERNSHIP
+  ALTERNANCE
+  PROJECT
+  CERTIFICATION
+  EDUCATION
+  PROFILE
+}
+
+/// section 39 — raw parser snapshot + reloadable UI draft. Never stores PDF bytes.
+model CvParseDraft {
+  id              String      @id @default(uuid())
+  status          DraftStatus @default(PARSED)
+  parserVersion   String      @map("parser_version")
+  parseQuality    String?     @map("parse_quality")
+  rawParserResult Json        @map("raw_parser_result")
+  uiDraft         Json        @map("ui_draft")
+  createdAt       DateTime    @default(now()) @map("created_at")
+  updatedAt       DateTime    @updatedAt @map("updated_at")
+  confirmedAt     DateTime?   @map("confirmed_at")
+  expiresAt       DateTime?   @map("expires_at")
+
+  candidateProfile CandidateProfile?
+
+  @@index([status])
+  @@index([createdAt])
+  @@map("cv_parse_drafts")
+}
+
+/// section 40. userId stays nullable until authentication exists (section 73).
+model CandidateProfile {
+  id          String    @id @default(uuid())
+  userId      String?   @map("user_id")
+  fullName    String    @map("full_name")
+  firstName   String?   @map("first_name")
+  lastName    String?   @map("last_name")
+  email       String
+  phone       String?   @map("phone")
+  phoneCode   String?   @map("phone_code")
+  country     String?   @map("country")
+  governorate String?
+  gender      String?
+  dateOfBirth DateTime? @map("date_of_birth") @db.Date
+
+  preferencesCompletedAt DateTime? @map("preferences_completed_at")
+
+  sourceDraftId String?       @unique @map("source_draft_id")
+  sourceDraft   CvParseDraft? @relation(fields: [sourceDraftId], references: [id])
+
+  positions      CandidateDesiredPosition[]
+  preferences    CandidatePreference[]
+  educations     CandidateEducation[]
+  experiences    CandidateExperience[]
+  skills         CandidateSkill[]
+  skillEvidence  CandidateSkillEvidence[]
+  customSkills   CandidateCustomSkill[]
+  languages      CandidateLanguage[]
+  certifications CandidateCertification[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([email])
+  @@map("candidate_profiles")
+}
+
+/// Wizard education step — not produced by the CV parser today.
+model CandidateEducation {
+  id                 String  @id @default(uuid())
+  candidateProfileId String  @map("candidate_profile_id")
+  degree             String
+  institution        String
+  field              String
+  startYear          Int     @map("start_year")
+  startMonth         Int?    @map("start_month")
+  endYear            Int?    @map("end_year")
+  endMonth           Int?    @map("end_month")
+  isCurrent          Boolean @default(false) @map("is_current")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@index([candidateProfileId])
+  @@map("candidate_educations")
+}
+
+/// section 41 — child rows because a candidate may target multiple positions.
+model CandidateDesiredPosition {
+  id                 String  @id @default(uuid())
+  candidateProfileId String  @map("candidate_profile_id")
+  rawTitle           String  @map("raw_title")
+  normalizedTitle    String? @map("normalized_title")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@index([candidateProfileId])
+  @@map("candidate_desired_positions")
+}
+
+/// section 20/21 — normalized child rows for contract type / work mode.
+model CandidatePreference {
+  id                 String         @id @default(uuid())
+  candidateProfileId String         @map("candidate_profile_id")
+  type               PreferenceType
+  value              String
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateProfileId, type, value])
+  @@index([candidateProfileId])
+  @@map("candidate_preferences")
+}
+
+/// section 42 — the source of truth; totals are recomputed, never stored as facts.
+model CandidateExperience {
+  id                 String         @id @default(uuid())
+  candidateProfileId String         @map("candidate_profile_id")
+  type               ExperienceType
+  title              String
+  company            String?
+  description        String?
+  startYear          Int            @map("start_year")
+  startMonth         Int?           @map("start_month")
+  endYear            Int?           @map("end_year")
+  endMonth           Int?           @map("end_month")
+  isCurrent          Boolean        @default(false) @map("is_current")
+  sourceRecordId     String?        @map("source_record_id")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@index([candidateProfileId])
+  @@map("candidate_experiences")
+}
+
+/// section 43 — canonical, global taxonomy. Never written to from unknown parser text.
+model Skill {
+  id            String  @id @default(uuid())
+  canonicalName String  @unique @map("canonical_name")
+  category      String?
+  escoUri       String? @map("esco_uri")
+  onetId        String? @map("onet_id")
+
+  candidateSkills CandidateSkill[]
+  evidence        CandidateSkillEvidence[]
+
+  @@map("skills")
+}
+
+model CandidateSkill {
+  id                 String  @id @default(uuid())
+  candidateProfileId String  @map("candidate_profile_id")
+  skillId            String  @map("skill_id")
+  userConfirmed      Boolean @default(true) @map("user_confirmed")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+  skill            Skill            @relation(fields: [skillId], references: [id])
+
+  @@unique([candidateProfileId, skillId])
+  @@index([candidateProfileId])
+  @@index([skillId])
+  @@map("candidate_skills")
+}
+
+/// section 44 — kept for future weighting; this module never assigns weights.
+model CandidateSkillEvidence {
+  id                 String              @id @default(uuid())
+  candidateProfileId String              @map("candidate_profile_id")
+  skillId            String              @map("skill_id")
+  sourceType         SkillEvidenceSource @map("source_type")
+  sourceRecordId     String?             @map("source_record_id")
+  parserDraftId      String?             @map("parser_draft_id")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+  skill            Skill            @relation(fields: [skillId], references: [id])
+
+  @@index([candidateProfileId])
+  @@index([skillId])
+  @@map("candidate_skill_evidence")
+}
+
+/// section 45 — unknown/custom text, kept out of the global canonical table.
+model CandidateCustomSkill {
+  id                 String @id @default(uuid())
+  candidateProfileId String @map("candidate_profile_id")
+  rawName            String @map("raw_name")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@index([candidateProfileId])
+  @@map("candidate_custom_skills")
+}
+
+/// section 46.
+model CandidateLanguage {
+  id                 String        @id @default(uuid())
+  candidateProfileId String        @map("candidate_profile_id")
+  language           String
+  level              LanguageLevel
+  rawLevel           String?       @map("raw_level")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateProfileId, language])
+  @@index([candidateProfileId])
+  @@map("candidate_languages")
+}
+
+/// section 47.
+model CandidateCertification {
+  id                 String  @id @default(uuid())
+  candidateProfileId String  @map("candidate_profile_id")
+  name               String
+  issuer             String?
+  year               Int?
+  issueMonth         Int?    @map("issue_month")
+  expirationYear     Int?    @map("expiration_year")
+  expirationMonth    Int?    @map("expiration_month")
+  doesNotExpire      Boolean @default(false) @map("does_not_expire")
+  credentialId       String? @map("credential_id")
+  credentialUrl      String? @map("credential_url")
+
+  candidateProfile CandidateProfile @relation(fields: [candidateProfileId], references: [id], onDelete: Cascade)
+
+  @@index([candidateProfileId])
+  @@map("candidate_certifications")
+}

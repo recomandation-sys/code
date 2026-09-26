@@ -1,0 +1,37 @@
+{
+  "education_level": [
+    "UNKNOWN",
+    "ASSOCIATE",
+    "BACHELOR",
+    "MASTER_OR_HIGHER"
+  ],
+  "work_mode": [
+    "REMOTE",
+    "HYBRID",
+    "ONSITE",
+    "UNKNOWN"
+  ],
+  "contract_type": [
+    "UNKNOWN",
+    "PERMANENT",
+    "FIXED_TERM",
+    "FREELANCE",
+    "INTERNSHIP"
+  ],
+  "minimum_experience_bracket": [
+    "0_YEARS",
+    "1_2_YEARS",
+    "3_5_YEARS",
+    "5_7_YEARS",
+    "8_PLUS_YEARS",
+    "UNKNOWN"
+  ],
+  "seniority_level": [
+    "INTERN_ENTRY",
+    "JUNIOR",
+    "MID",
+    "SENIOR",
+    "LEAD_PRINCIPAL",
+    "UNKNOWN"
+  ]
+}

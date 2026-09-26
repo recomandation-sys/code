@@ -1,0 +1,571 @@
+{
+  "schema_version": "custom_leaf_profile_batch_v1",
+  "batch_id": "leaf_profile_batch_02_next_unprofiled",
+  "source": {
+    "source_id": "CUSTOM_LEAF_PROFILE",
+    "name": "Analyst-curated IT leaf evidence",
+    "version": "0.1.0",
+    "language": "en",
+    "type": "custom_curated",
+    "official_source_status": "not_official",
+    "description": "Curated role evidence used only to close reviewed taxonomy gaps. It is kept separate from ESCO, O*NET, ISCO and OSCA evidence until independently reviewed."
+  },
+  "review_policy": {
+    "review_status": "REVIEW_REQUIRED",
+    "vector_status": "NOT_INCLUDED_UNTIL_APPROVED",
+    "basis": [
+      "canonical family/parent/leaf definition",
+      "reviewed title examples already present in the KB",
+      "analyst role-boundary and technology knowledge"
+    ],
+    "required_before_approval": [
+      "independent reviewer confirms the scope boundary",
+      "at least one external source or source occupation is attached",
+      "task and technology lists are checked for generic or adjacent-role leakage",
+      "three sibling hard-negative rules are reviewed"
+    ]
+  },
+  "profiles": [
+    {
+      "leaf_id": "ANDROID_DEVELOPER",
+      "description": "Builds and maintains native Android applications, owning mobile UI, application state, device integration, performance, automated tests and store releases. The defining evidence is Android platform delivery rather than generic mobile or web development.",
+      "primary_outcome": "Reliable, usable and releasable Android applications.",
+      "in_scope": [
+        "Android application architecture",
+        "native UI implementation",
+        "mobile API and device integration",
+        "offline and lifecycle behavior",
+        "mobile testing",
+        "store release delivery"
+      ],
+      "out_of_scope": [
+        "iOS-only development",
+        "mobile product ownership without coding",
+        "backend services as the primary role",
+        "generic responsive web development"
+      ],
+      "tasks": [
+        "Implement Android features and screens from product and design requirements.",
+        "Manage application state, navigation, lifecycle and background execution.",
+        "Integrate device capabilities, permissions, notifications and platform APIs.",
+        "Consume secure APIs and handle offline, synchronization and error states.",
+        "Create unit, UI and device-compatibility tests and diagnose failures.",
+        "Prepare signed builds, staged releases and production monitoring for Google Play."
+      ],
+      "professional_skills": [
+        "mobile software development",
+        "Android architecture",
+        "UI implementation",
+        "API integration",
+        "performance optimization",
+        "mobile testing",
+        "debugging",
+        "release management"
+      ],
+      "technologies": [
+        "Kotlin",
+        "Java",
+        "Android SDK",
+        "Jetpack",
+        "Android Studio",
+        "Gradle",
+        "Jetpack Compose",
+        "Firebase"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "IOS_DEVELOPER",
+          "rule": "Use ANDROID_DEVELOPER when Android SDK, Kotlin/Java or Google Play delivery is central; iOS SDK and App Store delivery belong to IOS_DEVELOPER."
+        },
+        {
+          "sibling_leaf_id": "FRONTEND_DEVELOPER",
+          "rule": "Browser UI and web frameworks alone are FRONTEND_DEVELOPER; Android runtime and device integration are required for ANDROID_DEVELOPER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "BI_DEVELOPER",
+      "description": "Builds business-intelligence datasets, semantic models, reports and dashboards that turn governed data into operational and management insight. The role owns analytical presentation and modelling rather than pure business analysis or raw data-platform engineering.",
+      "primary_outcome": "Trusted, usable BI reports and semantic models.",
+      "in_scope": [
+        "BI semantic modelling",
+        "dashboard and report development",
+        "analytical SQL",
+        "ETL for reporting",
+        "metric implementation",
+        "report performance and governance"
+      ],
+      "out_of_scope": [
+        "business decisions as the primary responsibility",
+        "machine-learning research",
+        "enterprise pipeline platform engineering",
+        "database administration as the primary role"
+      ],
+      "tasks": [
+        "Gather reporting requirements and translate them into reusable BI models.",
+        "Build dimensional datasets, measures, calculated fields and hierarchies.",
+        "Develop dashboards and operational, financial or management reports.",
+        "Validate metric definitions, filters, refreshes and data quality.",
+        "Tune query and report performance and manage workspace permissions.",
+        "Publish documentation and support users interpreting governed reports."
+      ],
+      "professional_skills": [
+        "business intelligence development",
+        "data visualization",
+        "semantic modelling",
+        "analytical SQL",
+        "metric definition",
+        "requirements elicitation",
+        "data validation",
+        "report governance"
+      ],
+      "technologies": [
+        "Power BI",
+        "DAX",
+        "Tableau",
+        "SQL",
+        "SSRS",
+        "Looker",
+        "Snowflake",
+        "dbt"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "BI_ANALYST",
+          "rule": "Use BI_DEVELOPER when building models, reports and dashboards is the deliverable; use BI_ANALYST when interpretation and decision support dominate."
+        },
+        {
+          "sibling_leaf_id": "ANALYTICS_ENGINEER",
+          "rule": "Use ANALYTICS_ENGINEER for reusable transformation and semantic data products; use BI_DEVELOPER for report and dashboard delivery."
+        },
+        {
+          "sibling_leaf_id": "DATA_ENGINEER",
+          "rule": "Use DATA_ENGINEER for ingestion and production data pipelines; reporting models and dashboards are BI_DEVELOPER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "COMPUTER_OPERATOR",
+      "description": "Monitors and controls scheduled computing workloads and routine production operations using established runbooks. The role executes jobs, checks system status, handles first-line operational events and escalates exceptions rather than designing systems or administering infrastructure architecture.",
+      "primary_outcome": "Correct, timely and traceable execution of scheduled IT workloads.",
+      "in_scope": [
+        "batch and job control",
+        "production monitoring",
+        "runbook execution",
+        "operator consoles",
+        "backup and print operations",
+        "incident escalation"
+      ],
+      "out_of_scope": [
+        "systems architecture",
+        "software feature development",
+        "deep server administration",
+        "end-user desktop troubleshooting"
+      ],
+      "tasks": [
+        "Start, monitor and verify scheduled batch jobs and production workflows.",
+        "Review consoles, alerts, logs and completion codes for abnormal conditions.",
+        "Follow documented recovery, restart, backup and escalation procedures.",
+        "Maintain operator checklists, shift handovers and operational records.",
+        "Coordinate with system administrators and application teams on incidents.",
+        "Verify output delivery, job dependencies and routine capacity conditions."
+      ],
+      "professional_skills": [
+        "IT operations monitoring",
+        "batch scheduling",
+        "runbook execution",
+        "incident escalation",
+        "log review",
+        "shift handover",
+        "operational documentation",
+        "process compliance"
+      ],
+      "technologies": [
+        "Control-M",
+        "cron",
+        "Windows Task Scheduler",
+        "IBM z/OS",
+        "JCL",
+        "Linux",
+        "PowerShell",
+        "Nagios"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SYSTEM_ADMIN",
+          "rule": "Use COMPUTER_OPERATOR for runbook-based job monitoring and execution; use SYSTEM_ADMIN for configuration, patching and deeper server ownership."
+        },
+        {
+          "sibling_leaf_id": "DATACENTER_OPERATOR",
+          "rule": "Use DATACENTER_OPERATOR for facility, hardware and physical data-centre operations; use COMPUTER_OPERATOR for computing workloads and job control."
+        },
+        {
+          "sibling_leaf_id": "SYSTEM_CONFIG",
+          "rule": "Configuration design and change ownership belong to SYSTEM_CONFIG; routine execution and escalation belong to COMPUTER_OPERATOR."
+        }
+      ]
+    },
+    {
+      "leaf_id": "CRYPTOGRAPHER",
+      "description": "Designs, analyzes and implements cryptographic mechanisms and key-management controls that protect confidentiality, integrity, authenticity and non-repudiation. The role requires cryptographic engineering or analysis, not merely using TLS or configuring ordinary security tools.",
+      "primary_outcome": "Correctly designed and implemented cryptographic protection.",
+      "in_scope": [
+        "cryptographic algorithm analysis",
+        "protocol design and review",
+        "key management",
+        "PKI and certificates",
+        "hardware or software crypto implementation",
+        "cryptographic compliance"
+      ],
+      "out_of_scope": [
+        "generic security operations",
+        "ordinary application coding without crypto ownership",
+        "password administration alone",
+        "legal privacy policy without technical cryptography"
+      ],
+      "tasks": [
+        "Select and review algorithms, modes, protocols and cryptographic parameters.",
+        "Design key-generation, storage, rotation, escrow and revocation procedures.",
+        "Implement or review cryptographic libraries, secure protocols and interfaces.",
+        "Operate certificate authorities, PKI trust chains and certificate lifecycle controls.",
+        "Analyze cryptographic weaknesses and support remediation of vulnerable designs.",
+        "Document cryptographic assumptions, threat models and compliance evidence."
+      ],
+      "professional_skills": [
+        "cryptographic analysis",
+        "security protocol design",
+        "key management",
+        "PKI engineering",
+        "threat modelling",
+        "secure implementation",
+        "vulnerability analysis",
+        "security standards interpretation"
+      ],
+      "technologies": [
+        "OpenSSL",
+        "PKCS#11",
+        "TLS",
+        "X.509",
+        "HSM",
+        "GnuPG",
+        "Java Cryptography Architecture",
+        "libsodium"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SECURITY_ENGINEER",
+          "rule": "Use CRYPTOGRAPHER only when cryptographic mechanisms, protocols or key management are a defining responsibility; broader controls belong to SECURITY_ENGINEER."
+        },
+        {
+          "sibling_leaf_id": "PENETRATION_TESTER",
+          "rule": "Use PENETRATION_TESTER for authorized offensive testing; crypto design and analysis belong to CRYPTOGRAPHER."
+        },
+        {
+          "sibling_leaf_id": "APPSEC_ENGINEER",
+          "rule": "Use APPSEC_ENGINEER for application security lifecycle controls; use CRYPTOGRAPHER when the cryptographic construction or PKI is the core problem."
+        }
+      ]
+    },
+    {
+      "leaf_id": "DESKTOP_DEVELOPER",
+      "description": "Develops native or packaged applications that run on desktop operating systems, including user interfaces, local storage, device integration, installers and update mechanisms. The distinguishing boundary is desktop runtime delivery rather than browser, mobile or server-only software.",
+      "primary_outcome": "Installable, reliable and maintainable desktop applications.",
+      "in_scope": [
+        "desktop UI development",
+        "native OS integration",
+        "local data and configuration",
+        "installer and packaging",
+        "desktop testing",
+        "desktop release and update delivery"
+      ],
+      "out_of_scope": [
+        "browser-only interfaces",
+        "Android or iOS applications",
+        "backend services as the primary role",
+        "desktop support and endpoint administration"
+      ],
+      "tasks": [
+        "Implement desktop screens, workflows and accessibility behavior.",
+        "Integrate filesystem, printing, authentication and operating-system services.",
+        "Design local configuration, caching and offline behavior where required.",
+        "Build installers, signed packages, auto-updates and release artifacts.",
+        "Create automated and manual compatibility tests across supported desktop OS versions.",
+        "Diagnose crashes, performance issues and installation or upgrade failures."
+      ],
+      "professional_skills": [
+        "desktop software development",
+        "GUI engineering",
+        "OS integration",
+        "packaging",
+        "debugging",
+        "compatibility testing",
+        "secure release engineering",
+        "user experience implementation"
+      ],
+      "technologies": [
+        "C#",
+        ".NET",
+        "WPF",
+        "WinUI",
+        "C++",
+        "Qt",
+        "JavaFX",
+        "Electron"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "FRONTEND_DEVELOPER",
+          "rule": "Use DESKTOP_DEVELOPER for installed desktop runtime applications; browser HTML/CSS/JavaScript delivery belongs to FRONTEND_DEVELOPER."
+        },
+        {
+          "sibling_leaf_id": "ANDROID_DEVELOPER",
+          "rule": "Android SDK and mobile device delivery belong to ANDROID_DEVELOPER; desktop OS packaging belongs to DESKTOP_DEVELOPER."
+        },
+        {
+          "sibling_leaf_id": "DESKTOP_SUPPORT",
+          "rule": "Use DESKTOP_DEVELOPER for building installed desktop applications; endpoint provisioning and user-device incidents belong to DESKTOP_SUPPORT."
+        }
+      ]
+    },
+    {
+      "leaf_id": "DESKTOP_SUPPORT",
+      "description": "Provides technical support for employee endpoints, operating systems, peripherals, standard software and workplace access. The role restores user productivity through diagnosis, provisioning, configuration and documented service management rather than building business applications.",
+      "primary_outcome": "Reliable, secure and usable employee desktop environments.",
+      "in_scope": [
+        "endpoint provisioning",
+        "desktop and laptop troubleshooting",
+        "operating-system support",
+        "peripheral and print support",
+        "software deployment",
+        "user access support"
+      ],
+      "out_of_scope": [
+        "application feature development",
+        "enterprise network engineering",
+        "server platform administration as the primary role",
+        "customer service without technical endpoint responsibility"
+      ],
+      "tasks": [
+        "Diagnose and resolve hardware, operating-system and standard software incidents.",
+        "Provision, image, encrypt and configure laptops, desktops and peripherals.",
+        "Install, patch and remove approved endpoint software and updates.",
+        "Support user accounts, device enrollment, printing and local connectivity.",
+        "Record incidents, resolutions and knowledge articles in the service desk system.",
+        "Escalate security, network, application and hardware defects with usable evidence."
+      ],
+      "professional_skills": [
+        "desktop troubleshooting",
+        "endpoint administration",
+        "incident management",
+        "user support",
+        "device provisioning",
+        "diagnostic reasoning",
+        "access management",
+        "technical communication"
+      ],
+      "technologies": [
+        "Windows 10/11",
+        "macOS",
+        "Linux",
+        "Microsoft Intune",
+        "Microsoft Entra ID",
+        "Active Directory",
+        "PowerShell",
+        "ServiceNow"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "APPLICATION_SUPPORT",
+          "rule": "Use DESKTOP_SUPPORT for endpoint and user-device issues; business application incidents and configuration belong to APPLICATION_SUPPORT."
+        },
+        {
+          "sibling_leaf_id": "SUPPORT_ENGINEER",
+          "rule": "Use DESKTOP_SUPPORT when employee endpoint support is explicit; use SUPPORT_ENGINEER for broader product or technical support engineering."
+        },
+        {
+          "sibling_leaf_id": "SYSTEM_ADMIN",
+          "rule": "Use SYSTEM_ADMIN for server/platform ownership; endpoint provisioning and desktop incidents are DESKTOP_SUPPORT."
+        }
+      ]
+    },
+    {
+      "leaf_id": "DOCUMENT_MANAGEMENT_SPECIALIST",
+      "description": "Designs and administers digital document and content-management solutions, including taxonomy, metadata, permissions, retention, workflows, search and controlled collaboration. The role is centered on information repositories and lifecycle controls rather than writing user documentation.",
+      "primary_outcome": "Findable, controlled and compliant enterprise documents and content.",
+      "in_scope": [
+        "document-management platforms",
+        "content taxonomy and metadata",
+        "workflow configuration",
+        "repository permissions",
+        "retention and records controls",
+        "content migration and search"
+      ],
+      "out_of_scope": [
+        "technical writing as the primary output",
+        "general knowledge-management strategy without repository ownership",
+        "database administration",
+        "physical records handling only"
+      ],
+      "tasks": [
+        "Configure repositories, libraries, content types, metadata and controlled vocabularies.",
+        "Design document workflows for review, approval, publication and retention.",
+        "Administer access controls, sharing rules, versioning and audit settings.",
+        "Plan content migration, deduplication, classification and search improvements.",
+        "Monitor repository quality, storage, indexing and lifecycle policy compliance.",
+        "Train users and document operating procedures for managed content services."
+      ],
+      "professional_skills": [
+        "document management",
+        "content taxonomy",
+        "metadata design",
+        "workflow analysis",
+        "records lifecycle management",
+        "access control",
+        "content migration",
+        "user enablement"
+      ],
+      "technologies": [
+        "Microsoft SharePoint",
+        "Alfresco",
+        "OpenText",
+        "Confluence",
+        "Microsoft Purview",
+        "Power Automate",
+        "REST APIs",
+        "SQL"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "TECHNICAL_WRITER",
+          "rule": "Use DOCUMENT_MANAGEMENT_SPECIALIST for repositories, metadata, workflow and lifecycle controls; use TECHNICAL_WRITER for authoring technical content."
+        },
+        {
+          "sibling_leaf_id": "IT_KNOWLEDGE_MANAGER",
+          "rule": "Use DOCUMENT_MANAGEMENT_SPECIALIST for platform and content-control implementation; use IT_KNOWLEDGE_MANAGER for knowledge operating-model ownership where that leaf is retained."
+        },
+        {
+          "sibling_leaf_id": "DATA_GOVERNANCE_SPECIALIST",
+          "rule": "Use DATA_GOVERNANCE_SPECIALIST for enterprise data policy and stewardship; document repositories and content lifecycle belong to DOCUMENT_MANAGEMENT_SPECIALIST."
+        }
+      ]
+    },
+    {
+      "leaf_id": "FULLSTACK_DEVELOPER",
+      "description": "Delivers end-to-end web or application features across user interfaces, server-side services, APIs, persistence and integration. Both client and server implementation must be substantive; the role is not merely a backend developer who occasionally edits a page.",
+      "primary_outcome": "Coherent end-to-end application features from interface to data service.",
+      "in_scope": [
+        "frontend implementation",
+        "backend and API implementation",
+        "database integration",
+        "end-to-end testing",
+        "web deployment",
+        "cross-layer debugging"
+      ],
+      "out_of_scope": [
+        "frontend-only or backend-only specialization",
+        "platform operations as the primary role",
+        "product management without implementation",
+        "database administration as the primary role"
+      ],
+      "tasks": [
+        "Implement accessible user interfaces and client-side state and validation.",
+        "Build server-side endpoints, business logic and integration services.",
+        "Design persistence models and connect applications to databases and external APIs.",
+        "Write unit, integration and end-to-end tests across the application stack.",
+        "Trace defects across browser, service, data and deployment layers.",
+        "Package, deploy and monitor application releases with the delivery team."
+      ],
+      "professional_skills": [
+        "full-stack software development",
+        "UI engineering",
+        "API design",
+        "database integration",
+        "software architecture",
+        "end-to-end testing",
+        "debugging",
+        "secure coding"
+      ],
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Java",
+        "SQL",
+        "Docker"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "FRONTEND_DEVELOPER",
+          "rule": "Use FRONTEND_DEVELOPER when client-side interface work dominates and server implementation is incidental."
+        },
+        {
+          "sibling_leaf_id": "BACKEND_DEVELOPER",
+          "rule": "Use BACKEND_DEVELOPER when server-side services dominate and client work is not substantive."
+        },
+        {
+          "sibling_leaf_id": "APPLICATION_SUPPORT",
+          "rule": "Use FULLSTACK_DEVELOPER for implementing client and server features; application incidents and configuration without feature ownership belong to APPLICATION_SUPPORT."
+        }
+      ]
+    },
+    {
+      "leaf_id": "IOS_DEVELOPER",
+      "description": "Builds and maintains native iOS and iPadOS applications, owning Apple platform UI, lifecycle, device integration, testing, signing and App Store delivery. The defining evidence is Swift or Objective-C work against Apple SDKs rather than generic mobile or web development.",
+      "primary_outcome": "Reliable, usable and releasable Apple mobile applications.",
+      "in_scope": [
+        "iOS application architecture",
+        "native Apple UI",
+        "mobile API and device integration",
+        "lifecycle and offline behavior",
+        "mobile testing",
+        "App Store release delivery"
+      ],
+      "out_of_scope": [
+        "Android-only development",
+        "cross-platform development without native Apple ownership",
+        "backend services as the primary role",
+        "generic responsive web development"
+      ],
+      "tasks": [
+        "Implement iPhone and iPad features from product and design requirements.",
+        "Manage navigation, application state, lifecycle and background behavior.",
+        "Integrate Apple frameworks, device capabilities, notifications and permissions.",
+        "Consume secure APIs and handle offline, synchronization and failure states.",
+        "Create unit, UI and device-compatibility tests and diagnose crashes.",
+        "Manage signing, TestFlight, phased releases and production App Store delivery."
+      ],
+      "professional_skills": [
+        "mobile software development",
+        "iOS architecture",
+        "UI implementation",
+        "API integration",
+        "performance optimization",
+        "mobile testing",
+        "debugging",
+        "release management"
+      ],
+      "technologies": [
+        "Swift",
+        "Objective-C",
+        "Xcode",
+        "UIKit",
+        "SwiftUI",
+        "XCTest",
+        "CocoaPods",
+        "Fastlane"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "ANDROID_DEVELOPER",
+          "rule": "Use IOS_DEVELOPER when Apple SDKs, Swift/Objective-C or App Store delivery is central; Android SDK and Google Play delivery belong to ANDROID_DEVELOPER."
+        },
+        {
+          "sibling_leaf_id": "FRONTEND_DEVELOPER",
+          "rule": "Browser UI and web frameworks alone are FRONTEND_DEVELOPER; iOS runtime and Apple device integration are required for IOS_DEVELOPER."
+        }
+      ]
+    }
+  ]
+}

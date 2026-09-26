@@ -1,0 +1,119 @@
+id,family_id,family_name,parent_id,parent_name,leaf_name
+L001,F01,Architecture and Systems Analysis,P01,Business and Systems Analysis,IT Business Analyst
+L002,F01,Architecture and Systems Analysis,P01,Business and Systems Analysis,IT Consultant
+L003,F01,Architecture and Systems Analysis,P01,Business and Systems Analysis,Software Requirements Engineer
+L004,F01,Architecture and Systems Analysis,P01,Business and Systems Analysis,Systems Analyst
+L005,F01,Architecture and Systems Analysis,P02,Enterprise and Systems Architecture,Computer Systems Engineer
+L006,F01,Architecture and Systems Analysis,P02,Enterprise and Systems Architecture,Enterprise Architect
+L007,F01,Architecture and Systems Analysis,P02,Enterprise and Systems Architecture,Solution Architect
+L008,F01,Architecture and Systems Analysis,P02,Enterprise and Systems Architecture,Systems Architect
+L009,F01,Architecture and Systems Analysis,P02,Enterprise and Systems Architecture,Systems Integration Engineer
+L010,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Cloud Administrator
+L011,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Cloud Architect
+L012,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Cloud Engineer
+L013,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,DevOps Engineer
+L014,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Platform Engineer
+L015,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Release Engineer
+L016,F02,"Cloud, Platforms and IT Operations",P03,Cloud and Platform Engineering,Site Reliability Engineer
+L017,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Computer and Systems Operator
+L018,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Data Centre Operator
+L019,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,IT Disaster Recovery Specialist
+L020,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Storage Engineer
+L021,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Sustainable IT Specialist
+L022,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Systems Administrator
+L023,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Systems Configuration Specialist
+L024,F02,"Cloud, Platforms and IT Operations",P04,Systems Administration and Operations,Web Administrator
+L025,F03,Computer Hardware,P05,Computing Hardware Engineering,Computer Hardware Engineer
+L026,F03,Computer Hardware,P05,Computing Hardware Engineering,Computer Hardware Engineering Technician
+L027,F03,Computer Hardware,P05,Computing Hardware Engineering,Computer Hardware Test Technician
+L028,F03,Computer Hardware,P05,Computing Hardware Engineering,Embedded System Designer
+L029,F04,Cybersecurity,P06,Cybersecurity Engineering,Application Security Engineer
+L030,F04,Cybersecurity,P06,Cybersecurity Engineering,Cloud Security Engineer
+L031,F04,Cybersecurity,P06,Cybersecurity Engineering,Cryptography Specialist
+L032,F04,Cybersecurity,P06,Cybersecurity Engineering,Embedded and IoT Security Engineer
+L033,F04,Cybersecurity,P06,Cybersecurity Engineering,Identity and Access Management Specialist
+L034,F04,Cybersecurity,P06,Cybersecurity Engineering,Network Security Engineer
+L035,F04,Cybersecurity,P06,Cybersecurity Engineering,Security Administrator
+L036,F04,Cybersecurity,P06,Cybersecurity Engineering,Security Architect
+L037,F04,Cybersecurity,P06,Cybersecurity Engineering,Security Engineer
+L038,F04,Cybersecurity,P07,"Cybersecurity Governance, Risk and Compliance",Cybersecurity Consultant
+L039,F04,Cybersecurity,P07,"Cybersecurity Governance, Risk and Compliance",Cybersecurity GRC Specialist
+L040,F04,Cybersecurity,P07,"Cybersecurity Governance, Risk and Compliance",Data Protection and Privacy Specialist
+L041,F04,Cybersecurity,P07,"Cybersecurity Governance, Risk and Compliance",IT Auditor
+L042,F04,Cybersecurity,P07,"Cybersecurity Governance, Risk and Compliance",IT Compliance Specialist
+L043,F04,Cybersecurity,P08,Cybersecurity Operations,Cyber Incident Responder
+L044,F04,Cybersecurity,P08,Cybersecurity Operations,Cyber Threat Intelligence Analyst
+L045,F04,Cybersecurity,P08,Cybersecurity Operations,Cybersecurity Analyst
+L046,F04,Cybersecurity,P08,Cybersecurity Operations,Digital Forensics Analyst
+L047,F04,Cybersecurity,P09,Offensive Security and Security Testing,Penetration Tester
+L048,F04,Cybersecurity,P09,Offensive Security and Security Testing,Vulnerability Assessment Specialist
+L049,F05,"Data, Analytics and AI",P10,AI and Machine Learning Engineering,Artificial Intelligence Engineer
+L050,F05,"Data, Analytics and AI",P10,AI and Machine Learning Engineering,Computer Vision Engineer
+L051,F05,"Data, Analytics and AI",P10,AI and Machine Learning Engineering,Knowledge Engineer
+L052,F05,"Data, Analytics and AI",P10,AI and Machine Learning Engineering,Machine Learning Engineer
+L053,F05,"Data, Analytics and AI",P10,AI and Machine Learning Engineering,Natural Language Processing Engineer
+L054,F05,"Data, Analytics and AI",P11,Data Analysis and Business Intelligence,Business Intelligence Analyst
+L055,F05,"Data, Analytics and AI",P11,Data Analysis and Business Intelligence,Business Intelligence Developer
+L056,F05,"Data, Analytics and AI",P11,Data Analysis and Business Intelligence,Data Analyst
+L057,F05,"Data, Analytics and AI",P11,Data Analysis and Business Intelligence,Data Quality Specialist
+L058,F05,"Data, Analytics and AI",P12,Data Engineering,Analytics Engineer
+L059,F05,"Data, Analytics and AI",P12,Data Engineering,Data Architect
+L060,F05,"Data, Analytics and AI",P12,Data Engineering,Data Engineer
+L061,F05,"Data, Analytics and AI",P12,Data Engineering,Data Governance and Stewardship Specialist
+L062,F05,"Data, Analytics and AI",P12,Data Engineering,Data Warehouse Developer
+L063,F05,"Data, Analytics and AI",P13,Data Science and Computing Research,Computer Research Scientist
+L064,F05,"Data, Analytics and AI",P13,Data Science and Computing Research,Data Scientist
+L065,F05,"Data, Analytics and AI",P13,Data Science and Computing Research,Machine Learning Research Scientist
+L066,F05,"Data, Analytics and AI",P14,Database Engineering,Database Administrator
+L067,F05,"Data, Analytics and AI",P14,Database Engineering,Database Architect
+L068,F05,"Data, Analytics and AI",P14,Database Engineering,Database Developer
+L069,F05,"Data, Analytics and AI",P14,Database Engineering,Database Integrator
+L070,F05,"Data, Analytics and AI",P15,Domain-specific Informatics,Bioinformatics Specialist
+L071,F05,"Data, Analytics and AI",P15,Domain-specific Informatics,Geographic Information Systems Specialist
+L072,F05,"Data, Analytics and AI",P15,Domain-specific Informatics,Health Informatics Specialist
+L073,F06,IT Support,P16,Technical Documentation and Learning,Digital Document Management Specialist
+L074,F06,IT Support,P16,Technical Documentation and Learning,IT Technical Account Specialist
+L075,F06,IT Support,P16,Technical Documentation and Learning,IT Technical Writer
+L076,F06,IT Support,P16,Technical Documentation and Learning,IT Trainer
+L077,F06,IT Support,P17,User and Application Support,Application Support Specialist
+L078,F06,IT Support,P17,User and Application Support,Computer Hardware Technician
+L079,F06,IT Support,P17,User and Application Support,Desktop Support Specialist
+L080,F06,IT Support,P17,User and Application Support,IT Help Desk Specialist
+L081,F06,IT Support,P17,User and Application Support,IT Support Engineer
+L082,F07,Networks and Telecommunications,P18,Computer Network Engineering,Network Administrator
+L083,F07,Networks and Telecommunications,P18,Computer Network Engineering,Network Architect
+L084,F07,Networks and Telecommunications,P18,Computer Network Engineering,Network Engineer
+L085,F07,Networks and Telecommunications,P18,Computer Network Engineering,Network Support Specialist
+L086,F07,Networks and Telecommunications,P18,Computer Network Engineering,Network Technician
+L087,F07,Networks and Telecommunications,P19,Telecommunications Engineering,Telecommunications Analyst
+L088,F07,Networks and Telecommunications,P19,Telecommunications Engineering,Telecommunications Engineer
+L089,F08,Software Engineering,P20,Agile Product and Project Delivery,IT Product Manager
+L090,F08,Software Engineering,P20,Agile Product and Project Delivery,IT Project Manager
+L091,F08,Software Engineering,P20,Agile Product and Project Delivery,Scrum Master
+L092,F08,Software Engineering,P21,Digital Interface and User Experience,Digital Game Designer
+L093,F08,Software Engineering,P21,Digital Interface and User Experience,User Experience Designer
+L094,F08,Software Engineering,P21,Digital Interface and User Experience,User Experience Researcher
+L095,F08,Software Engineering,P21,Digital Interface and User Experience,User Interface Designer
+L096,F08,Software Engineering,P21,Digital Interface and User Experience,Web Designer
+L097,F08,Software Engineering,P22,Software Development,Android Developer
+L098,F08,Software Engineering,P22,Software Development,Backend Developer
+L099,F08,Software Engineering,P22,Software Development,Cloud Software Developer
+L100,F08,Software Engineering,P22,Software Development,Desktop Application Developer
+L101,F08,Software Engineering,P22,Software Development,Frontend Developer
+L102,F08,Software Engineering,P22,Software Development,Full-stack Developer
+L103,F08,Software Engineering,P22,Software Development,Software Architect
+L104,F08,Software Engineering,P22,Software Development,Systems Programmer
+L105,F08,Software Engineering,P22,Software Development,iOS Developer
+L106,F08,Software Engineering,P23,Software Quality and Testing,Accessibility Tester
+L107,F08,Software Engineering,P23,Software Quality and Testing,Game Tester
+L108,F08,Software Engineering,P23,Software Quality and Testing,Integration Test Engineer
+L109,F08,Software Engineering,P23,Software Quality and Testing,Localization Tester
+L110,F08,Software Engineering,P23,Software Quality and Testing,Performance Test Engineer
+L111,F08,Software Engineering,P23,Software Quality and Testing,Software Test Engineer
+L112,F08,Software Engineering,P23,Software Quality and Testing,Test Automation Engineer
+L113,F08,Software Engineering,P23,Software Quality and Testing,Usability Tester
+L114,F08,Software Engineering,P24,Specialized Software Development,Blockchain Developer
+L115,F08,Software Engineering,P24,Specialized Software Development,Embedded Software Developer
+L116,F08,Software Engineering,P24,Specialized Software Development,Game Developer
+L117,F08,Software Engineering,P24,Specialized Software Development,IoT Developer
+L118,F08,Software Engineering,P24,Specialized Software Development,RPA Developer

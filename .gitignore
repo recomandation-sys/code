@@ -1,0 +1,98 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.env
+.venv/
+venv/
+*_install_log.txt
+
+# generated ESCO index (rebuild with scripts/build_esco_index.py)
+data/esco/*.faiss
+data/esco/*.parquet
+data/model_cache/
+
+# YOLO fine-tuning runs
+runs/
+
+# uploads / scratch outputs
+data/samples/*.pdf
+*.log
+pytest-cache-files-*/
+
+# Node / web workspace
+node_modules/
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+apps/web/.vite/
+apps/api/uploads/tmp/
+
+# Prisma
+apps/api/prisma/*.db
+
+# env files (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+apps/api/.env
+apps/web/.env
+
+# job_nlp — trained weights too large for GitHub (retrain from scripts + freeze manifest)
+job_nlp/artifacts/models/
+job_nlp/artifacts/archive/
+job_nlp/artifacts/v2/models/
+
+# local IDE / tooling
+.cursor/
+
+# Local-only job extraction assets (large or reproducible; keep code/config/docs
+# visible for architecture audits and provision these artifacts separately).
+/models/
+job_nlp/ingestion/data/
+job_nlp/data/v2/
+job_nlp/data/04_job_extraction_pipeline_working_v1.csv
+job_nlp/data/resources/esco/ESCO_IT_SKILLS_V1.csv
+job_nlp/data/technology/v2/*.csv
+job_nlp/knowledge_base/it_knowledge.sqlite*
+job_nlp/knowledge_base/data/
+job_nlp/knowledge_base/exports/*
+!job_nlp/knowledge_base/exports/reviewed_titles_candidate_leaf_sets_v3.csv
+job_nlp/artifacts/reports/skills_all_offers_v1/
+job_nlp/artifacts/reports/mixed_200_skills_family/
+job_nlp/artifacts/reports/manual_review_*.jsonl
+job_nlp/artifacts/reports/*_dataset*.json
+job_nlp/artifacts/reports/*_dataset*.jsonl
+
+# Historical/experimental material is retained locally under archive/ but is
+# not part of the auditable source tree.
+archive/
+
+# Generated model/database/archive formats (never source code or settings).
+*.sqlite
+*.sqlite-*
+*.db
+*.bak
+*.joblib
+*.pt
+*.bin
+*.safetensors
+*.npz
+*.faiss
+*.parquet
+*.rar
+*.zip
+*.7z
+
+# Heavy local-only CV design screenshots
+CV PARSER DESIGN/*.png
+

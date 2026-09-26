@@ -1,0 +1,23 @@
+{
+  "total_patterns": 510,
+  "exact_id": 64,
+  "esco_code_anchor": 0,
+  "lexical_alias": 69,
+  "manual": 0,
+  "unresolved": 377,
+  "percentages": {
+    "exact_id": 12.55,
+    "esco_code_anchor": 0.0,
+    "lexical_alias": 13.53,
+    "manual": 0.0,
+    "unresolved": 73.92
+  },
+  "confidence_tiers": {
+    "tier_1_reviewed_kb_title": "not measured: no production title evaluation set supplied",
+    "tier_2_regex_esco_agree": "not measured: no closed evaluation set supplied",
+    "tier_3_regex_only_or_esco_deterministic": "not measured: no closed evaluation set supplied",
+    "tier_4_context_only": "not measured: no closed evaluation set supplied",
+    "tier_5_abstention": "not measured: no closed evaluation set supplied"
+  },
+  "evaluation_note": "Structural coverage only; accuracy and before/after production tier distributions require human-labelled offers."
+}

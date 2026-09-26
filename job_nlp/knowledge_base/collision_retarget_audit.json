@@ -1,0 +1,87 @@
+[
+  {
+    "winner": "FULLSTACK_DEVELOPER",
+    "winner_kb_leaf_id": "FULLSTACK_DEVELOPER",
+    "losers": [
+      {
+        "leaf": "FRONTEND_DEVELOPER",
+        "kb_leaf_id": "FRONTEND_DEVELOPER"
+      },
+      {
+        "leaf": "BACKEND_DEVELOPER",
+        "kb_leaf_id": "BACKEND_DEVELOPER"
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "DEVSECOPS_ENGINEER",
+    "winner_kb_leaf_id": null,
+    "losers": [
+      {
+        "leaf": "DEVOPS_ENGINEER",
+        "kb_leaf_id": "DEVOPS_ENGINEER"
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "SITE_RELIABILITY_ENGINEER",
+    "winner_kb_leaf_id": null,
+    "losers": [
+      {
+        "leaf": "DEVOPS_ENGINEER",
+        "kb_leaf_id": "DEVOPS_ENGINEER"
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "SAP_DEVELOPER",
+    "winner_kb_leaf_id": null,
+    "losers": [
+      {
+        "leaf": "SOFTWARE_ENGINEER",
+        "kb_leaf_id": null
+      },
+      {
+        "leaf": "SOFTWARE_DEVELOPER",
+        "kb_leaf_id": null
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "SAP_FUNCTIONAL_CONSULTANT",
+    "winner_kb_leaf_id": null,
+    "losers": [
+      {
+        "leaf": "FUNCTIONAL_CONSULTANT",
+        "kb_leaf_id": null
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "NETWORK_SECURITY_ENGINEER",
+    "winner_kb_leaf_id": "NETWORK_SECURITY",
+    "losers": [
+      {
+        "leaf": "NETWORK_ENGINEER",
+        "kb_leaf_id": "NETWORK_ENGINEER"
+      }
+    ],
+    "post_retarget_redundant": false
+  },
+  {
+    "winner": "DATABASE_ADMINISTRATOR",
+    "winner_kb_leaf_id": "DATABASE_ADMIN",
+    "losers": [
+      {
+        "leaf": "DATABASE_ENGINEER",
+        "kb_leaf_id": null
+      }
+    ],
+    "post_retarget_redundant": false
+  }
+]

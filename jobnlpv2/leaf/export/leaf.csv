@@ -1,0 +1,119 @@
+leaf_id,leaf_name,parent_id
+L001,IT Business Analyst,P01
+L002,IT Consultant,P01
+L003,Software Requirements Engineer,P01
+L004,Systems Analyst,P01
+L005,Computer Systems Engineer,P02
+L006,Enterprise Architect,P02
+L007,Solution Architect,P02
+L008,Systems Architect,P02
+L009,Systems Integration Engineer,P02
+L010,Cloud Administrator,P03
+L011,Cloud Architect,P03
+L012,Cloud Engineer,P03
+L013,DevOps Engineer,P03
+L014,Platform Engineer,P03
+L015,Release Engineer,P03
+L016,Site Reliability Engineer,P03
+L017,Computer and Systems Operator,P04
+L018,Data Centre Operator,P04
+L019,IT Disaster Recovery Specialist,P04
+L020,Storage Engineer,P04
+L021,Sustainable IT Specialist,P04
+L022,Systems Administrator,P04
+L023,Systems Configuration Specialist,P04
+L024,Web Administrator,P04
+L025,Computer Hardware Engineer,P05
+L026,Computer Hardware Engineering Technician,P05
+L027,Computer Hardware Test Technician,P05
+L028,Embedded System Designer,P05
+L029,Application Security Engineer,P06
+L030,Cloud Security Engineer,P06
+L031,Cryptography Specialist,P06
+L032,Embedded and IoT Security Engineer,P06
+L033,Identity and Access Management Specialist,P06
+L034,Network Security Engineer,P06
+L035,Security Administrator,P06
+L036,Security Architect,P06
+L037,Security Engineer,P06
+L038,Cybersecurity Consultant,P07
+L039,Cybersecurity GRC Specialist,P07
+L040,Data Protection and Privacy Specialist,P07
+L041,IT Auditor,P07
+L042,IT Compliance Specialist,P07
+L043,Cyber Incident Responder,P08
+L044,Cyber Threat Intelligence Analyst,P08
+L045,Cybersecurity Analyst,P08
+L046,Digital Forensics Analyst,P08
+L047,Penetration Tester,P09
+L048,Vulnerability Assessment Specialist,P09
+L049,Artificial Intelligence Engineer,P10
+L050,Computer Vision Engineer,P10
+L051,Knowledge Engineer,P10
+L052,Machine Learning Engineer,P10
+L053,Natural Language Processing Engineer,P10
+L054,Business Intelligence Analyst,P11
+L055,Business Intelligence Developer,P11
+L056,Data Analyst,P11
+L057,Data Quality Specialist,P11
+L058,Analytics Engineer,P12
+L059,Data Architect,P12
+L060,Data Engineer,P12
+L061,Data Governance and Stewardship Specialist,P12
+L062,Data Warehouse Developer,P12
+L063,Computer Research Scientist,P13
+L064,Data Scientist,P13
+L065,Machine Learning Research Scientist,P13
+L066,Database Administrator,P14
+L067,Database Architect,P14
+L068,Database Developer,P14
+L069,Database Integrator,P14
+L070,Bioinformatics Specialist,P15
+L071,Geographic Information Systems Specialist,P15
+L072,Health Informatics Specialist,P15
+L073,Digital Document Management Specialist,P16
+L074,IT Technical Account Specialist,P16
+L075,IT Technical Writer,P16
+L076,IT Trainer,P16
+L077,Application Support Specialist,P17
+L078,Computer Hardware Technician,P17
+L079,Desktop Support Specialist,P17
+L080,IT Help Desk Specialist,P17
+L081,IT Support Engineer,P17
+L082,Network Administrator,P18
+L083,Network Architect,P18
+L084,Network Engineer,P18
+L085,Network Support Specialist,P18
+L086,Network Technician,P18
+L087,Telecommunications Analyst,P19
+L088,Telecommunications Engineer,P19
+L089,IT Product Manager,P20
+L090,IT Project Manager,P20
+L091,Scrum Master,P20
+L092,Digital Game Designer,P21
+L093,User Experience Designer,P21
+L094,User Experience Researcher,P21
+L095,User Interface Designer,P21
+L096,Web Designer,P21
+L097,Android Developer,P22
+L098,Backend Developer,P22
+L099,Cloud Software Developer,P22
+L100,Desktop Application Developer,P22
+L101,Frontend Developer,P22
+L102,Full-stack Developer,P22
+L103,Software Architect,P22
+L104,Systems Programmer,P22
+L105,iOS Developer,P22
+L106,Accessibility Tester,P23
+L107,Game Tester,P23
+L108,Integration Test Engineer,P23
+L109,Localization Tester,P23
+L110,Performance Test Engineer,P23
+L111,Software Test Engineer,P23
+L112,Test Automation Engineer,P23
+L113,Usability Tester,P23
+L114,Blockchain Developer,P24
+L115,Embedded Software Developer,P24
+L116,Game Developer,P24
+L117,IoT Developer,P24
+L118,RPA Developer,P24

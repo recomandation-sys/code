@@ -1,0 +1,35 @@
+{
+  "identity": {
+    "full_name": null,
+    "email": { "value": null, "confidence": "LOW", "method": null, "reason_codes": [] }
+  },
+  "target": { "desired_positions": [], "desired_contract_types": [], "desired_work_modes": [] },
+  "experience": { "professional_months": 0, "internship_months": 0, "alternance_months": 0, "freelance_months": 0, "records": [] },
+  "skills": { "known": [], "unmapped_technology_candidates": [] },
+  "languages": [],
+  "certifications": [],
+  "parse_quality": {
+    "status": "POOR",
+    "section_coverage": 0.2,
+    "orphan_ratio": 0.6,
+    "record_coherence": 0.3,
+    "warnings": ["LAYOUT_QUALITY_POOR", "LOW_SECTION_COVERAGE"]
+  },
+  "review_items": [
+    { "field": "identity.full_name", "reason": "No confident header candidate found.", "confidence": "LOW" },
+    { "field": "identity.email", "reason": "No email pattern matched.", "confidence": "LOW" }
+  ],
+  "meta": {
+    "parser_version": "3.0.0",
+    "page_count": 2,
+    "used_ocr": false,
+    "overall_page_state": "NATIVE_TEXT_POOR",
+    "reading_strategy": "SIMPLE_POSITIONAL",
+    "parse_duration_ms": 340.1,
+    "word_count": 40,
+    "line_count": 10,
+    "block_count": 3,
+    "sections_found": 1,
+    "unknown_section_count": 2
+  }
+}

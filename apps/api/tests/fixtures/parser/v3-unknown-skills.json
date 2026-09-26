@@ -1,0 +1,32 @@
+{
+  "identity": {
+    "full_name": { "value": "Alex Martin", "confidence": "MEDIUM", "method": "HEADER_REGION_CANDIDATE", "reason_codes": ["HEADER_REGION"] },
+    "email": { "value": "alex.martin@example.com", "confidence": "HIGH", "method": "REGEX", "reason_codes": [] }
+  },
+  "target": { "desired_positions": [], "desired_contract_types": [], "desired_work_modes": [] },
+  "experience": { "professional_months": 6, "internship_months": 0, "alternance_months": 0, "freelance_months": 0, "records": [] },
+  "skills": {
+    "known": [],
+    "unmapped_technology_candidates": [
+      { "raw_name": "Zustand", "known": false, "source_type": "SKILLS_SECTION", "evidence": [{ "source_type": "SKILLS_SECTION", "source_id": "section_002_000", "raw_text": "Zustand" }] },
+      { "raw_name": "Drizzle ORM", "known": false, "source_type": "PROJECT", "evidence": [{ "source_type": "PROJECT", "source_id": "section_003_000", "raw_text": "Drizzle ORM" }] }
+    ]
+  },
+  "languages": [],
+  "certifications": [],
+  "parse_quality": { "status": "FAIR", "section_coverage": 0.7, "orphan_ratio": 0.1, "record_coherence": 0.8, "warnings": ["UNKNOWN_TECHNOLOGY_CANDIDATES_ONLY"] },
+  "review_items": [{ "field": "skills", "reason": "No canonical skills recognized, only unmapped candidates.", "confidence": "MEDIUM" }],
+  "meta": {
+    "parser_version": "3.0.0",
+    "page_count": 1,
+    "used_ocr": false,
+    "overall_page_state": "NATIVE_TEXT_GOOD",
+    "reading_strategy": "XY_CUT",
+    "parse_duration_ms": 95.0,
+    "word_count": 200,
+    "line_count": 40,
+    "block_count": 8,
+    "sections_found": 4,
+    "unknown_section_count": 0
+  }
+}

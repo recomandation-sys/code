@@ -1,0 +1,57 @@
+{
+  "PROFILE_SUMMARY": {
+    "en": ["profile", "summary", "professional summary", "about me", "objective", "career objective", "personal statement", "personal profile", "career summary", "professional profile"],
+    "fr": ["profil", "résumé", "à propos", "objectif professionnel", "présentation", "profil professionnel"],
+    "ar": ["نبذة", "الملف الشخصي", "نبذة عني", "نبذة شخصية"]
+  },
+  "SKILLS": {
+    "en": ["skills", "technical skills", "technologies", "core competencies", "competencies", "tech stack", "key skills", "skills & technologies", "hard skills", "computer skills", "computer proficiency", "it skills", "personal skills", "technical proficiency", "skill set", "areas of expertise", "professional skills", "proficient skills", "proficiencies", "skills summary", "expertise"],
+    "fr": ["compétences", "compétences techniques", "technologies", "compétences clés", "compétences informatiques"],
+    "ar": ["المهارات", "المهارات التقنية", "المهارات الفنية"]
+  },
+  "PROFESSIONAL_EXPERIENCE": {
+    "en": ["experience", "work experience", "professional experience", "employment history", "career history", "professional background"],
+    "fr": ["expérience", "expérience professionnelle", "expériences professionnelles", "parcours professionnel"],
+    "ar": ["الخبرة", "الخبرة المهنية", "الخبرات العملية", "الخبرات المهنية"]
+  },
+  "INTERNSHIP": {
+    "en": ["internship", "internships", "internship experience", "industrial training", "industrial visit"],
+    "fr": ["stage", "stages", "expérience de stage", "stage professionnel"],
+    "ar": ["التدريب", "تدريب", "التدريب الميداني"]
+  },
+  "ALTERNANCE": {
+    "en": ["apprenticeship", "work-study", "alternance", "apprenticeship program"],
+    "fr": ["alternance", "apprentissage", "contrat d'apprentissage", "contrat de professionnalisation"],
+    "ar": ["التلمذة الصناعية", "التدريب بالتناوب"]
+  },
+  "PROJECTS": {
+    "en": ["projects", "personal projects", "academic projects", "key projects", "side projects"],
+    "fr": ["projets", "projets personnels", "projets académiques", "projets réalisés"],
+    "ar": ["المشاريع", "مشاريع", "المشاريع الشخصية"]
+  },
+  "CERTIFICATIONS": {
+    "en": ["certifications", "certificates", "licenses & certifications", "certifications & licenses"],
+    "fr": ["certifications", "certificats", "certifications obtenues"],
+    "ar": ["الشهادات", "شهادات"]
+  },
+  "LANGUAGES": {
+    "en": ["languages", "language skills", "spoken languages"],
+    "fr": ["langues", "compétences linguistiques", "langues parlées"],
+    "ar": ["اللغات", "اللغات المتقنة"]
+  },
+  "EDUCATION": {
+    "en": ["education", "academic background", "education & training", "academic qualifications", "studies", "educational qualification", "educational qualifications", "education qualification", "professional qualification", "professional qualifications", "academic profile", "academic details", "qualification"],
+    "fr": ["formation", "éducation", "parcours académique", "diplômes", "formation académique"],
+    "ar": ["التعليم", "المؤهلات العلمية", "التحصيل الدراسي"]
+  },
+  "CONTACT": {
+    "en": ["contact", "contact information", "contact details", "personal information", "personal details", "passport details"],
+    "fr": ["contact", "coordonnées", "informations personnelles"],
+    "ar": ["معلومات الاتصال", "التواصل", "بيانات التواصل"]
+  },
+  "IGNORED": {
+    "en": ["declaration", "hobbies", "hobbies & interests", "hobbies and interests", "interests", "area of interest", "areas of interest", "extra curricular activities", "extracurricular activities", "achievements", "achievement", "references", "reference", "strengths", "strength", "curriculum vitae", "hobbies/interests"],
+    "fr": ["déclaration", "centres d'intérêt", "loisirs", "références"],
+    "ar": ["إقرار", "الهوايات", "الاهتمامات", "المراجع"]
+  }
+}

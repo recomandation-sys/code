@@ -1,0 +1,1135 @@
+{
+  "version": "IT_KB_2.7.0_REMOVE_GENERIC_LEAVES",
+  "tree": {
+    "SOFTWARE": [
+      "Software Engineering",
+      {
+        "SOFTWARE_DEVELOPMENT": [
+          "Software Development",
+          "Design and build software applications and system software.",
+          {
+            "FRONTEND_DEVELOPER": "Frontend Developer",
+            "BACKEND_DEVELOPER": "Backend Developer",
+            "FULLSTACK_DEVELOPER": "Full-stack Developer",
+            "ANDROID_DEVELOPER": "Android Developer",
+            "IOS_DEVELOPER": "iOS Developer",
+            "DESKTOP_DEVELOPER": "Desktop Application Developer",
+            "SYSTEMS_PROGRAMMER": "Systems Programmer",
+            "SOFTWARE_ARCHITECT": "Software Architect",
+            "CLOUD_SOFTWARE_DEVELOPER": "Cloud Software Developer"
+          }
+        ],
+        "SPECIALIZED_DEVELOPMENT": [
+          "Specialized Software Development",
+          "Develop software for specific technical platforms or execution environments.",
+          {
+            "EMBEDDED_DEVELOPER": "Embedded Software Developer",
+            "IOT_DEVELOPER": "IoT Developer",
+            "GAME_DEVELOPER": "Game Developer",
+            "BLOCKCHAIN_DEVELOPER": "Blockchain Developer",
+            "RPA_DEVELOPER": "RPA Developer"
+          }
+        ],
+        "SOFTWARE_TESTING": [
+          "Software Quality and Testing",
+          "Verify software behavior, quality, performance, accessibility and integration.",
+          {
+            "SOFTWARE_TESTER": "Software Test Engineer",
+            "TEST_AUTOMATION": "Test Automation Engineer",
+            "PERFORMANCE_TESTER": "Performance Test Engineer",
+            "ACCESSIBILITY_TESTER": "Accessibility Tester",
+            "USABILITY_TESTER": "Usability Tester",
+            "INTEGRATION_TESTER": "Integration Test Engineer",
+            "GAME_TESTER": "Game Tester",
+            "LOCALIZATION_TESTER": "Localization Tester"
+          }
+        ],
+        "DIGITAL_EXPERIENCE": [
+          "Digital Interface and User Experience",
+          "Design and evaluate digital interfaces and interactive experiences.",
+          {
+            "UI_DESIGNER": "User Interface Designer",
+            "UX_DESIGNER": "User Experience Designer",
+            "UX_RESEARCHER": "User Experience Researcher",
+            "WEB_DESIGNER": "Web Designer",
+            "GAME_DESIGNER": "Digital Game Designer"
+          }
+        ],
+        "AGILE_PRODUCT_AND_PROJECT_DELIVERY": [
+          "Agile Product and Project Delivery",
+          "Plan and coordinate technology products, projects and agile delivery.",
+          {
+            "IT_PROJECT_MANAGER": "IT Project Manager",
+            "IT_PRODUCT_MANAGER": "IT Product Manager",
+            "SCRUM_MASTER": "Scrum Master"
+          }
+        ]
+      }
+    ],
+    "DATA_AI": [
+      "Data, Analytics and Artificial Intelligence",
+      {
+        "DATA_ENGINEERING": [
+          "Data Engineering",
+          "Build and operate data pipelines, data models and analytical platforms.",
+          {
+            "DATA_ENGINEER": "Data Engineer",
+            "DATA_ARCHITECT": "Data Architect",
+            "DATA_WAREHOUSE": "Data Warehouse Developer",
+            "ANALYTICS_ENGINEER": "Analytics Engineer",
+            "DATA_GOVERNANCE_SPECIALIST": "Data Governance and Stewardship Specialist"
+          }
+        ],
+        "DATABASE_ENGINEERING": [
+          "Database Engineering",
+          "Design, develop, integrate and administer databases.",
+          {
+            "DATABASE_ADMIN": "Database Administrator",
+            "DATABASE_DEVELOPER": "Database Developer",
+            "DATABASE_ARCHITECT": "Database Architect",
+            "DATABASE_INTEGRATOR": "Database Integrator"
+          }
+        ],
+        "DATA_ANALYSIS": [
+          "Data Analysis and Business Intelligence",
+          "Analyze data, build reports and support data-informed decisions.",
+          {
+            "DATA_ANALYST": "Data Analyst",
+            "BI_ANALYST": "Business Intelligence Analyst",
+            "BI_DEVELOPER": "Business Intelligence Developer",
+            "DATA_QUALITY": "Data Quality Specialist"
+          }
+        ],
+        "AI_ENGINEERING": [
+          "AI and Machine Learning Engineering",
+          "Engineer AI systems and deploy machine learning applications.",
+          {
+            "AI_ENGINEER": "Artificial Intelligence Engineer",
+            "ML_ENGINEER": "Machine Learning Engineer",
+            "NLP_ENGINEER": "Natural Language Processing Engineer",
+            "CV_ENGINEER": "Computer Vision Engineer",
+            "KNOWLEDGE_ENGINEER": "Knowledge Engineer"
+          }
+        ],
+        "DATA_SCIENCE_RESEARCH": [
+          "Data Science and Computing Research",
+          "Develop statistical models, computational methods and scientific computing research.",
+          {
+            "DATA_SCIENTIST": "Data Scientist",
+            "ML_RESEARCHER": "Machine Learning Research Scientist",
+            "COMPUTER_SCIENTIST": "Computer Research Scientist"
+          }
+        ],
+        "DOMAIN_INFORMATICS": [
+          "Domain-specific Informatics",
+          "Apply computing to geospatial, biomedical or healthcare problems; require explicit IT evidence.",
+          {
+            "GIS_SPECIALIST": "Geographic Information Systems Specialist",
+            "BIOINFORMATICS": "Bioinformatics Specialist",
+            "HEALTH_INFORMATICS": "Health Informatics Specialist"
+          }
+        ]
+      }
+    ],
+    "PLATFORM_INFRASTRUCTURE": [
+      "Cloud, Platforms and IT Operations",
+      {
+        "SYSTEMS_OPERATIONS": [
+          "Systems Administration and Operations",
+          "Configure, administer and operate computing infrastructure.",
+          {
+            "SYSTEM_ADMIN": "Systems Administrator",
+            "WEB_ADMIN": "Web Administrator",
+            "DATACENTER_OPERATOR": "Data Centre Operator",
+            "SYSTEM_CONFIG": "Systems Configuration Specialist",
+            "STORAGE_ENGINEER": "Storage Engineer",
+            "DISASTER_RECOVERY": "IT Disaster Recovery Specialist",
+            "SUSTAINABLE_IT": "Sustainable IT Specialist",
+            "COMPUTER_OPERATOR": "Computer and Systems Operator"
+          }
+        ],
+        "CLOUD_AND_PLATFORM": [
+          "Cloud and Platform Engineering",
+          "Design, build and operate cloud platforms, DevOps delivery systems, SRE and release infrastructure.",
+          {
+            "CLOUD_ENGINEER": "Cloud Engineer",
+            "CLOUD_ARCHITECT": "Cloud Architect",
+            "CLOUD_ADMIN": "Cloud Administrator",
+            "DEVOPS_ENGINEER": "DevOps Engineer",
+            "SRE": "Site Reliability Engineer",
+            "PLATFORM_ENGINEER": "Platform Engineer",
+            "RELEASE_ENGINEER": "Release Engineer"
+          }
+        ]
+      }
+    ],
+    "SECURITY": [
+      "Cybersecurity",
+      {
+        "SECURITY_OPERATIONS": [
+          "Cybersecurity Operations",
+          "Monitor cyber threats, respond to incidents and investigate digital evidence.",
+          {
+            "SECURITY_ANALYST": "Cybersecurity Analyst",
+            "INCIDENT_RESPONDER": "Cyber Incident Responder",
+            "THREAT_INTELLIGENCE": "Cyber Threat Intelligence Analyst",
+            "DIGITAL_FORENSICS": "Digital Forensics Analyst"
+          }
+        ],
+        "SECURITY_ENGINEERING": [
+          "Cybersecurity Engineering",
+          "Design and implement technical security controls and architectures.",
+          {
+            "SECURITY_ENGINEER": "Security Engineer",
+            "SECURITY_ARCHITECT": "Security Architect",
+            "APPSEC_ENGINEER": "Application Security Engineer",
+            "CLOUD_SECURITY": "Cloud Security Engineer",
+            "NETWORK_SECURITY": "Network Security Engineer",
+            "EMBEDDED_SECURITY": "Embedded and IoT Security Engineer",
+            "IAM_ENGINEER": "Identity and Access Management Specialist",
+            "CRYPTOGRAPHER": "Cryptography Specialist",
+            "SECURITY_ADMIN": "Security Administrator"
+          }
+        ],
+        "OFFENSIVE_SECURITY": [
+          "Offensive Security and Security Testing",
+          "Assess technical attack surfaces and test cyber defenses.",
+          {
+            "PENETRATION_TESTER": "Penetration Tester",
+            "VULNERABILITY_ANALYST": "Vulnerability Assessment Specialist"
+          }
+        ],
+        "SECURITY_GOVERNANCE": [
+          "Cybersecurity Governance, Risk and Compliance",
+          "Manage cyber risk, assurance, privacy and security policy.",
+          {
+            "SECURITY_GRC": "Cybersecurity GRC Specialist",
+            "IT_AUDITOR": "IT Auditor",
+            "SECURITY_CONSULTANT": "Cybersecurity Consultant",
+            "DATA_PRIVACY": "Data Protection and Privacy Specialist",
+            "IT_COMPLIANCE_SPECIALIST": "IT Compliance Specialist"
+          }
+        ]
+      }
+    ],
+    "NETWORKS": [
+      "Networks and Telecommunications",
+      {
+        "NETWORK_ENGINEERING": [
+          "Computer Network Engineering",
+          "Design, administer, secure and support computer networks.",
+          {
+            "NETWORK_ENGINEER": "Network Engineer",
+            "NETWORK_ARCHITECT": "Network Architect",
+            "NETWORK_ADMIN": "Network Administrator",
+            "NETWORK_SUPPORT": "Network Support Specialist",
+            "NETWORK_TECHNICIAN": "Network Technician"
+          }
+        ],
+        "TELECOM_ENGINEERING": [
+          "Telecommunications Engineering",
+          "Engineer telecommunications systems and communication networks.",
+          {
+            "TELECOM_ENGINEER": "Telecommunications Engineer",
+            "TELECOM_ANALYST": "Telecommunications Analyst"
+          }
+        ]
+      }
+    ],
+    "ARCHITECTURE_ANALYSIS": [
+      "IT Architecture and Systems Analysis",
+      {
+        "SYSTEMS_ARCHITECTURE": [
+          "Enterprise and Systems Architecture",
+          "Design system architectures and integrate enterprise technology.",
+          {
+            "ENTERPRISE_ARCHITECT": "Enterprise Architect",
+            "SOLUTION_ARCHITECT": "Solution Architect",
+            "SYSTEMS_ARCHITECT": "Systems Architect",
+            "SYSTEMS_ENGINEER": "Computer Systems Engineer",
+            "INTEGRATION_ENGINEER": "Systems Integration Engineer"
+          }
+        ],
+        "SYSTEMS_ANALYSIS": [
+          "Business and Systems Analysis",
+          "Analyze business needs and translate them into information-system requirements.",
+          {
+            "BUSINESS_ANALYST": "IT Business Analyst",
+            "SYSTEMS_ANALYST": "Systems Analyst",
+            "REQUIREMENTS_ENGINEER": "Software Requirements Engineer",
+            "IT_CONSULTANT": "IT Consultant"
+          }
+        ]
+      }
+    ],
+    "SUPPORT": [
+      "IT Support",
+      {
+        "USER_APPLICATION_SUPPORT": [
+          "User and Application Support",
+          "Resolve user computing and software application problems.",
+          {
+            "HELPDESK": "IT Help Desk Specialist",
+            "DESKTOP_SUPPORT": "Desktop Support Specialist",
+            "SUPPORT_ENGINEER": "IT Support Engineer",
+            "APPLICATION_SUPPORT": "Application Support Specialist",
+            "COMPUTER_TECHNICIAN": "Computer Hardware Technician"
+          }
+        ],
+        "TECHNICAL_ENABLEMENT": [
+          "Technical Documentation and Learning",
+          "Explain IT systems, train users and support technical adoption.",
+          {
+            "TECHNICAL_WRITER": "IT Technical Writer",
+            "IT_TRAINER": "IT Trainer",
+            "TECHNICAL_ACCOUNT": "IT Technical Account Specialist",
+            "DOCUMENT_MANAGEMENT_SPECIALIST": "Digital Document Management Specialist"
+          }
+        ]
+      }
+    ],
+    "COMPUTER_HARDWARE": [
+      "Computer Hardware Engineering",
+      {
+        "HARDWARE_ENGINEERING": [
+          "Computing Hardware Engineering",
+          "Design and test computer hardware and embedded computing systems.",
+          {
+            "HARDWARE_ENGINEER": "Computer Hardware Engineer",
+            "HARDWARE_TEST": "Computer Hardware Test Technician",
+            "EMBEDDED_DESIGNER": "Embedded System Designer",
+            "HARDWARE_ENG_TECHNICIAN": "Computer Hardware Engineering Technician"
+          }
+        ]
+      }
+    ]
+  },
+  "label_rules": [
+    {
+      "leaf": "INCIDENT_RESPONDER",
+      "regex": "(?:cyber|security|digital).*incident|incident (?:response|responder|handler)",
+      "priority": 120
+    },
+    {
+      "leaf": "DIGITAL_FORENSICS",
+      "regex": "(?:digital|computer|cyber).*forensic|forensic.*(?:digital|computer|cyber)",
+      "priority": 120
+    },
+    {
+      "leaf": "THREAT_INTELLIGENCE",
+      "regex": "(?:cyber|threat).*intel|threat (?:hunter|hunting|investigat)",
+      "priority": 120
+    },
+    {
+      "leaf": "PENETRATION_TESTER",
+      "regex": "penetration|pentest|ethical hack|bug bounty|red team|offensive (?:cyber|security)|security hacker",
+      "priority": 120
+    },
+    {
+      "leaf": "VULNERABILITY_ANALYST",
+      "regex": "vulnerabilit|(?:cyber|security|secure software|network security|system security).*?(?:test|assess)",
+      "priority": 118
+    },
+    {
+      "leaf": "IAM_ENGINEER",
+      "regex": "identity|\\biam\\b|access management",
+      "priority": 117
+    },
+    {
+      "leaf": "APPSEC_ENGINEER",
+      "regex": "application security|secure software (?:develop|engineer)|software security",
+      "priority": 115
+    },
+    {
+      "leaf": "CLOUD_SECURITY",
+      "regex": "cloud security",
+      "priority": 115
+    },
+    {
+      "leaf": "NETWORK_SECURITY",
+      "regex": "network security (?:engineer|admin)",
+      "priority": 115
+    },
+    {
+      "leaf": "EMBEDDED_SECURITY",
+      "regex": "(?:embedded|iot|internet of things|automotive|mobile|scada).*security",
+      "priority": 116
+    },
+    {
+      "leaf": "SECURITY_ARCHITECT",
+      "regex": "security architect",
+      "priority": 116
+    },
+    {
+      "leaf": "CRYPTOGRAPHER",
+      "regex": "cryptograph|cryptanalyst",
+      "priority": 115
+    },
+    {
+      "leaf": "SECURITY_GRC",
+      "regex": "(?:cyber|security).*(?:governance|risk|compliance|policy)|compliance.*information security",
+      "priority": 114
+    },
+    {
+      "leaf": "IT_AUDITOR",
+      "regex": "\\bit audit|\\bict audit|systems auditor.*ict",
+      "priority": 114
+    },
+    {
+      "leaf": "DATA_PRIVACY",
+      "regex": "data (?:protection|privacy)|privacy.*(?:data|information)",
+      "priority": 114
+    },
+    {
+      "leaf": "SECURITY_CONSULTANT",
+      "regex": "(?:ict|cyber).*security.*(?:consult|advice)|consultant.*ict security",
+      "priority": 112
+    },
+    {
+      "leaf": "SECURITY_ENGINEER",
+      "regex": "(?:cyber|information|computer|ict).*security.*(?:engineer|develop)|cyber defense infrastructure",
+      "priority": 108
+    },
+    {
+      "leaf": "SECURITY_ADMIN",
+      "regex": "(?:ict|information|computer|cyber).*security administrator",
+      "priority": 118
+    },
+    {
+      "leaf": "SECURITY_ANALYST",
+      "regex": "(?:cyber|information security|network defense|network security|ict security).*analyst|blue team|cyber defender",
+      "priority": 90
+    },
+    {
+      "leaf": "LOCALIZATION_TESTER",
+      "regex": "locali[sz].*(?:test|quality assurance)",
+      "priority": 117
+    },
+    {
+      "leaf": "GAME_TESTER",
+      "regex": "(?:games?|gaming).*test|test.*(?:games?|gaming)",
+      "priority": 116
+    },
+    {
+      "leaf": "ACCESSIBILITY_TESTER",
+      "regex": "accessibility.*test",
+      "priority": 115
+    },
+    {
+      "leaf": "USABILITY_TESTER",
+      "regex": "usability.*test",
+      "priority": 115
+    },
+    {
+      "leaf": "PERFORMANCE_TESTER",
+      "regex": "performance.*test",
+      "priority": 115
+    },
+    {
+      "leaf": "INTEGRATION_TESTER",
+      "regex": "integration.*test",
+      "priority": 115
+    },
+    {
+      "leaf": "TEST_AUTOMATION",
+      "regex": "(?:test|quality assurance|qa).*automat|automat.*(?:test|quality assurance|qa)",
+      "priority": 115
+    },
+    {
+      "leaf": "SOFTWARE_TESTER",
+      "regex": "(?:software|application|ict|systems?).*(?:test|quality assurance|quality control|quality engineer)|beta tester",
+      "priority": 100
+    },
+    {
+      "leaf": "FRONTEND_DEVELOPER",
+      "regex": "front[ -]?end|user interface develop|\\bui programmer|react[.]?js developer|angularjs developer",
+      "priority": 110
+    },
+    {
+      "leaf": "BACKEND_DEVELOPER",
+      "regex": "back[ -]?end",
+      "priority": 110
+    },
+    {
+      "leaf": "FULLSTACK_DEVELOPER",
+      "regex": "full[ -]?stack",
+      "priority": 112
+    },
+    {
+      "leaf": "ANDROID_DEVELOPER",
+      "regex": "android develop",
+      "priority": 112
+    },
+    {
+      "leaf": "IOS_DEVELOPER",
+      "regex": "\\bios develop",
+      "priority": 112
+    },
+    {
+      "leaf": "DESKTOP_DEVELOPER",
+      "regex": "desktop.*develop|windows software engineer",
+      "priority": 105
+    },
+    {
+      "leaf": "SYSTEMS_PROGRAMMER",
+      "regex": "operating systems?.*(?:develop|program|design)|mainframe program|systems? programmer",
+      "priority": 105
+    },
+    {
+      "leaf": "SOFTWARE_ARCHITECT",
+      "regex": "software architect|application architect|java architect",
+      "priority": 105
+    },
+    {
+      "leaf": "CLOUD_SOFTWARE_DEVELOPER",
+      "regex": "cloud (?:software|native).*?(?:develop|engineer)|cloud developer",
+      "priority": 110
+    },
+    {
+      "leaf": "EMBEDDED_DEVELOPER",
+      "regex": "embedded.*(?:software|develop)|(?:battery|satellite|drone|smart home).*software|firmware",
+      "priority": 111
+    },
+    {
+      "leaf": "IOT_DEVELOPER",
+      "regex": "(?:iot|internet of things).*develop",
+      "priority": 110
+    },
+    {
+      "leaf": "GAME_DEVELOPER",
+      "regex": "(?:games?|gaming).*?(?:develop|program|engineer)|(?:games?|gaming) creator",
+      "priority": 100
+    },
+    {
+      "leaf": "BLOCKCHAIN_DEVELOPER",
+      "regex": "blockchain.*(?:develop|engineer|architect)",
+      "priority": 105
+    },
+    {
+      "leaf": "RPA_DEVELOPER",
+      "regex": "\\brpa\\b|robotic process automation",
+      "priority": 110
+    },
+    {
+      "leaf": "DATA_ARCHITECT",
+      "regex": "(?:big )?data architect",
+      "priority": 110
+    },
+    {
+      "leaf": "DATA_ENGINEER",
+      "regex": "data engineer|data visualization developer|hadoop developer|datastage developer|etl developer",
+      "priority": 105
+    },
+    {
+      "leaf": "DATA_WAREHOUSE",
+      "regex": "data warehous",
+      "priority": 110
+    },
+    {
+      "leaf": "ANALYTICS_ENGINEER",
+      "regex": "analytics engineer",
+      "priority": 110
+    },
+    {
+      "leaf": "DATABASE_ADMIN",
+      "regex": "database admin|data ?base administrator|\\bdba\\b",
+      "priority": 108
+    },
+    {
+      "leaf": "DATABASE_DEVELOPER",
+      "regex": "database develop",
+      "priority": 108
+    },
+    {
+      "leaf": "DATABASE_ARCHITECT",
+      "regex": "database (?:architect|designer)|data ?base designer",
+      "priority": 108
+    },
+    {
+      "leaf": "DATABASE_INTEGRATOR",
+      "regex": "database integrat",
+      "priority": 108
+    },
+    {
+      "leaf": "DATA_QUALITY",
+      "regex": "data quality",
+      "priority": 108
+    },
+    {
+      "leaf": "BI_DEVELOPER",
+      "regex": "(?:business intelligence|\\bbi\\b).*?(?:develop|engineer)|tableau developer",
+      "priority": 108
+    },
+    {
+      "leaf": "BI_ANALYST",
+      "regex": "business intelligence|\\bbi consultant|\\bbi specialist",
+      "priority": 100
+    },
+    {
+      "leaf": "DATA_ANALYST",
+      "regex": "data analyst|data analytics|data min(?:er|ing)|information analyst|analytics (?:consultant|associate)",
+      "priority": 90
+    },
+    {
+      "leaf": "CV_ENGINEER",
+      "regex": "computer vision",
+      "priority": 110
+    },
+    {
+      "leaf": "NLP_ENGINEER",
+      "regex": "natural language|\\bnlp\\b|computational linguist|language engineer",
+      "priority": 110
+    },
+    {
+      "leaf": "ML_RESEARCHER",
+      "regex": "machine learning.*scientist",
+      "priority": 111
+    },
+    {
+      "leaf": "ML_ENGINEER",
+      "regex": "machine learning.*(?:engineer|develop|designer)",
+      "priority": 110
+    },
+    {
+      "leaf": "AI_ENGINEER",
+      "regex": "artificial intelligence|\\bai (?:engineer|specialist|system|designer|consultant|technician)",
+      "priority": 100
+    },
+    {
+      "leaf": "KNOWLEDGE_ENGINEER",
+      "regex": "knowledge engineer|intelligent systems? (?:develop|engineer|designer)",
+      "priority": 102
+    },
+    {
+      "leaf": "DATA_SCIENTIST",
+      "regex": "data scientist|predictive model",
+      "priority": 100
+    },
+    {
+      "leaf": "COMPUTER_SCIENTIST",
+      "regex": "computer scientist|computer and information research scientist|computational scientist|ict research consultant",
+      "priority": 100
+    },
+    {
+      "leaf": "SRE",
+      "regex": "site reliability",
+      "priority": 118
+    },
+    {
+      "leaf": "DEVOPS_ENGINEER",
+      "regex": "dev[ -]?ops",
+      "priority": 112
+    },
+    {
+      "leaf": "PLATFORM_ENGINEER",
+      "regex": "platform engineer",
+      "priority": 108
+    },
+    {
+      "leaf": "RELEASE_ENGINEER",
+      "regex": "release engineer|build engineer",
+      "priority": 108
+    },
+    {
+      "leaf": "CLOUD_ARCHITECT",
+      "regex": "cloud.*architect",
+      "priority": 105
+    },
+    {
+      "leaf": "CLOUD_ADMIN",
+      "regex": "cloud administrator",
+      "priority": 107
+    },
+    {
+      "leaf": "CLOUD_ENGINEER",
+      "regex": "cloud|cloud-native",
+      "priority": 80
+    },
+    {
+      "leaf": "DISASTER_RECOVERY",
+      "regex": "ict disaster recovery|ict resilience",
+      "priority": 110
+    },
+    {
+      "leaf": "DATACENTER_OPERATOR",
+      "regex": "data cent(?:er|re)|computer operator|computer operations technician|computer console operator",
+      "priority": 105
+    },
+    {
+      "leaf": "WEB_ADMIN",
+      "regex": "webmaster|web administrator|websphere administrator|web.*(?:operations|technologies administrator)|website manager",
+      "priority": 110
+    },
+    {
+      "leaf": "SYSTEM_CONFIG",
+      "regex": "system configur|application configur|app configur|application.*packag|system setup",
+      "priority": 105
+    },
+    {
+      "leaf": "STORAGE_ENGINEER",
+      "regex": "storage engineer|storage administrator",
+      "priority": 105
+    },
+    {
+      "leaf": "SYSTEM_ADMIN",
+      "regex": "(?:systems?|windows|mainframe|network and computer systems).*admin",
+      "priority": 95
+    },
+    {
+      "leaf": "NETWORK_ARCHITECT",
+      "regex": "network architect|network designer|internet architect",
+      "priority": 105
+    },
+    {
+      "leaf": "NETWORK_ADMIN",
+      "regex": "network admin|(?:local|wide) area network administrator|\\blan admin|\\bwan admin",
+      "priority": 105
+    },
+    {
+      "leaf": "NETWORK_SUPPORT",
+      "regex": "network.*support|network diagnostic|\\blan support|\\bwan support",
+      "priority": 100
+    },
+    {
+      "leaf": "NETWORK_ENGINEER",
+      "regex": "network.*engineer|internetwork.*expert|\\bwan engineer|\\bnoc engineer|network and systems engineer",
+      "priority": 98
+    },
+    {
+      "leaf": "NETWORK_TECHNICIAN",
+      "regex": "network.*technician|network operations|network configur|network specialist|network analyst|internetworking technician",
+      "priority": 85
+    },
+    {
+      "leaf": "TELECOM_ANALYST",
+      "regex": "telecommunications? analyst|telecommunication design analyst",
+      "priority": 102
+    },
+    {
+      "leaf": "TELECOM_ENGINEER",
+      "regex": "telecom.*(?:engineer|design|architect)|communications engineer",
+      "priority": 95
+    },
+    {
+      "leaf": "ENTERPRISE_ARCHITECT",
+      "regex": "enterprise architect",
+      "priority": 110
+    },
+    {
+      "leaf": "SOLUTION_ARCHITECT",
+      "regex": "solutions? architect",
+      "priority": 105
+    },
+    {
+      "leaf": "INTEGRATION_ENGINEER",
+      "regex": "integration (?:engineer|consultant)|systems? integrat|application integrat|cross enterprise integrat",
+      "priority": 103
+    },
+    {
+      "leaf": "SYSTEMS_ARCHITECT",
+      "regex": "systems? architect|computer architect|technical architect",
+      "priority": 95
+    },
+    {
+      "leaf": "SYSTEMS_ENGINEER",
+      "regex": "computer systems? engineer|ict system engineer",
+      "priority": 95
+    },
+    {
+      "leaf": "BUSINESS_ANALYST",
+      "regex": "business (?:systems? |information |ict )?analyst|ict business analys",
+      "priority": 95
+    },
+    {
+      "leaf": "REQUIREMENTS_ENGINEER",
+      "regex": "requirements? (?:engineer|analyst|planner)|software requirement",
+      "priority": 105
+    },
+    {
+      "leaf": "SYSTEMS_ANALYST",
+      "regex": "systems? analys|software analyst|computer analyst|application analyst",
+      "priority": 90
+    },
+    {
+      "leaf": "IT_CONSULTANT",
+      "regex": "ict consultant|computer consultant|business technology consultant|information technology consultant",
+      "priority": 90
+    },
+    {
+      "leaf": "IT_PROJECT_MANAGER",
+      "regex": "(?:ict|it|information technology|computer|web|internet|network|telecommunications).*project|project management it specialist",
+      "priority": 125
+    },
+    {
+      "leaf": "IT_PRODUCT_MANAGER",
+      "regex": "(?:ict|it|cloud|software).*product",
+      "priority": 125
+    },
+    {
+      "leaf": "SCRUM_MASTER",
+      "regex": "scrum master",
+      "priority": 125
+    },
+    {
+      "leaf": "SUSTAINABLE_IT",
+      "regex": "green (?:ict|it)|(?:ict|it) environmental|sustainable (?:it|ict|systems?)|(?:ict|it) sustainability",
+      "priority": 120
+    },
+    {
+      "leaf": "APPLICATION_SUPPORT",
+      "regex": "application support|software support|application customer service",
+      "priority": 103
+    },
+    {
+      "leaf": "DESKTOP_SUPPORT",
+      "regex": "desktop support|pc support|work station support",
+      "priority": 105
+    },
+    {
+      "leaf": "HELPDESK",
+      "regex": "help ?desk|service desk",
+      "priority": 105
+    },
+    {
+      "leaf": "SUPPORT_ENGINEER",
+      "regex": "(?:ict|it|computer|technical|systems?|user).*support|technical support",
+      "priority": 85
+    },
+    {
+      "leaf": "COMPUTER_TECHNICIAN",
+      "regex": "computer.*(?:technician|installer)|ict technician|ict hardware technician|it hardware|pc hardware technician",
+      "priority": 90
+    },
+    {
+      "leaf": "HARDWARE_ENG_TECHNICIAN",
+      "regex": "computer hardware engineering technician",
+      "priority": 119
+    },
+    {
+      "leaf": "HARDWARE_TEST",
+      "regex": "computer hardware.*(?:test|inspect)",
+      "priority": 114
+    },
+    {
+      "leaf": "HARDWARE_ENGINEER",
+      "regex": "computer hardware.*(?:engineer|design|develop)|pc hardware engineer",
+      "priority": 110
+    },
+    {
+      "leaf": "EMBEDDED_DESIGNER",
+      "regex": "embedded.*(?:system|hardware|electronics).*(?:designer|design)|microcontroller.*(?:hardware|design)|pcb.*(?:design|layout)",
+      "priority": 110
+    },
+    {
+      "leaf": "UX_RESEARCHER",
+      "regex": "(?:ux|user experience).*research",
+      "priority": 115
+    },
+    {
+      "leaf": "UX_DESIGNER",
+      "regex": "\\bux\\b|user experience|usability developer",
+      "priority": 100
+    },
+    {
+      "leaf": "UI_DESIGNER",
+      "regex": "user interface.*(?:design|architect)|\\bui (?:design|product)",
+      "priority": 100
+    },
+    {
+      "leaf": "WEB_DESIGNER",
+      "regex": "web.*design|website designer",
+      "priority": 95
+    },
+    {
+      "leaf": "GAME_DESIGNER",
+      "regex": "(?:games?|gambling).*design",
+      "priority": 98
+    },
+    {
+      "leaf": "GIS_SPECIALIST",
+      "regex": "geographic information|geospatial|\\bgis\\b",
+      "priority": 119
+    },
+    {
+      "leaf": "BIOINFORMATICS",
+      "regex": "bioinformatic",
+      "priority": 119
+    },
+    {
+      "leaf": "HEALTH_INFORMATICS",
+      "regex": "health informatic|clinical information systems|nursing informatic|picture archiving|\\bpacs\\b|pathology ict",
+      "priority": 119
+    },
+    {
+      "leaf": "TECHNICAL_WRITER",
+      "regex": "api writer|technical communicator|information developer|ict documentation",
+      "priority": 100
+    },
+    {
+      "leaf": "IT_TRAINER",
+      "regex": "ict train|ict teacher|ict tutor|applications? trainer|systems? trainer",
+      "priority": 100
+    },
+    {
+      "leaf": "TECHNICAL_ACCOUNT",
+      "regex": "ict account manager|ict vendor relationship",
+      "priority": 100
+    }
+  ],
+  "functional_domains": {
+    "SOFTWARE_BUILD": "Software development and build tooling",
+    "WEB_UI": "Web and interface development",
+    "MOBILE": "Mobile development",
+    "DATA_STORAGE": "Databases and data storage",
+    "DATA_PIPELINES": "Data integration and streaming",
+    "ANALYTICS": "Analytics and reporting",
+    "AI_ML": "Artificial intelligence and machine learning",
+    "CLOUD": "Cloud infrastructure",
+    "DEVOPS": "Deployment and configuration automation",
+    "SECURITY": "Security and identity",
+    "NETWORKS": "Networking and communications",
+    "OBSERVABILITY": "Monitoring and observability",
+    "SYSTEMS": "Operating systems and runtime infrastructure",
+    "QUALITY": "Software testing and quality",
+    "DESIGN": "Digital design and graphics",
+    "ENTERPRISE_APPS": "Enterprise application platforms",
+    "COLLABORATION": "Collaboration and productivity",
+    "IT_SERVICE": "IT support and service management",
+    "TECHNICAL_DOCUMENTATION": "Technical documentation and learning",
+    "GEOSPATIAL": "Geospatial computing",
+    "SPECIALIST_SOFTWARE": "Specialist domain software"
+  },
+  "provided_category_domain_proposals": {
+    "PROGRAMMING_LANGUAGE": [
+      "SOFTWARE_BUILD"
+    ],
+    "MARKUP_STYLE_LANGUAGE": [
+      "WEB_UI"
+    ],
+    "DATA_SERIALIZATION_LANGUAGE": [
+      "DATA_PIPELINES"
+    ],
+    "FRAMEWORK": [
+      "SOFTWARE_BUILD"
+    ],
+    "LIBRARY": [
+      "SOFTWARE_BUILD"
+    ],
+    "DEVELOPMENT_TOOL": [
+      "SOFTWARE_BUILD"
+    ],
+    "IDE_EDITOR": [
+      "SOFTWARE_BUILD"
+    ],
+    "BUILD_TOOL": [
+      "SOFTWARE_BUILD"
+    ],
+    "PACKAGE_MANAGER": [
+      "SOFTWARE_BUILD"
+    ],
+    "VERSION_CONTROL": [
+      "SOFTWARE_BUILD",
+      "DEVOPS"
+    ],
+    "DATABASE": [
+      "DATA_STORAGE"
+    ],
+    "SEARCH_ENGINE": [
+      "DATA_STORAGE"
+    ],
+    "STORAGE": [
+      "DATA_STORAGE"
+    ],
+    "STREAM_PROCESSING": [
+      "DATA_PIPELINES"
+    ],
+    "MESSAGE_BROKER": [
+      "DATA_PIPELINES"
+    ],
+    "BI_ANALYTICS": [
+      "ANALYTICS"
+    ],
+    "AI_ML": [
+      "AI_ML"
+    ],
+    "CLOUD_SERVICE": [
+      "CLOUD"
+    ],
+    "CLOUD_PLATFORM": [
+      "CLOUD"
+    ],
+    "CONTAINER": [
+      "DEVOPS"
+    ],
+    "CONTAINER_ORCHESTRATION": [
+      "DEVOPS"
+    ],
+    "CONFIGURATION_MANAGEMENT": [
+      "DEVOPS"
+    ],
+    "INFRASTRUCTURE_AS_CODE": [
+      "DEVOPS"
+    ],
+    "CI_CD": [
+      "DEVOPS"
+    ],
+    "SECURITY_TOOL": [
+      "SECURITY"
+    ],
+    "IDENTITY_ACCESS": [
+      "SECURITY"
+    ],
+    "MONITORING_OBSERVABILITY": [
+      "OBSERVABILITY"
+    ],
+    "OPERATING_SYSTEM": [
+      "SYSTEMS"
+    ],
+    "VIRTUALIZATION": [
+      "SYSTEMS"
+    ],
+    "RUNTIME": [
+      "SYSTEMS"
+    ],
+    "APPLICATION_SERVER": [
+      "SYSTEMS"
+    ],
+    "API_TECHNOLOGY": [
+      "WEB_UI",
+      "DATA_PIPELINES"
+    ],
+    "WEB_SERVER": [
+      "WEB_UI"
+    ],
+    "CMS": [
+      "WEB_UI"
+    ],
+    "MOBILE_TECHNOLOGY": [
+      "MOBILE"
+    ],
+    "TESTING_TOOL": [
+      "QUALITY"
+    ],
+    "DESIGN_CAD": [
+      "DESIGN"
+    ],
+    "ERP_CRM": [
+      "ENTERPRISE_APPS"
+    ],
+    "PROJECT_ISSUE_TOOL": [
+      "COLLABORATION"
+    ],
+    "COLLABORATION_TOOL": [
+      "COLLABORATION"
+    ]
+  },
+  "functional_keyword_rules": {
+    "SOFTWARE_BUILD": "develop|programming|compiler|file version|code review|write.*code|debug",
+    "WEB_UI": "web |interface develop|website|api |graphical user interface",
+    "MOBILE": "mobile|smartphone",
+    "DATA_STORAGE": "data ?base|storage|backup|archiv|file ?system",
+    "DATA_PIPELINES": "data integrat|data conversion|data pipeline|data warehouse|etl|metadata",
+    "ANALYTICS": "analytic|business intelligence|data analysis|reporting|data mining|spreadsheet|statistical",
+    "AI_ML": "machine learning|neural network|artificial intelligence|expert system|voice recognition|pattern recognition",
+    "CLOUD": "cloud",
+    "DEVOPS": "configuration management|deploy|devops|continuous integrat|release.*software",
+    "SECURITY": "secur|virus|authenticat|access control|vulnerabilit|cyber|encrypt",
+    "NETWORKS": "network|communications server|switch or router|routing|telecommunicat",
+    "OBSERVABILITY": "monitor|observab|logging|log analys",
+    "SYSTEMS": "operating system|device driver|system software|server|virtualiz|virtualis",
+    "QUALITY": "program testing|test.*software|software.*test|quality assurance|debug|accessibility|usability",
+    "DESIGN": "graphic|design cad|photo imaging|video creation|web design|digital design",
+    "ENTERPRISE_APPS": "enterprise resource|customer relationship|erp|crm|enterprise application",
+    "COLLABORATION": "project management|electronic mail|office suite|word processing|presentation|calendar|conferenc|instant messag",
+    "IT_SERVICE": "helpdesk|help desk|technical support|support.*user|service desk",
+    "TECHNICAL_DOCUMENTATION": "computer based training|technical document|user manual|train.*users",
+    "GEOSPATIAL": "geographic information|geospatial|map creation",
+    "SPECIALIST_SOFTWARE": "medical software|financial analysis software|accounting software|manufacturing|industrial control|flight control|tax preparation"
+  },
+  "functional_domain_parent_candidates": {
+    "SOFTWARE_BUILD": [
+      "SOFTWARE_DEVELOPMENT",
+      "SPECIALIZED_DEVELOPMENT",
+      "SOFTWARE_TESTING"
+    ],
+    "WEB_UI": [
+      "SOFTWARE_DEVELOPMENT",
+      "DIGITAL_EXPERIENCE"
+    ],
+    "MOBILE": [
+      "SOFTWARE_DEVELOPMENT",
+      "SPECIALIZED_DEVELOPMENT"
+    ],
+    "DATA_STORAGE": [
+      "DATABASE_ENGINEERING",
+      "DATA_ENGINEERING",
+      "SYSTEMS_OPERATIONS"
+    ],
+    "DATA_PIPELINES": [
+      "DATA_ENGINEERING",
+      "DATABASE_ENGINEERING"
+    ],
+    "ANALYTICS": [
+      "DATA_ANALYSIS",
+      "DATA_SCIENCE_RESEARCH"
+    ],
+    "AI_ML": [
+      "AI_ENGINEERING",
+      "DATA_SCIENCE_RESEARCH"
+    ],
+    "CLOUD": [
+      "CLOUD_AND_PLATFORM",
+      "SYSTEMS_OPERATIONS"
+    ],
+    "DEVOPS": [
+      "CLOUD_AND_PLATFORM",
+      "SYSTEMS_OPERATIONS"
+    ],
+    "SECURITY": [
+      "SECURITY_ENGINEERING",
+      "SECURITY_OPERATIONS",
+      "OFFENSIVE_SECURITY",
+      "SECURITY_GOVERNANCE"
+    ],
+    "NETWORKS": [
+      "NETWORK_ENGINEERING",
+      "TELECOM_ENGINEERING"
+    ],
+    "OBSERVABILITY": [
+      "CLOUD_AND_PLATFORM",
+      "SYSTEMS_OPERATIONS",
+      "NETWORK_ENGINEERING"
+    ],
+    "SYSTEMS": [
+      "SYSTEMS_OPERATIONS",
+      "SYSTEMS_ARCHITECTURE"
+    ],
+    "QUALITY": [
+      "SOFTWARE_TESTING"
+    ],
+    "DESIGN": [
+      "DIGITAL_EXPERIENCE",
+      "HARDWARE_ENGINEERING"
+    ],
+    "ENTERPRISE_APPS": [
+      "SYSTEMS_ANALYSIS",
+      "SYSTEMS_ARCHITECTURE",
+      "USER_APPLICATION_SUPPORT"
+    ],
+    "COLLABORATION": [
+      "AGILE_PRODUCT_AND_PROJECT_DELIVERY"
+    ],
+    "IT_SERVICE": [
+      "USER_APPLICATION_SUPPORT"
+    ],
+    "TECHNICAL_DOCUMENTATION": [
+      "TECHNICAL_ENABLEMENT"
+    ],
+    "GEOSPATIAL": [
+      "DOMAIN_INFORMATICS"
+    ],
+    "SPECIALIST_SOFTWARE": [
+      "DOMAIN_INFORMATICS"
+    ]
+  }
+}

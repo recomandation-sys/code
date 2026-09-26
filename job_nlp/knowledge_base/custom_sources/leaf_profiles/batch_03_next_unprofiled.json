@@ -1,0 +1,579 @@
+{
+  "schema_version": "custom_leaf_profile_batch_v1",
+  "batch_id": "leaf_profile_batch_03_next_unprofiled",
+  "source": {
+    "source_id": "CUSTOM_LEAF_PROFILE",
+    "name": "Analyst-curated IT leaf evidence",
+    "version": "0.1.0",
+    "language": "en",
+    "type": "custom_curated",
+    "official_source_status": "not_official",
+    "description": "Curated role evidence used only to close reviewed taxonomy gaps. It is kept separate from ESCO, O*NET, ISCO and OSCA evidence until independently reviewed."
+  },
+  "review_policy": {
+    "review_status": "REVIEW_REQUIRED",
+    "vector_status": "NOT_INCLUDED_UNTIL_APPROVED",
+    "basis": [
+      "canonical family/parent/leaf definition",
+      "reviewed title examples already present in the KB",
+      "analyst role-boundary and technology knowledge"
+    ],
+    "required_before_approval": [
+      "independent reviewer confirms the scope boundary",
+      "at least one external source or source occupation is attached",
+      "task and technology lists are checked for generic or adjacent-role leakage",
+      "three sibling hard-negative rules are reviewed"
+    ]
+  },
+  "profiles": [
+    {
+      "leaf_id": "IT_COMPLIANCE_SPECIALIST",
+      "description": "Operates the IT control and compliance lifecycle by mapping requirements to controls, collecting evidence, testing implementation, tracking remediation and preparing audit responses. The role is technical governance, not legal counsel or a general security operator.",
+      "primary_outcome": "Auditable IT controls with tracked and remediated compliance gaps.",
+      "in_scope": [
+        "IT control mapping",
+        "audit evidence",
+        "control testing",
+        "risk and exception tracking",
+        "policy implementation",
+        "remediation coordination"
+      ],
+      "out_of_scope": [
+        "legal advice as the primary work",
+        "SOC monitoring",
+        "penetration testing",
+        "generic project administration without control ownership"
+      ],
+      "tasks": [
+        "Map regulatory and customer requirements to IT policies and control activities.",
+        "Collect, validate and organize evidence for internal and external audits.",
+        "Perform control tests, document findings and assess residual risk.",
+        "Track exceptions, remediation plans, owners, due dates and retesting.",
+        "Maintain control narratives, procedures, risk registers and compliance dashboards.",
+        "Coordinate responses with infrastructure, security, engineering and business owners."
+      ],
+      "professional_skills": [
+        "IT compliance",
+        "control testing",
+        "audit evidence management",
+        "risk assessment",
+        "policy analysis",
+        "remediation tracking",
+        "stakeholder coordination",
+        "compliance reporting"
+      ],
+      "technologies": [
+        "ServiceNow GRC",
+        "RSA Archer",
+        "OneTrust",
+        "Jira",
+        "Confluence",
+        "Microsoft Excel",
+        "SQL",
+        "ISO 27001"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SECURITY_GRC",
+          "rule": "Use IT_COMPLIANCE_SPECIALIST for IT control operation and audit evidence; use SECURITY_GRC when broader security governance and risk strategy dominate."
+        },
+        {
+          "sibling_leaf_id": "IT_AUDITOR",
+          "rule": "Use IT_AUDITOR for independent audit assessment; use IT_COMPLIANCE_SPECIALIST for first-line control operation and remediation."
+        },
+        {
+          "sibling_leaf_id": "SECURITY_OPERATIONS",
+          "rule": "SOC monitoring and incident response belong to SECURITY_OPERATIONS, not compliance control work."
+        }
+      ]
+    },
+    {
+      "leaf_id": "LOCALIZATION_TESTER",
+      "description": "Validates localized software and digital content for linguistic accuracy, functional behavior, layout, locale conventions and cultural appropriateness. The role combines language review with software test execution rather than general translation alone.",
+      "primary_outcome": "Correct and usable localized product experiences across supported locales.",
+      "in_scope": [
+        "linguistic testing",
+        "locale and formatting validation",
+        "UI truncation and layout checks",
+        "internationalization defect reporting",
+        "device and browser coverage",
+        "localization regression testing"
+      ],
+      "out_of_scope": [
+        "translation-only work",
+        "generic functional QA without locale scope",
+        "software development",
+        "product marketing localization strategy"
+      ],
+      "tasks": [
+        "Review translated strings for grammar, terminology, tone and locale conventions.",
+        "Exercise localized workflows and verify dates, numbers, currencies, sorting and input behavior.",
+        "Check text expansion, truncation, bidirectional layout, fonts and visual rendering.",
+        "Compare builds across supported devices, browsers, operating systems and locales.",
+        "Log reproducible localization defects with screenshots, locale and environment data.",
+        "Run regression checks after string, resource, translation or internationalization changes."
+      ],
+      "professional_skills": [
+        "localization testing",
+        "linguistic review",
+        "internationalization analysis",
+        "functional testing",
+        "defect reporting",
+        "cross-locale validation",
+        "attention to detail",
+        "test case design"
+      ],
+      "technologies": [
+        "Jira",
+        "Xcode",
+        "Android Studio",
+        "Selenium",
+        "BrowserStack",
+        "Smartling",
+        "Crowdin",
+        "Git"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SOFTWARE_TESTER",
+          "rule": "Use LOCALIZATION_TESTER when language and locale behavior are defining test dimensions; use SOFTWARE_TESTER for general product quality."
+        },
+        {
+          "sibling_leaf_id": "TRANSLATOR",
+          "rule": "Translation production without software execution and defect testing belongs to TRANSLATOR, not LOCALIZATION_TESTER."
+        },
+        {
+          "sibling_leaf_id": "TEST_AUTOMATION",
+          "rule": "Use TEST_AUTOMATION for coded reusable test frameworks; localization-specific linguistic and locale validation is LOCALIZATION_TESTER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "ML_RESEARCHER",
+      "description": "Conducts research into machine-learning methods, experiments, representations and evaluation, producing novel or improved models and scientific evidence. The defining output is research insight or algorithms rather than production service operations.",
+      "primary_outcome": "Validated machine-learning research findings or novel model methods.",
+      "in_scope": [
+        "algorithm research",
+        "model experimentation",
+        "statistical evaluation",
+        "research datasets",
+        "technical publications",
+        "reproducible experiments"
+      ],
+      "out_of_scope": [
+        "routine model deployment and serving",
+        "dashboard analytics",
+        "production data-platform operations",
+        "generic application development without ML research"
+      ],
+      "tasks": [
+        "Formulate research questions and hypotheses for machine-learning methods.",
+        "Design experiments, baselines, ablations and statistically meaningful evaluations.",
+        "Develop and train models or representations using appropriate datasets and objectives.",
+        "Analyze error patterns, robustness, bias, generalization and computational trade-offs.",
+        "Document methods, results, limitations and reproducibility requirements.",
+        "Communicate findings through technical reports, papers, prototypes or research reviews."
+      ],
+      "professional_skills": [
+        "machine-learning research",
+        "statistical modelling",
+        "experimental design",
+        "model evaluation",
+        "scientific programming",
+        "data analysis",
+        "technical writing",
+        "research communication"
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "JAX",
+        "scikit-learn",
+        "NumPy",
+        "Pandas",
+        "CUDA"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "ML_ENGINEER",
+          "rule": "Use ML_RESEARCHER for novel methods and experimental findings; production serving, monitoring and retraining belong to ML_ENGINEER."
+        },
+        {
+          "sibling_leaf_id": "DATA_SCIENTIST",
+          "rule": "Use DATA_SCIENTIST for applied business analysis and predictive modelling; use ML_RESEARCHER for algorithmic or scientific research emphasis."
+        },
+        {
+          "sibling_leaf_id": "AI_ENGINEER",
+          "rule": "Use AI_ENGINEER for production AI application integration; research into methods and model behavior is ML_RESEARCHER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "NETWORK_SECURITY",
+      "description": "Protects enterprise networks and communications through segmentation, secure access, traffic inspection, detection, hardening and incident investigation. The role is network-control focused, distinct from general SOC work and from application security.",
+      "primary_outcome": "Resilient network connectivity with controlled exposure and detectable abuse.",
+      "in_scope": [
+        "network segmentation",
+        "firewall and gateway security",
+        "secure remote access",
+        "network detection",
+        "traffic analysis",
+        "network security incident response"
+      ],
+      "out_of_scope": [
+        "application code security",
+        "generic routing and switching without security ownership",
+        "physical telecom installation",
+        "security policy work without technical controls"
+      ],
+      "tasks": [
+        "Design and review network segmentation, trust zones and access paths.",
+        "Configure and maintain firewalls, VPNs, proxies, gateways and network policies.",
+        "Monitor traffic, network alerts and anomalous behavior for indicators of compromise.",
+        "Investigate network security incidents using flows, packets, logs and endpoint context.",
+        "Harden network devices and validate secure configurations and rule changes.",
+        "Document network controls, exceptions, exposure findings and remediation plans."
+      ],
+      "professional_skills": [
+        "network security engineering",
+        "firewall policy design",
+        "network threat analysis",
+        "traffic analysis",
+        "incident response",
+        "security hardening",
+        "risk assessment",
+        "secure network architecture"
+      ],
+      "technologies": [
+        "Cisco ASA",
+        "Palo Alto Networks",
+        "Fortinet",
+        "Wireshark",
+        "Zeek",
+        "Suricata",
+        "IPsec",
+        "Splunk"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "NETWORK_ENGINEER",
+          "rule": "Use NETWORK_SECURITY when protection, inspection and secure access dominate; ordinary routing, switching and availability belong to NETWORK_ENGINEER."
+        },
+        {
+          "sibling_leaf_id": "SECURITY_OPERATIONS",
+          "rule": "Use SECURITY_OPERATIONS for broad SOC monitoring and response; use NETWORK_SECURITY when network controls and traffic are the defining domain."
+        },
+        {
+          "sibling_leaf_id": "CLOUD_SECURITY",
+          "rule": "Use CLOUD_SECURITY for cloud control-plane and workload protection; on-premises or enterprise network security belongs to NETWORK_SECURITY."
+        }
+      ]
+    },
+    {
+      "leaf_id": "PERFORMANCE_TESTER",
+      "description": "Measures and improves application or platform performance through workload modelling, load and stress tests, bottleneck analysis and capacity reporting. The role validates non-functional behavior under realistic demand rather than general functional correctness.",
+      "primary_outcome": "Evidence-based performance, scalability and capacity confidence.",
+      "in_scope": [
+        "load and stress testing",
+        "capacity and scalability analysis",
+        "performance baselines",
+        "bottleneck diagnosis",
+        "soak and endurance testing",
+        "performance reporting"
+      ],
+      "out_of_scope": [
+        "functional regression as the primary scope",
+        "production SRE ownership",
+        "manual exploratory testing without performance measurement",
+        "application feature development"
+      ],
+      "tasks": [
+        "Model representative workloads, concurrency, data volumes and traffic patterns.",
+        "Build and execute load, stress, spike, soak and capacity test scenarios.",
+        "Measure latency, throughput, error rates, resource utilization and saturation.",
+        "Correlate test results with application, database, network and infrastructure telemetry.",
+        "Identify bottlenecks and verify remediation through repeatable baselines.",
+        "Publish capacity assumptions, performance risks and release recommendations."
+      ],
+      "professional_skills": [
+        "performance engineering",
+        "workload modelling",
+        "capacity analysis",
+        "benchmark design",
+        "telemetry interpretation",
+        "bottleneck analysis",
+        "test automation",
+        "technical reporting"
+      ],
+      "technologies": [
+        "JMeter",
+        "Gatling",
+        "k6",
+        "LoadRunner",
+        "Grafana",
+        "Prometheus",
+        "New Relic",
+        "SQL"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "TEST_AUTOMATION",
+          "rule": "Use PERFORMANCE_TESTER when load, latency, throughput and capacity are central; general automated functional checks belong to TEST_AUTOMATION."
+        },
+        {
+          "sibling_leaf_id": "SOFTWARE_TESTER",
+          "rule": "Use SOFTWARE_TESTER for functional quality execution; non-functional performance measurement is PERFORMANCE_TESTER."
+        },
+        {
+          "sibling_leaf_id": "SRE",
+          "rule": "Use SRE for ongoing production reliability ownership and error budgets; use PERFORMANCE_TESTER for controlled performance validation."
+        }
+      ]
+    },
+    {
+      "leaf_id": "RELEASE_ENGINEER",
+      "description": "Coordinates and automates the build, packaging, promotion and release of software across environments. The role protects repeatability, version integrity, approvals and rollback without owning all product development or general infrastructure operations.",
+      "primary_outcome": "Predictable, traceable and recoverable software releases.",
+      "in_scope": [
+        "build and packaging automation",
+        "release pipelines",
+        "artifact and version management",
+        "environment promotion",
+        "release governance",
+        "rollback and deployment coordination"
+      ],
+      "out_of_scope": [
+        "product roadmap ownership",
+        "pure cloud administration",
+        "manual project scheduling without technical release work",
+        "application feature development as the primary role"
+      ],
+      "tasks": [
+        "Define and maintain build, packaging and promotion workflows.",
+        "Manage artifact repositories, versions, provenance and release metadata.",
+        "Coordinate approvals, change records, deployment windows and release readiness.",
+        "Automate environment promotion, smoke checks, rollback and release verification.",
+        "Investigate failed builds and deployments and improve pipeline reliability.",
+        "Publish release notes, operational handover information and deployment metrics."
+      ],
+      "professional_skills": [
+        "release engineering",
+        "CI/CD design",
+        "build automation",
+        "artifact management",
+        "deployment coordination",
+        "change management",
+        "rollback planning",
+        "release documentation"
+      ],
+      "technologies": [
+        "Jenkins",
+        "GitHub Actions",
+        "GitLab CI",
+        "Azure DevOps",
+        "Docker",
+        "Maven",
+        "Gradle",
+        "Artifactory"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "DEVOPS_ENGINEER",
+          "rule": "Use RELEASE_ENGINEER for software build and release flow ownership; use DEVOPS_ENGINEER for broader infrastructure and delivery platform engineering."
+        },
+        {
+          "sibling_leaf_id": "PLATFORM_ENGINEER",
+          "rule": "Use PLATFORM_ENGINEER when the internal developer platform is the product; release pipelines and artifact promotion are RELEASE_ENGINEER."
+        },
+        {
+          "sibling_leaf_id": "IT_PROJECT_MANAGER",
+          "rule": "Use IT_PROJECT_MANAGER for schedule, budget and dependency governance; technical build and deployment automation are RELEASE_ENGINEER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "REQUIREMENTS_ENGINEER",
+      "description": "Elicits, analyzes, specifies, traces and validates software or system requirements so that stakeholders and delivery teams share an actionable, testable scope. The role is technical analysis and specification, not generic project coordination.",
+      "primary_outcome": "Clear, traceable and testable requirements aligned with stakeholder needs.",
+      "in_scope": [
+        "requirements elicitation",
+        "functional and non-functional specification",
+        "acceptance criteria",
+        "traceability",
+        "requirements validation",
+        "change impact analysis"
+      ],
+      "out_of_scope": [
+        "project schedule ownership",
+        "solution architecture as the primary role",
+        "coding as the primary responsibility",
+        "UX visual design without requirements ownership"
+      ],
+      "tasks": [
+        "Elicit needs through stakeholder interviews, workshops, observation and process analysis.",
+        "Model scope, actors, workflows, business rules and system interactions.",
+        "Write clear functional, non-functional and interface requirements.",
+        "Define acceptance criteria and trace requirements to tests and delivered capabilities.",
+        "Validate requirements for completeness, consistency, feasibility and ambiguity.",
+        "Assess change impact and maintain baselines through the delivery lifecycle."
+      ],
+      "professional_skills": [
+        "requirements engineering",
+        "business analysis",
+        "stakeholder facilitation",
+        "process modelling",
+        "acceptance criteria",
+        "traceability management",
+        "change impact analysis",
+        "technical writing"
+      ],
+      "technologies": [
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "IBM DOORS",
+        "Polarion",
+        "UML",
+        "BPMN",
+        "SQL"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "BUSINESS_ANALYST",
+          "rule": "Use REQUIREMENTS_ENGINEER when formal system requirements, traceability and validation dominate; use BUSINESS_ANALYST for broader process and business-case analysis."
+        },
+        {
+          "sibling_leaf_id": "SYSTEMS_ANALYST",
+          "rule": "Use SYSTEMS_ANALYST when solution and process analysis extends beyond requirements; use REQUIREMENTS_ENGINEER for specification and traceability ownership."
+        },
+        {
+          "sibling_leaf_id": "SOLUTION_ARCHITECT",
+          "rule": "Architecture and target-state design belong to SOLUTION_ARCHITECT; requirement definition and validation belong to REQUIREMENTS_ENGINEER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "RPA_DEVELOPER",
+      "description": "Develops, tests and operates robotic-process-automation workflows that execute repeatable business tasks across applications. The role combines process analysis, bot implementation, exception handling, credential security and controlled deployment.",
+      "primary_outcome": "Reliable and governable automation of repeatable business processes.",
+      "in_scope": [
+        "process suitability analysis",
+        "RPA workflow development",
+        "application UI/API automation",
+        "bot testing",
+        "exception handling",
+        "bot deployment and monitoring"
+      ],
+      "out_of_scope": [
+        "general backend application development",
+        "enterprise integration architecture as the primary role",
+        "manual operations without automation",
+        "AI research without process automation delivery"
+      ],
+      "tasks": [
+        "Assess processes for automation suitability, stability, volume and exception patterns.",
+        "Design and implement attended or unattended automation workflows.",
+        "Integrate bots with web, desktop, email, files, APIs and structured data.",
+        "Build validation, retries, exception routes, audit logs and secure credential use.",
+        "Test bots across environments and coordinate controlled production releases.",
+        "Monitor bot queues, failures, throughput and business outcomes and improve workflows."
+      ],
+      "professional_skills": [
+        "robotic process automation",
+        "process analysis",
+        "workflow design",
+        "exception handling",
+        "automation testing",
+        "integration analysis",
+        "operational monitoring",
+        "technical documentation"
+      ],
+      "technologies": [
+        "UiPath",
+        "Automation Anywhere",
+        "Blue Prism",
+        "Power Automate",
+        "Python",
+        "REST APIs",
+        "OCR",
+        "SQL"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "INTEGRATION_ENGINEER",
+          "rule": "Use INTEGRATION_ENGINEER for durable system-to-system integration engineering; RPA_DEVELOPER is UI/process automation centered."
+        },
+        {
+          "sibling_leaf_id": "DATA_ENGINEER",
+          "rule": "Use DATA_ENGINEER for data pipelines and platform ingestion; bot workflows for business tasks are RPA_DEVELOPER."
+        },
+        {
+          "sibling_leaf_id": "BACKEND_DEVELOPER",
+          "rule": "Use RPA_DEVELOPER when repeatable business-process bots are the deliverable; conventional server application feature development belongs to BACKEND_DEVELOPER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "SCRUM_MASTER",
+      "description": "Facilitates empirical delivery for a Scrum team by improving flow, removing impediments, coaching Scrum practices and making progress and risks visible. The role serves team effectiveness and process health rather than acting as a people manager or product owner.",
+      "primary_outcome": "A healthy, transparent and continuously improving Scrum delivery system.",
+      "in_scope": [
+        "Scrum facilitation",
+        "team coaching",
+        "impediment removal",
+        "flow and metrics",
+        "retrospective improvement",
+        "cross-team delivery coordination"
+      ],
+      "out_of_scope": [
+        "product vision and backlog prioritization",
+        "line management and performance appraisal",
+        "technical architecture ownership",
+        "project budget ownership as the primary role"
+      ],
+      "tasks": [
+        "Facilitate planning, daily Scrum, review, retrospective and refinement activities.",
+        "Coach teams and stakeholders on Scrum values, accountabilities and empiricism.",
+        "Identify and remove impediments or escalate systemic blockers.",
+        "Make work, dependencies, risks, flow and delivery forecasts transparent.",
+        "Use cycle-time, throughput and quality signals to guide improvement experiments.",
+        "Coordinate with product, engineering and other teams on dependencies and organizational impediments."
+      ],
+      "professional_skills": [
+        "Scrum facilitation",
+        "agile coaching",
+        "servant leadership",
+        "impediment removal",
+        "conflict resolution",
+        "flow metrics",
+        "retrospective facilitation",
+        "stakeholder communication"
+      ],
+      "technologies": [
+        "Jira",
+        "Azure DevOps",
+        "Confluence",
+        "Miro",
+        "Trello",
+        "Slack",
+        "Kanban boards",
+        "Power BI"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "IT_PROJECT_MANAGER",
+          "rule": "Use SCRUM_MASTER for Scrum process and team coaching; use IT_PROJECT_MANAGER for scope, schedule, budget and dependency management."
+        },
+        {
+          "sibling_leaf_id": "IT_PRODUCT_MANAGER",
+          "rule": "Product strategy, roadmap and backlog value belong to IT_PRODUCT_MANAGER; Scrum facilitation belongs to SCRUM_MASTER."
+        },
+        {
+          "sibling_leaf_id": "AGILE_COACH",
+          "rule": "Use AGILE_COACH for multi-team or organizational coaching; use SCRUM_MASTER for serving a specific Scrum team or team group."
+        }
+      ]
+    }
+  ]
+}

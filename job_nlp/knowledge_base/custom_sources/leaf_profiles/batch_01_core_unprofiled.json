@@ -1,0 +1,250 @@
+{
+  "schema_version": "custom_leaf_profile_batch_v1",
+  "batch_id": "leaf_profile_batch_01_core_unprofiled",
+  "source": {
+    "source_id": "CUSTOM_LEAF_PROFILE",
+    "name": "Analyst-curated IT leaf evidence",
+    "version": "0.1.0",
+    "language": "en",
+    "type": "custom_curated",
+    "official_source_status": "not_official",
+    "description": "Curated role evidence used only to close reviewed taxonomy gaps. It is kept separate from ESCO, O*NET, ISCO and OSCA evidence until independently reviewed."
+  },
+  "review_policy": {
+    "review_status": "REVIEW_REQUIRED",
+    "vector_status": "NOT_INCLUDED_UNTIL_APPROVED",
+    "basis": [
+      "canonical family/parent/leaf definition",
+      "reviewed title examples already present in the KB",
+      "analyst role-boundary and technology knowledge"
+    ],
+    "required_before_approval": [
+      "independent reviewer confirms the scope boundary",
+      "at least one external source or source occupation is attached",
+      "task and technology lists are checked for generic or adjacent-role leakage",
+      "three sibling hard-negative rules are reviewed"
+    ]
+  },
+  "profiles": [
+    {
+      "leaf_id": "ANALYTICS_ENGINEER",
+      "description": "Builds reliable analytical datasets and semantic data models between data engineering and business intelligence. Owns transformation logic, metric definitions, testing, documentation and the delivery of trusted data products for analysts and decision makers.",
+      "primary_outcome": "Trusted, tested and documented analytical data products.",
+      "in_scope": ["analytical data modelling", "ELT transformation", "metric and semantic-layer design", "data quality testing", "analytics platform delivery", "documentation of data products"],
+      "out_of_scope": ["operating production infrastructure as a primary duty", "pure dashboard-only reporting", "research-only statistical modelling", "database administration as the primary role"],
+      "tasks": [
+        "Design dimensional and semantic models for analytical workloads.",
+        "Build and maintain ELT transformations from operational and event data.",
+        "Define reusable business metrics and semantic-layer measures.",
+        "Add automated tests for freshness, uniqueness, relationships and accepted values.",
+        "Review data lineage and document analytical datasets for consumers.",
+        "Collaborate with analysts and data engineers to publish reliable data products."
+      ],
+      "professional_skills": ["analytical data modelling", "ELT design", "SQL data transformation", "data quality engineering", "metric definition", "data lineage", "requirements analysis", "technical documentation"],
+      "technologies": ["SQL", "dbt", "Python", "Apache Airflow", "Snowflake", "BigQuery", "Databricks", "Git"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "DATA_ENGINEER", "rule": "Prefer DATA_ENGINEER when pipeline orchestration, ingestion and platform operations dominate; prefer ANALYTICS_ENGINEER when transformation, semantic models and metrics dominate."},
+        {"sibling_leaf_id": "BI_DEVELOPER", "rule": "Prefer BI_DEVELOPER when dashboard/report delivery is the central output; prefer ANALYTICS_ENGINEER when reusable analytical datasets and models are central."},
+        {"sibling_leaf_id": "DATA_SCIENTIST", "rule": "Do not route to DATA_SCIENTIST for modelling and experimentation unless statistical or machine-learning modelling is a primary duty."}
+      ]
+    },
+    {
+      "leaf_id": "BACKEND_DEVELOPER",
+      "description": "Develops server-side application software, APIs, services and data-access components. Owns business logic, integration contracts, reliability, security and automated tests for applications consumed by web, mobile or other services.",
+      "primary_outcome": "Reliable and maintainable server-side application services.",
+      "in_scope": ["API development", "business-logic implementation", "service integration", "data-access code", "backend testing", "application observability"],
+      "out_of_scope": ["frontend-only interface development", "infrastructure operations as the primary role", "database administration as the primary role", "embedded firmware development"],
+      "tasks": [
+        "Design and implement REST or event-driven backend services.",
+        "Translate product requirements into maintainable server-side components.",
+        "Implement validation, authorization, error handling and service contracts.",
+        "Integrate databases, queues, external APIs and identity services.",
+        "Write unit, integration and contract tests for backend code.",
+        "Monitor service health and troubleshoot production application defects."
+      ],
+      "professional_skills": ["software design", "API design", "object-oriented programming", "database integration", "debugging", "automated testing", "secure coding", "code review"],
+      "technologies": ["Python", "Java", "C#", "JavaScript", "TypeScript", "Node.js", "REST", "PostgreSQL"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "FRONTEND_DEVELOPER", "rule": "Require server-side services, APIs or business logic for BACKEND_DEVELOPER; browser UI work alone belongs to FRONTEND_DEVELOPER."},
+        {"sibling_leaf_id": "FULLSTACK_DEVELOPER", "rule": "Use FULLSTACK_DEVELOPER only when both client-side and server-side development are substantial responsibilities."},
+        {"sibling_leaf_id": "SOFTWARE_ARCHITECT", "rule": "Architecture titles without substantial implementation duties should route to SOFTWARE_ARCHITECT rather than BACKEND_DEVELOPER."}
+      ]
+    },
+    {
+      "leaf_id": "APPLICATION_SUPPORT",
+      "description": "Supports business applications after deployment by diagnosing incidents, resolving user and integration problems, coordinating defects and maintaining application configuration and knowledge. The role is centered on application service continuity rather than general desktop support.",
+      "primary_outcome": "Stable and usable business applications with resolved incidents.",
+      "in_scope": ["application incident resolution", "production application support", "business-system configuration", "problem analysis", "vendor and development escalation", "support documentation"],
+      "out_of_scope": ["general hardware repair", "network engineering as the primary role", "new application development as the primary role", "generic customer service without IT application responsibility"],
+      "tasks": [
+        "Investigate and resolve application incidents using logs, traces and user reports.",
+        "Configure application workflows, roles, permissions and reference data.",
+        "Reproduce defects and provide diagnostic evidence to development teams.",
+        "Monitor application integrations, scheduled jobs and data exchanges.",
+        "Maintain support runbooks, known-error records and user guidance.",
+        "Coordinate releases, vendor tickets and problem-management follow-up."
+      ],
+      "professional_skills": ["incident management", "application troubleshooting", "root-cause analysis", "business-process analysis", "log analysis", "customer communication", "change coordination", "technical documentation"],
+      "technologies": ["SQL", "REST APIs", "Java", "Python", "ServiceNow", "Salesforce", "SAP", "Microsoft Dynamics"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "DESKTOP_SUPPORT", "rule": "Use APPLICATION_SUPPORT when the supported object is a business application or service; use DESKTOP_SUPPORT for endpoint, operating-system and user-device support."},
+        {"sibling_leaf_id": "SUPPORT_ENGINEER", "rule": "Use SUPPORT_ENGINEER for broad technical support engineering; use APPLICATION_SUPPORT when application incidents and configuration dominate."},
+        {"sibling_leaf_id": "BACKEND_DEVELOPER", "rule": "Support and defect diagnosis without primary feature implementation belongs to APPLICATION_SUPPORT."}
+      ]
+    },
+    {
+      "leaf_id": "APPSEC_ENGINEER",
+      "description": "Embeds security engineering into the software lifecycle by finding and reducing application vulnerabilities through threat modelling, secure design review, code analysis, testing, remediation guidance and security automation.",
+      "primary_outcome": "Reduced application attack surface and secure software delivery.",
+      "in_scope": ["secure software design", "application threat modelling", "SAST and DAST", "dependency and supply-chain security", "secure code review", "developer security enablement"],
+      "out_of_scope": ["general SOC monitoring", "penetration testing as the only duty", "network security administration", "security governance without technical application work"],
+      "tasks": [
+        "Perform threat modelling for applications, APIs and software architectures.",
+        "Review source code and design changes for security weaknesses.",
+        "Operate and tune static, dynamic and software-composition analysis tools.",
+        "Validate vulnerability fixes and track remediation to closure.",
+        "Create secure coding guidance and partner with development teams.",
+        "Integrate security checks into CI/CD pipelines and release gates."
+      ],
+      "professional_skills": ["threat modelling", "secure code review", "vulnerability analysis", "risk-based remediation", "security testing", "secure architecture", "developer enablement", "security automation"],
+      "technologies": ["Snyk", "SonarQube", "Checkmarx", "Semgrep", "OWASP ZAP", "Burp Suite", "GitHub Actions", "Docker"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "SECURITY_ENGINEER", "rule": "Use APPSEC_ENGINEER when application code, APIs and SDLC controls are central; use SECURITY_ENGINEER for broader infrastructure or security-control engineering."},
+        {"sibling_leaf_id": "PENETRATION_TESTER", "rule": "Use PENETRATION_TESTER when authorized offensive assessment is the primary service; use APPSEC_ENGINEER for continuous secure-development integration."},
+        {"sibling_leaf_id": "CLOUD_SECURITY", "rule": "Use CLOUD_SECURITY when cloud identity, platform and workload controls dominate rather than application lifecycle controls."}
+      ]
+    },
+    {
+      "leaf_id": "CLOUD_ADMIN",
+      "description": "Administers cloud environments by provisioning and configuring accounts, networks, identities, compute, storage, monitoring, backups and policy controls. The role emphasizes reliable day-to-day cloud operations rather than cloud strategy or application development.",
+      "primary_outcome": "Secure, available and correctly configured cloud environments.",
+      "in_scope": ["cloud account administration", "identity and access configuration", "compute and storage operations", "cloud monitoring", "backup and recovery", "cost and policy hygiene"],
+      "out_of_scope": ["enterprise cloud strategy as the primary role", "application feature development", "security governance without operational ownership", "telecom or physical datacenter operations"],
+      "tasks": [
+        "Provision and maintain cloud compute, storage and network resources.",
+        "Configure users, roles, policies, service accounts and access boundaries.",
+        "Monitor availability, capacity, performance and operational alerts.",
+        "Apply backups, patching, recovery procedures and operational runbooks.",
+        "Manage quotas, tagging, budgets and basic cloud cost controls.",
+        "Troubleshoot cloud incidents and coordinate escalations with platform teams."
+      ],
+      "professional_skills": ["systems administration", "cloud operations", "identity administration", "incident response", "monitoring", "backup and recovery", "configuration management", "cost awareness"],
+      "technologies": ["AWS", "Microsoft Azure", "Google Cloud", "Terraform", "Kubernetes", "Linux", "CloudTrail", "Azure Monitor"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "CLOUD_ARCHITECT", "rule": "Use CLOUD_ARCHITECT for target-state design and architecture leadership; use CLOUD_ADMIN for operational configuration and administration."},
+        {"sibling_leaf_id": "DEVOPS_ENGINEER", "rule": "Use DEVOPS_ENGINEER when delivery automation and platform engineering dominate; use CLOUD_ADMIN for environment administration."},
+        {"sibling_leaf_id": "SYSTEM_ADMIN", "rule": "Use CLOUD_ADMIN when cloud control planes are central; use SYSTEM_ADMIN for general server and datacenter operations."}
+      ]
+    },
+    {
+      "leaf_id": "CLOUD_SECURITY",
+      "description": "Designs and operates security controls for cloud accounts, identities, networks, workloads and data. Combines cloud-platform knowledge with threat prevention, detection, compliance evidence and secure deployment practices.",
+      "primary_outcome": "Protected cloud workloads and enforceable cloud security controls.",
+      "in_scope": ["cloud identity security", "cloud network security", "workload protection", "cloud posture management", "security logging", "cloud incident response"],
+      "out_of_scope": ["generic cloud administration without security ownership", "application security as the primary scope", "enterprise risk policy without technical controls", "on-premises-only security operations"],
+      "tasks": [
+        "Design least-privilege roles, policies and workload identities.",
+        "Review cloud network segmentation, gateways, security groups and exposure.",
+        "Implement posture, configuration and vulnerability monitoring for cloud assets.",
+        "Protect secrets, keys, data stores, containers and serverless workloads.",
+        "Investigate cloud audit events and support incident response.",
+        "Provide security evidence for cloud compliance and architecture reviews."
+      ],
+      "professional_skills": ["cloud threat modelling", "identity and access security", "security architecture", "configuration assessment", "incident investigation", "risk assessment", "security automation", "compliance evidence"],
+      "technologies": ["AWS IAM", "Microsoft Entra ID", "Google Cloud IAM", "AWS Security Hub", "Microsoft Defender for Cloud", "Terraform", "Kubernetes", "HashiCorp Vault"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "APPSEC_ENGINEER", "rule": "Use CLOUD_SECURITY for cloud control-plane, workload and identity security; use APPSEC_ENGINEER for application lifecycle and code security."},
+        {"sibling_leaf_id": "SECURITY_ENGINEER", "rule": "Use CLOUD_SECURITY when cloud platforms are the dominant environment; use SECURITY_ENGINEER for broader security-control engineering."},
+        {"sibling_leaf_id": "CLOUD_ADMIN", "rule": "Require explicit security-control ownership for CLOUD_SECURITY; routine provisioning alone is CLOUD_ADMIN."}
+      ]
+    },
+    {
+      "leaf_id": "DATA_GOVERNANCE_SPECIALIST",
+      "description": "Defines and operationalizes policies for data ownership, quality, metadata, lineage, classification, access and lifecycle. Connects business accountability with technical data platforms without being primarily a pipeline developer or data scientist.",
+      "primary_outcome": "Discoverable, governed, trusted and compliant enterprise data.",
+      "in_scope": ["data ownership and stewardship", "metadata and catalog policy", "data quality governance", "lineage and classification", "access and retention policy", "governance operating models"],
+      "out_of_scope": ["building data pipelines as the primary job", "statistical modelling", "database administration as the primary role", "legal privacy counsel without data-operating duties"],
+      "tasks": [
+        "Define data ownership, stewardship and accountability models.",
+        "Establish data-quality dimensions, controls, thresholds and issue workflows.",
+        "Maintain business glossaries, metadata standards and lineage requirements.",
+        "Coordinate classification, retention, access and lifecycle policies.",
+        "Review data products for governance, compliance and trusted-use criteria.",
+        "Report governance risks and coordinate remediation across data teams."
+      ],
+      "professional_skills": ["data governance", "data stewardship", "metadata management", "data quality management", "lineage analysis", "policy writing", "stakeholder facilitation", "risk and compliance analysis"],
+      "technologies": ["Collibra", "Alation", "Microsoft Purview", "Apache Atlas", "Great Expectations", "dbt", "SQL", "Snowflake"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "DATA_QUALITY", "rule": "Use DATA_GOVERNANCE_SPECIALIST for policy, ownership and operating-model responsibilities; use DATA_QUALITY for hands-on quality analysis and controls."},
+        {"sibling_leaf_id": "DATA_ENGINEER", "rule": "Use DATA_ENGINEER for pipeline/platform implementation; governance roles define controls and accountability."},
+        {"sibling_leaf_id": "DATA_PRIVACY", "rule": "Use DATA_PRIVACY when privacy rights and protection obligations dominate; use DATA_GOVERNANCE_SPECIALIST for broader enterprise data governance."}
+      ]
+    },
+    {
+      "leaf_id": "ML_ENGINEER",
+      "description": "Engineers production machine-learning systems from data and model packaging through deployment, monitoring, evaluation and retraining. Combines software engineering, data pipelines and model operations; it is distinct from research-only model development.",
+      "primary_outcome": "Reliable, observable and maintainable machine-learning services.",
+      "in_scope": ["model serving", "ML pipelines", "feature engineering", "model evaluation", "monitoring and drift", "reproducible ML delivery"],
+      "out_of_scope": ["research-only algorithm development", "dashboard-only analytics", "generic software development without ML systems", "data governance as the primary role"],
+      "tasks": [
+        "Package and deploy trained models as batch or online services.",
+        "Build reproducible data, feature and model-training pipelines.",
+        "Implement model evaluation, validation and release criteria.",
+        "Monitor model quality, drift, latency, cost and data health.",
+        "Manage model versions, registries, rollback and retraining workflows.",
+        "Collaborate with data scientists and platform engineers to operate ML products."
+      ],
+      "professional_skills": ["machine-learning engineering", "software engineering", "feature engineering", "model evaluation", "MLOps", "data pipeline design", "observability", "reproducibility"],
+      "technologies": ["Python", "PyTorch", "TensorFlow", "scikit-learn", "MLflow", "Kubeflow", "Docker", "Kubernetes"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "DATA_SCIENTIST", "rule": "Use ML_ENGINEER when productionization, serving and operations dominate; use DATA_SCIENTIST when analysis and modelling are the primary outputs."},
+        {"sibling_leaf_id": "AI_ENGINEER", "rule": "Use AI_ENGINEER for broader AI application engineering; use ML_ENGINEER when model lifecycle and MLOps dominate."},
+        {"sibling_leaf_id": "ML_RESEARCHER", "rule": "Research contributions and novel algorithms without production ownership belong to ML_RESEARCHER."}
+      ]
+    },
+    {
+      "leaf_id": "PLATFORM_ENGINEER",
+      "description": "Builds and operates internal developer platforms that provide reusable paths for software delivery, infrastructure provisioning, observability and secure self-service. The role optimizes developer experience and platform reliability rather than one application team’s feature backlog.",
+      "primary_outcome": "Reliable self-service platforms that accelerate safe software delivery.",
+      "in_scope": ["internal developer platforms", "self-service infrastructure", "platform APIs and templates", "delivery golden paths", "observability platforms", "developer experience engineering"],
+      "out_of_scope": ["single-application feature development", "basic cloud administration", "pure release scheduling", "helpdesk or end-user support"],
+      "tasks": [
+        "Design reusable platform capabilities for application teams.",
+        "Build self-service workflows for environments, services and infrastructure.",
+        "Maintain deployment templates, paved roads and platform APIs.",
+        "Provide observability, secrets, policy and access capabilities to developers.",
+        "Measure platform reliability, adoption, lead time and developer experience.",
+        "Document platform interfaces and support product teams using the platform."
+      ],
+      "professional_skills": ["platform engineering", "developer experience", "infrastructure automation", "API design", "reliability engineering", "observability", "technical product thinking", "systems design"],
+      "technologies": ["Kubernetes", "Terraform", "Backstage", "Helm", "GitHub Actions", "Argo CD", "Prometheus", "Grafana"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "DEVOPS_ENGINEER", "rule": "Use PLATFORM_ENGINEER when an internal reusable platform is the product; use DEVOPS_ENGINEER for delivery automation across application teams."},
+        {"sibling_leaf_id": "SRE", "rule": "Use SRE when service reliability ownership and error budgets dominate; use PLATFORM_ENGINEER for developer self-service platform ownership."},
+        {"sibling_leaf_id": "CLOUD_ENGINEER", "rule": "Use CLOUD_ENGINEER for cloud infrastructure design and operations; use PLATFORM_ENGINEER for internal developer platform capabilities."}
+      ]
+    },
+    {
+      "leaf_id": "TEST_AUTOMATION",
+      "description": "Designs and maintains automated software tests and quality gates across functional, integration, API, regression and delivery workflows. The role turns quality risks into repeatable automated checks and actionable defect evidence.",
+      "primary_outcome": "Fast, repeatable and trustworthy automated quality feedback.",
+      "in_scope": ["automated functional testing", "API and integration testing", "regression suites", "test frameworks", "quality gates", "test reporting and defect evidence"],
+      "out_of_scope": ["manual testing only", "performance testing as the primary specialty", "application development without test ownership", "production operations"],
+      "tasks": [
+        "Design maintainable automated tests from requirements and risk analysis.",
+        "Build UI, API, integration and regression test suites.",
+        "Create test fixtures, data setup, mocks and environment controls.",
+        "Integrate automated checks into CI/CD quality gates.",
+        "Diagnose failures and provide reproducible defect evidence.",
+        "Monitor test stability, coverage, execution time and false failures."
+      ],
+      "professional_skills": ["test automation", "test design", "quality risk analysis", "debugging", "defect triage", "test data management", "CI/CD integration", "quality reporting"],
+      "technologies": ["Selenium", "Playwright", "Cypress", "JUnit", "pytest", "Postman", "Jenkins", "GitHub Actions"],
+      "sibling_disambiguators": [
+        {"sibling_leaf_id": "SOFTWARE_TESTER", "rule": "Use TEST_AUTOMATION when coded repeatable tests and automation frameworks are central; use SOFTWARE_TESTER for broader manual or mixed test execution."},
+        {"sibling_leaf_id": "PERFORMANCE_TESTER", "rule": "Use PERFORMANCE_TESTER when load, stress, capacity and performance engineering dominate."},
+        {"sibling_leaf_id": "INTEGRATION_TESTER", "rule": "Use INTEGRATION_TESTER when system integration validation is the defining specialty rather than general automation."}
+      ]
+    }
+  ]
+}

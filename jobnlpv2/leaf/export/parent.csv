@@ -1,0 +1,25 @@
+parent_id,parent_name,family_id
+P01,Business and Systems Analysis,F01
+P02,Enterprise and Systems Architecture,F01
+P03,Cloud and Platform Engineering,F02
+P04,Systems Administration and Operations,F02
+P05,Computing Hardware Engineering,F03
+P06,Cybersecurity Engineering,F04
+P07,"Cybersecurity Governance, Risk and Compliance",F04
+P08,Cybersecurity Operations,F04
+P09,Offensive Security and Security Testing,F04
+P10,AI and Machine Learning Engineering,F05
+P11,Data Analysis and Business Intelligence,F05
+P12,Data Engineering,F05
+P13,Data Science and Computing Research,F05
+P14,Database Engineering,F05
+P15,Domain-specific Informatics,F05
+P16,Technical Documentation and Learning,F06
+P17,User and Application Support,F06
+P18,Computer Network Engineering,F07
+P19,Telecommunications Engineering,F07
+P20,Agile Product and Project Delivery,F08
+P21,Digital Interface and User Experience,F08
+P22,Software Development,F08
+P23,Software Quality and Testing,F08
+P24,Specialized Software Development,F08

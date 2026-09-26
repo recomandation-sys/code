@@ -1,0 +1,338 @@
+{
+  "taxonomy_version": "IT_KB_2.7.0_REMOVE_GENERIC_LEAVES",
+  "table_counts": {
+    "metadata": 46,
+    "source": 9,
+    "source_file": 82,
+    "evidence": 187144,
+    "family": 8,
+    "parent": 24,
+    "leaf": 118,
+    "legacy_taxonomy_crosswalk": 0,
+    "occupation_group": 5407,
+    "occupation_group_edge": 5389,
+    "occupation": 360,
+    "occupation_alias": 11493,
+    "occupation_classification": 195,
+    "input_title": 1793,
+    "title_source_match": 1844,
+    "title_classification": 1751,
+    "source_crosswalk": 1448,
+    "skill": 12923,
+    "skill_alias": 24772,
+    "skill_crosswalk": 3479,
+    "external_skill_crosswalk": 0,
+    "technology_curation": 21,
+    "domain": 1297,
+    "domain_edge": 1444,
+    "skill_domain": 25459,
+    "skill_relation": 799,
+    "occupation_skill": 16262,
+    "descriptor": 3006,
+    "rating_scale": 33,
+    "rating_category": 341,
+    "scale_anchor": 483,
+    "occupation_rating": 28294,
+    "occupation_metadata": 4486,
+    "job_zone": 4,
+    "occupation_job_zone": 38,
+    "related_occupation": 483,
+    "task": 1101,
+    "occupation_task": 1101,
+    "task_rating": 7380,
+    "activity": 2460,
+    "activity_edge": 2419,
+    "task_activity": 1071,
+    "descriptor_activity": 916,
+    "descriptor_relation": 501,
+    "skill_task_evidence": 2,
+    "task_domain": 1027,
+    "domain_parent_candidate": 44,
+    "review_issue": 7544,
+    "role_track": 5,
+    "family_role_track": 0,
+    "leaf_profile": 118,
+    "leaf_source_occupation": 159,
+    "leaf_alias": 2137,
+    "leaf_task_evidence": 722,
+    "leaf_skill_profile": 10854,
+    "leaf_technology_profile": 3450,
+    "leaf_confusion_pair": 4,
+    "leaf_title_evidence": 1805,
+    "leaf_custom_profile": 35,
+    "taxonomy_v2_crosswalk": 221,
+    "taxonomy_v2_excluded_node": 2,
+    "taxonomy_v2_excluded_title": 42,
+    "document": 0,
+    "document_skill": 0,
+    "document_role": 0,
+    "document_fact": 0
+  },
+  "view_count": 17,
+  "occupation_scope": [
+    {
+      "source_id": "ESCO",
+      "scope": "conditional",
+      "n": 13
+    },
+    {
+      "source_id": "ESCO",
+      "scope": "core",
+      "n": 105
+    },
+    {
+      "source_id": "ESCO",
+      "scope": "reference_only",
+      "n": 48
+    },
+    {
+      "source_id": "ONET",
+      "scope": "conditional",
+      "n": 10
+    },
+    {
+      "source_id": "ONET",
+      "scope": "core",
+      "n": 29
+    },
+    {
+      "source_id": "ONET",
+      "scope": "reference_only",
+      "n": 101
+    },
+    {
+      "source_id": "OSCA",
+      "scope": "conditional",
+      "n": 6
+    },
+    {
+      "source_id": "OSCA",
+      "scope": "core",
+      "n": 40
+    },
+    {
+      "source_id": "OSCA",
+      "scope": "reference_only",
+      "n": 8
+    }
+  ],
+  "title_scope": [
+    {
+      "scope": "conditional",
+      "n": 78
+    },
+    {
+      "scope": "core",
+      "n": 1460
+    },
+    {
+      "scope": "excluded",
+      "n": 7
+    },
+    {
+      "scope": "review",
+      "n": 248
+    }
+  ],
+  "title_resolution": [
+    {
+      "resolution_status": "credential_not_occupation",
+      "n": 5
+    },
+    {
+      "resolution_status": "label_policy_proposal",
+      "n": 23
+    },
+    {
+      "resolution_status": "needs_it_duties",
+      "n": 78
+    },
+    {
+      "resolution_status": "non_it_source_collision",
+      "n": 176
+    },
+    {
+      "resolution_status": "outside_it_scope",
+      "n": 7
+    },
+    {
+      "resolution_status": "parent_only",
+      "n": 22
+    },
+    {
+      "resolution_status": "parent_only_proposal",
+      "n": 301
+    },
+    {
+      "resolution_status": "preferred_source_supported_proposal",
+      "n": 82
+    },
+    {
+      "resolution_status": "source_scope_conflict",
+      "n": 26
+    },
+    {
+      "resolution_status": "source_supported_proposal",
+      "n": 1042
+    },
+    {
+      "resolution_status": "unresolved",
+      "n": 31
+    }
+  ],
+  "source_matching": [
+    {
+      "match_method": "normalized_exact",
+      "title_count": 1262
+    },
+    {
+      "match_method": "parenthetical_head_candidate",
+      "title_count": 4
+    }
+  ],
+  "technology_coverage": {
+    "technologies": 6959,
+    "direct_core_occupation_link": 1070,
+    "official_software_category": 3379,
+    "functional_domain_proposal": 6050,
+    "literal_task_mention": 2
+  },
+  "skills_by_kind": [
+    {
+      "source_id": "ESCO",
+      "kind": "knowledge",
+      "n": 817
+    },
+    {
+      "source_id": "ESCO",
+      "kind": "professional_skill",
+      "n": 1228
+    },
+    {
+      "source_id": "ONET",
+      "kind": "knowledge",
+      "n": 33
+    },
+    {
+      "source_id": "ONET",
+      "kind": "professional_skill",
+      "n": 35
+    },
+    {
+      "source_id": "ONET",
+      "kind": "software_example",
+      "n": 3851
+    },
+    {
+      "source_id": "TECH_V2",
+      "kind": "technology",
+      "n": 6959
+    }
+  ],
+  "task_counts": [
+    {
+      "source_id": "ONET",
+      "n": 825
+    },
+    {
+      "source_id": "OSCA",
+      "n": 276
+    }
+  ],
+  "review_counts": [
+    {
+      "issue_type": "no_core_occupation_link",
+      "severity": "low",
+      "n": 5889
+    },
+    {
+      "issue_type": "functional_domain_unresolved",
+      "severity": "medium",
+      "n": 909
+    },
+    {
+      "issue_type": "non_it_source_collision",
+      "severity": "medium",
+      "n": 211
+    },
+    {
+      "issue_type": "needs_it_duties",
+      "severity": "medium",
+      "n": 145
+    },
+    {
+      "issue_type": "multiple_source_parents",
+      "severity": "medium",
+      "n": 131
+    },
+    {
+      "issue_type": "no_source_title_match",
+      "severity": "medium",
+      "n": 81
+    },
+    {
+      "issue_type": "unresolved",
+      "severity": "medium",
+      "n": 52
+    },
+    {
+      "issue_type": "alias_collision",
+      "severity": "medium",
+      "n": 38
+    },
+    {
+      "issue_type": "source_scope_conflict",
+      "severity": "high",
+      "n": 27
+    },
+    {
+      "issue_type": "supplied_category_corrected",
+      "severity": "high",
+      "n": 17
+    },
+    {
+      "issue_type": "ambiguous_tech_crosswalk",
+      "severity": "medium",
+      "n": 15
+    },
+    {
+      "issue_type": "outside_it_scope",
+      "severity": "high",
+      "n": 9
+    },
+    {
+      "issue_type": "canonical_mapping_missing",
+      "severity": "medium",
+      "n": 8
+    },
+    {
+      "issue_type": "credential_not_occupation",
+      "severity": "medium",
+      "n": 5
+    },
+    {
+      "issue_type": "duplicate_source_concept",
+      "severity": "low",
+      "n": 4
+    },
+    {
+      "issue_type": "gold_evaluation_not_supplied",
+      "severity": "high",
+      "n": 1
+    },
+    {
+      "issue_type": "legacy_ids_not_supplied",
+      "severity": "high",
+      "n": 1
+    },
+    {
+      "issue_type": "nesta_ids_not_supplied",
+      "severity": "high",
+      "n": 1
+    }
+  ],
+  "database_bytes": 145014784,
+  "language": "en",
+  "classification_accuracy": "not_measured_no_gold_dataset",
+  "recommendation_accuracy": "not_measured_no_gold_dataset"
+}

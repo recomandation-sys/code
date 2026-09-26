@@ -1,0 +1,51 @@
+{
+  "name": "@job-recommender/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Express API: public HTTP contract, parser orchestration, validation, adaptation, persistence (README_CV_UPLOAD_REVIEW_WEB_ARCHITECTURE.md section 4).",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -b",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -b --noEmit false --dry",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "prisma:studio": "prisma studio",
+    "prisma:seed": "tsx prisma/seed.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@job-recommender/contracts": "*",
+    "@prisma/client": "^6",
+    "cors": "^2",
+    "dotenv": "^16",
+    "express": "^5",
+    "multer": "^2",
+    "pino": "^9",
+    "pino-http": "^10",
+    "uuid": "^11",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2",
+    "@types/express": "^5",
+    "@types/multer": "^2",
+    "@types/node": "^22",
+    "@types/supertest": "^6",
+    "@types/uuid": "^10",
+    "pino-pretty": "^13",
+    "prisma": "^6",
+    "supertest": "^7",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}

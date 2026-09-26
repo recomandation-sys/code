@@ -1,0 +1,925 @@
+task_id,leaf_id,task
+K0001,L001,Elicit requirements
+K0002,L001,map business processes
+K0003,L001,write user stories and acceptance criteria
+K0004,L001,analyze data and KPIs
+K0005,L001,validate delivered functionality
+K0006,L001,facilitate stakeholder workshops.
+K0007,L002,Assess current systems
+K0008,L002,identify business and technology gaps
+K0009,L002,recommend solutions and vendors
+K0010,L002,build roadmaps and business cases
+K0011,L002,support implementation
+K0012,L002,present findings to stakeholders.
+K0013,L003,Elicit requirements
+K0014,L003,write specifications
+K0015,L003,model use cases and system behavior
+K0016,L003,manage traceability
+K0017,L003,define acceptance criteria
+K0018,L003,control requirement changes
+K0019,L003,support testing and validation.
+K0020,L004,Analyze existing systems
+K0021,L004,model data/process flows
+K0022,L004,define system changes
+K0023,L004,document interfaces
+K0024,L004,investigate incidents
+K0025,L004,query databases
+K0026,L004,support integration and testing.
+K0027,L005,Evaluate system requirements
+K0028,L005,design compute environments
+K0029,L005,integrate hardware and software
+K0030,L005,optimize performance
+K0031,L005,troubleshoot low-level issues
+K0032,L005,automate system configuration
+K0033,L005,test reliability.
+K0034,L006,Create enterprise roadmaps
+K0035,L006,define architecture standards
+K0036,L006,map business capabilities
+K0037,L006,govern technology portfolios
+K0038,L006,assess target architectures
+K0039,L006,guide transformation programs
+K0040,L006,manage architecture repositories.
+K0041,L007,Convert requirements into solution designs
+K0042,L007,select technologies
+K0043,L007,define APIs and integrations
+K0044,L007,design security and scalability
+K0045,L007,estimate technical work
+K0046,L007,guide implementation
+K0047,L007,review architecture decisions.
+K0048,L008,Design infrastructure architecture
+K0049,L008,define resilience and recovery
+K0050,L008,select platforms
+K0051,L008,plan capacity
+K0052,L008,design network/storage/compute patterns
+K0053,L008,establish technical standards
+K0054,L008,review implementation quality.
+K0055,L009,Build APIs and integrations
+K0056,L009,configure middleware
+K0057,L009,transform data
+K0058,L009,manage message queues
+K0059,L009,test interfaces
+K0060,L009,diagnose integration failures
+K0061,L009,document contracts
+K0062,L009,support production integrations.
+K0063,L010,Provision resources
+K0064,L010,administer IAM
+K0065,L010,manage subscriptions/accounts
+K0066,L010,monitor usage
+K0067,L010,handle access requests
+K0068,L010,maintain backups
+K0069,L010,apply policies
+K0070,L010,support cloud incidents
+K0071,L010,track cost and inventory.
+K0072,L011,Design landing zones
+K0073,L011,choose cloud services
+K0074,L011,define network and identity architecture
+K0075,L011,establish governance
+K0076,L011,plan migrations
+K0077,L011,design resilience
+K0078,L011,review cloud security
+K0079,L011,optimize cost and performance.
+K0080,L012,Build infrastructure as code
+K0081,L012,configure cloud networks and services
+K0082,L012,automate deployment
+K0083,L012,manage containers
+K0084,L012,operate cloud environments
+K0085,L012,write scripts
+K0086,L012,monitor systems
+K0087,L012,troubleshoot cloud issues.
+K0088,L013,Build CI/CD pipelines
+K0089,L013,automate environments
+K0090,L013,manage infrastructure as code
+K0091,L013,containerize applications
+K0092,L013,implement DevSecOps controls
+K0093,L013,maintain deployment tooling
+K0094,L013,improve observability
+K0095,L013,reduce manual delivery work.
+K0096,L014,Operate Kubernetes platforms
+K0097,L014,create reusable templates
+K0098,L014,build developer portals
+K0099,L014,provide self-service infrastructure
+K0100,L014,implement GitOps
+K0101,L014,maintain platform APIs
+K0102,L014,enforce policies
+K0103,L014,improve developer experience.
+K0104,L015,Manage release calendars
+K0105,L015,define versioning and branching
+K0106,L015,package artifacts
+K0107,L015,coordinate deployment approvals
+K0108,L015,promote builds
+K0109,L015,plan rollback
+K0110,L015,publish release notes
+K0111,L015,monitor release quality.
+K0112,L016,Define SLOs and error budgets
+K0113,L016,build monitoring
+K0114,L016,automate operational work
+K0115,L016,manage incidents and on-call
+K0116,L016,perform capacity planning
+K0117,L016,improve resilience
+K0118,L016,conduct postmortems
+K0119,L016,reduce toil.
+K0120,L017,Monitor jobs and alerts
+K0121,L017,operate scheduled workloads
+K0122,L017,follow runbooks
+K0123,L017,manage batch processing
+K0124,L017,escalate incidents
+K0125,L017,record operational events
+K0126,L017,perform first-line recovery actions.
+K0127,L018,Rack and cable equipment
+K0128,L018,replace hardware
+K0129,L018,monitor power and cooling
+K0130,L018,perform physical checks
+K0131,L018,maintain asset records
+K0132,L018,use remote-management tools
+K0133,L018,manage access
+K0134,L018,escalate facility incidents.
+K0135,L019,Define RTO/RPO targets
+K0136,L019,manage backups
+K0137,L019,plan replication
+K0138,L019,conduct DR tests
+K0139,L019,coordinate failover and failback
+K0140,L019,validate restores
+K0141,L019,document recovery runbooks
+K0142,L019,report resilience gaps.
+K0143,L020,Provision storage
+K0144,L020,manage SAN/NAS/object platforms
+K0145,L020,configure replication
+K0146,L020,tune capacity and performance
+K0147,L020,manage snapshots
+K0148,L020,support backup/restore
+K0149,L020,troubleshoot storage incidents
+K0150,L020,automate storage tasks.
+K0151,L021,Measure energy use
+K0152,L021,analyze cloud consumption
+K0153,L021,report carbon indicators
+K0154,L021,optimize resource utilization
+K0155,L021,support hardware lifecycle programs
+K0156,L021,reduce e-waste
+K0157,L021,advise on green IT and FinOps practices.
+K0158,L022,Manage Linux/Windows servers
+K0159,L022,administer directories and user access
+K0160,L022,patch systems
+K0161,L022,automate administration
+K0162,L022,manage backups
+K0163,L022,monitor health
+K0164,L022,troubleshoot incidents
+K0165,L022,maintain system documentation.
+K0166,L023,Maintain CMDB data
+K0167,L023,create configuration baselines
+K0168,L023,automate configuration
+K0169,L023,detect configuration drift
+K0170,L023,manage change records
+K0171,L023,audit compliance
+K0172,L023,manage policies
+K0173,L023,version infrastructure configuration.
+K0174,L024,Configure web servers
+K0175,L024,manage DNS and TLS certificates
+K0176,L024,administer hosting/CMS
+K0177,L024,monitor uptime
+K0178,L024,apply patches
+K0179,L024,optimize web performance
+K0180,L024,troubleshoot site failures
+K0181,L024,manage backups and access.
+K0182,L025,Create hardware designs
+K0183,L025,develop schematics
+K0184,L025,select components
+K0185,L025,design PCBs
+K0186,L025,validate prototypes
+K0187,L025,analyze signal/power integrity
+K0188,L025,perform laboratory testing
+K0189,L025,collaborate with firmware and manufacturing teams.
+K0190,L026,Assemble systems
+K0191,L026,replace components
+K0192,L026,run diagnostics
+K0193,L026,calibrate equipment
+K0194,L026,perform cable and hardware checks
+K0195,L026,document repairs
+K0196,L026,support prototypes
+K0197,L026,maintain inventory and test equipment.
+K0198,L027,Run functional and regression tests
+K0199,L027,operate test equipment
+K0200,L027,capture measurements
+K0201,L027,reproduce failures
+K0202,L027,record defects
+K0203,L027,verify fixes
+K0204,L027,maintain test records
+K0205,L027,assist root-cause analysis.
+K0206,L028,Select microcontrollers
+K0207,L028,define device architecture
+K0208,L028,design hardware/firmware interfaces
+K0209,L028,develop prototypes
+K0210,L028,specify sensors and actuators
+K0211,L028,validate real-time behavior
+K0212,L028,support embedded testing
+K0213,L028,define connectivity and security requirements.
+K0214,L029,Perform threat modeling
+K0215,L029,review code
+K0216,L029,run SAST/DAST/SCA
+K0217,L029,secure APIs
+K0218,L029,manage security findings
+K0219,L029,support developers
+K0220,L029,implement DevSecOps checks
+K0221,L029,improve secure coding standards.
+K0222,L030,Harden cloud accounts
+K0223,L030,manage IAM
+K0224,L030,configure cloud logging
+K0225,L030,implement policies
+K0226,L030,secure networks
+K0227,L030,manage secrets and keys
+K0228,L030,run posture assessments
+K0229,L030,automate security checks
+K0230,L030,remediate cloud risks.
+K0231,L031,Evaluate cryptographic controls
+K0232,L031,manage key lifecycle
+K0233,L031,design PKI
+K0234,L031,integrate encryption/signatures
+K0235,L031,configure HSMs
+K0236,L031,validate protocols
+K0237,L031,support certificate management
+K0238,L031,assess cryptographic compliance.
+K0239,L032,Implement secure boot
+K0240,L032,secure firmware
+K0241,L032,assess hardware interfaces
+K0242,L032,manage device certificates
+K0243,L032,secure OTA updates
+K0244,L032,test IoT protocols
+K0245,L032,perform firmware analysis
+K0246,L032,apply embedded threat modeling.
+K0247,L033,Configure SSO and MFA
+K0248,L033,integrate applications with IAM
+K0249,L033,manage OAuth/OIDC/SAML
+K0250,L033,automate provisioning
+K0251,L033,conduct access reviews
+K0252,L033,administer PAM
+K0253,L033,manage joiner-mover-leaver workflows
+K0254,L033,troubleshoot access issues.
+K0255,L034,Configure firewalls
+K0256,L034,manage VPNs
+K0257,L034,implement segmentation
+K0258,L034,operate IDS/IPS
+K0259,L034,secure routing
+K0260,L034,manage NAC
+K0261,L034,analyze packets
+K0262,L034,deploy network controls
+K0263,L034,investigate network-security incidents.
+K0264,L035,Manage endpoint protection
+K0265,L035,configure security platforms
+K0266,L035,run vulnerability scans
+K0267,L035,support access requests
+K0268,L035,patch security tools
+K0269,L035,investigate routine alerts
+K0270,L035,maintain policies
+K0271,L035,manage security tickets.
+K0272,L036,Design security architecture
+K0273,L036,review solutions
+K0274,L036,define Zero Trust patterns
+K0275,L036,select controls
+K0276,L036,establish security standards
+K0277,L036,model threats
+K0278,L036,guide cloud/application/network security
+K0279,L036,govern exceptions.
+K0280,L037,Deploy controls
+K0281,L037,automate security tasks
+K0282,L037,tune tools
+K0283,L037,harden systems
+K0284,L037,integrate SIEM/EDR/IAM
+K0285,L037,remediate vulnerabilities
+K0286,L037,support incident response
+K0287,L037,maintain security infrastructure.
+K0288,L038,Assess security posture
+K0289,L038,perform gap analyses
+K0290,L038,create roadmaps
+K0291,L038,advise executives
+K0292,L038,review architecture
+K0293,L038,recommend controls
+K0294,L038,assess vendors
+K0295,L038,support compliance initiatives.
+K0296,L039,Maintain risk registers
+K0297,L039,assess controls
+K0298,L039,manage policy lifecycle
+K0299,L039,coordinate risk treatment
+K0300,L039,run vendor-risk reviews
+K0301,L039,collect evidence
+K0302,L039,prepare governance reports
+K0303,L039,support audits.
+K0304,L040,Conduct DPIAs/PIAs
+K0305,L040,maintain processing inventories
+K0306,L040,handle DSARs
+K0307,L040,classify data
+K0308,L040,define retention rules
+K0309,L040,support consent management
+K0310,L040,assess privacy risks
+K0311,L040,advise on privacy-by-design.
+K0312,L041,Plan audits
+K0313,L041,test ITGCs
+K0314,L041,assess segregation of duties
+K0315,L041,review access
+K0316,L041,test change-management controls
+K0317,L041,document findings
+K0318,L041,collect evidence
+K0319,L041,issue audit reports
+K0320,L041,track remediation.
+K0321,L042,Track obligations
+K0322,L042,collect compliance evidence
+K0323,L042,monitor controls
+K0324,L042,prepare certification audits
+K0325,L042,manage exceptions
+K0326,L042,report compliance status
+K0327,L042,coordinate remediation
+K0328,L042,maintain compliance documentation.
+K0329,L043,Triage incidents
+K0330,L043,collect evidence
+K0331,L043,contain threats
+K0332,L043,isolate assets
+K0333,L043,analyze logs and memory
+K0334,L043,eradicate malware
+K0335,L043,coordinate recovery
+K0336,L043,document timelines
+K0337,L043,conduct post-incident reviews.
+K0338,L044,Gather OSINT
+K0339,L044,analyze TTPs
+K0340,L044,track threat actors
+K0341,L044,manage IoCs
+K0342,L044,map ATT&CK techniques
+K0343,L044,write intelligence reports
+K0344,L044,enrich alerts
+K0345,L044,share intelligence with security teams.
+K0346,L045,Monitor SIEM/EDR alerts
+K0347,L045,analyze logs
+K0348,L045,investigate phishing
+K0349,L045,validate indicators
+K0350,L045,correlate events
+K0351,L045,document cases
+K0352,L045,tune detections
+K0353,L045,escalate incidents
+K0354,L045,support vulnerability management.
+K0355,L046,Acquire evidence
+K0356,L046,maintain chain of custody
+K0357,L046,analyze file systems
+K0358,L046,inspect memory
+K0359,L046,recover artifacts
+K0360,L046,examine mobile/cloud evidence
+K0361,L046,validate hashes
+K0362,L046,write forensic reports
+K0363,L046,support legal investigations.
+K0364,L047,Scope engagements
+K0365,L047,enumerate targets
+K0366,L047,test web/network/cloud/mobile environments
+K0367,L047,exploit vulnerabilities
+K0368,L047,escalate privileges
+K0369,L047,document proof of concept
+K0370,L047,write reports
+K0371,L047,retest remediation.
+K0372,L048,Run scans
+K0373,L048,validate findings
+K0374,L048,assign severity
+K0375,L048,prioritize remediation
+K0376,L048,manage vulnerability exceptions
+K0377,L048,track remediation SLAs
+K0378,L048,report risk trends
+K0379,L048,verify patches and fixes.
+K0380,L049,Build AI services
+K0381,L049,integrate models
+K0382,L049,implement RAG
+K0383,L049,design prompts and guardrails
+K0384,L049,create APIs
+K0385,L049,evaluate outputs
+K0386,L049,deploy models
+K0387,L049,monitor AI quality and reliability.
+K0388,L050,Prepare image data
+K0389,L050,train vision models
+K0390,L050,implement object detection/segmentation
+K0391,L050,optimize inference
+K0392,L050,label datasets
+K0393,L050,deploy vision services
+K0394,L050,evaluate visual model performance.
+K0395,L051,Design taxonomies
+K0396,L051,build ontologies
+K0397,L051,model entities and relations
+K0398,L051,curate knowledge graphs
+K0399,L051,define rules
+K0400,L051,support semantic search
+K0401,L051,integrate structured knowledge with AI systems.
+K0402,L052,Train models
+K0403,L052,engineer features
+K0404,L052,build ML pipelines
+K0405,L052,deploy model services
+K0406,L052,manage model versions
+K0407,L052,monitor drift
+K0408,L052,automate retraining
+K0409,L052,implement MLOps practices.
+K0410,L053,Build NLP pipelines
+K0411,L053,train/fine-tune language models
+K0412,L053,implement NER/classification
+K0413,L053,create embeddings
+K0414,L053,build RAG/search
+K0415,L053,evaluate language outputs
+K0416,L053,deploy NLP APIs
+K0417,L053,monitor quality.
+K0418,L054,Define KPIs
+K0419,L054,query data
+K0420,L054,build dashboards
+K0421,L054,analyze trends
+K0422,L054,create reports
+K0423,L054,gather reporting requirements
+K0424,L054,validate metrics
+K0425,L054,present insights to stakeholders.
+K0426,L055,Develop BI reports
+K0427,L055,build semantic models
+K0428,L055,write transformations
+K0429,L055,manage data refreshes
+K0430,L055,optimize dashboards
+K0431,L055,implement row-level security
+K0432,L055,deploy BI assets
+K0433,L055,support analysts.
+K0434,L056,Query data
+K0435,L056,clean datasets
+K0436,L056,conduct exploratory analysis
+K0437,L056,create visualizations
+K0438,L056,build reports
+K0439,L056,analyze cohorts/trends
+K0440,L056,support experiments
+K0441,L056,communicate findings.
+K0442,L057,Profile data
+K0443,L057,define quality rules
+K0444,L057,monitor anomalies
+K0445,L057,investigate defects
+K0446,L057,maintain lineage
+K0447,L057,coordinate remediation
+K0448,L057,validate pipelines
+K0449,L057,report quality metrics.
+K0450,L058,Build dbt models
+K0451,L058,write warehouse SQL
+K0452,L058,test transformations
+K0453,L058,document datasets
+K0454,L058,manage lineage
+K0455,L058,create reusable metrics
+K0456,L058,collaborate with analysts
+K0457,L058,improve data reliability.
+K0458,L059,Design target data platforms
+K0459,L059,create conceptual/logical models
+K0460,L059,define domains
+K0461,L059,choose storage patterns
+K0462,L059,govern integration
+K0463,L059,establish standards
+K0464,L059,guide data modernization.
+K0465,L060,Develop ETL/ELT pipelines
+K0466,L060,manage orchestration
+K0467,L060,build streaming pipelines
+K0468,L060,optimize Spark/SQL
+K0469,L060,operate warehouses/lakes
+K0470,L060,automate testing
+K0471,L060,monitor data jobs
+K0472,L060,resolve failures.
+K0473,L061,Maintain data catalog
+K0474,L061,assign owners
+K0475,L061,define policies
+K0476,L061,manage metadata
+K0477,L061,document lineage
+K0478,L061,support data classification
+K0479,L061,coordinate stewardship
+K0480,L061,govern data access and retention.
+K0481,L062,Model dimensions/facts
+K0482,L062,develop ETL/ELT
+K0483,L062,write SQL procedures
+K0484,L062,tune queries
+K0485,L062,load warehouse tables
+K0486,L062,manage partitions
+K0487,L062,support reporting
+K0488,L062,maintain warehouse documentation.
+K0489,L063,Form research questions
+K0490,L063,review literature
+K0491,L063,design experiments
+K0492,L063,implement prototypes
+K0493,L063,analyze results
+K0494,L063,publish findings
+K0495,L063,develop algorithms
+K0496,L063,collaborate with engineering teams.
+K0497,L064,Explore data
+K0498,L064,develop models
+K0499,L064,perform statistical analysis
+K0500,L064,run experiments
+K0501,L064,evaluate models
+K0502,L064,create visualizations
+K0503,L064,communicate findings
+K0504,L064,support decisions.
+K0505,L065,Develop hypotheses
+K0506,L065,run model experiments
+K0507,L065,create architectures
+K0508,L065,train at scale
+K0509,L065,evaluate benchmarks
+K0510,L065,publish research
+K0511,L065,prototype methods
+K0512,L065,analyze model behavior.
+K0513,L066,Install databases
+K0514,L066,manage users
+K0515,L066,run backups
+K0516,L066,test restores
+K0517,L066,tune performance
+K0518,L066,monitor health
+K0519,L066,manage replication
+K0520,L066,patch systems
+K0521,L066,support incidents.
+K0522,L067,Select database technologies
+K0523,L067,design models
+K0524,L067,set standards
+K0525,L067,plan migration
+K0526,L067,define HA/DR
+K0527,L067,design security
+K0528,L067,review database designs
+K0529,L067,govern database lifecycle.
+K0530,L068,Design schemas
+K0531,L068,write SQL
+K0532,L068,create stored procedures
+K0533,L068,optimize queries
+K0534,L068,build migrations
+K0535,L068,implement data-access layers
+K0536,L068,test database code
+K0537,L068,support application integrations.
+K0538,L069,Configure connectors
+K0539,L069,build ETL/API links
+K0540,L069,manage CDC
+K0541,L069,map data
+K0542,L069,test interfaces
+K0543,L069,migrate databases
+K0544,L069,diagnose integration failures
+K0545,L069,secure data transfers.
+K0546,L070,Process sequence data
+K0547,L070,run genomic pipelines
+K0548,L070,analyze omics data
+K0549,L070,manage biological databases
+K0550,L070,build reproducible workflows
+K0551,L070,visualize findings
+K0552,L070,support scientific interpretation.
+K0553,L071,Create maps
+K0554,L071,manage geodatabases
+K0555,L071,analyze spatial patterns
+K0556,L071,process imagery
+K0557,L071,publish GIS services
+K0558,L071,automate geospatial workflows
+K0559,L071,support field and planning teams.
+K0560,L072,Support EHR/EMR systems
+K0561,L072,implement HL7/FHIR integration
+K0562,L072,map clinical data
+K0563,L072,manage health standards
+K0564,L072,analyze health data
+K0565,L072,improve workflows
+K0566,L072,support privacy and interoperability.
+K0567,L073,Manage document repositories
+K0568,L073,define metadata/taxonomy
+K0569,L073,configure workflows
+K0570,L073,apply retention policies
+K0571,L073,support OCR
+K0572,L073,manage access
+K0573,L073,improve search
+K0574,L073,support eDiscovery and records compliance.
+K0575,L074,Conduct technical reviews
+K0576,L074,manage escalations
+K0577,L074,analyze service health
+K0578,L074,advise customers
+K0579,L074,coordinate internal teams
+K0580,L074,support onboarding
+K0581,L074,track success plans
+K0582,L074,communicate technical risks.
+K0583,L075,Write guides
+K0584,L075,create API documentation
+K0585,L075,maintain knowledge bases
+K0586,L075,publish release notes
+K0587,L075,create diagrams
+K0588,L075,document configurations
+K0589,L075,work with engineers
+K0590,L075,maintain docs-as-code content.
+K0591,L076,Develop curricula
+K0592,L076,create learning content
+K0593,L076,run workshops
+K0594,L076,deliver virtual/classroom training
+K0595,L076,build labs
+K0596,L076,assess learners
+K0597,L076,update materials
+K0598,L076,measure adoption and learning outcomes.
+K0599,L077,Resolve tickets
+K0600,L077,investigate errors
+K0601,L077,analyze logs
+K0602,L077,query data
+K0603,L077,validate interfaces
+K0604,L077,coordinate with developers/vendors
+K0605,L077,maintain knowledge articles
+K0606,L077,support release validation.
+K0607,L078,Diagnose hardware
+K0608,L078,replace components
+K0609,L078,image devices
+K0610,L078,repair printers/peripherals
+K0611,L078,install drivers
+K0612,L078,manage inventory
+K0613,L078,perform physical maintenance
+K0614,L078,document repairs.
+K0615,L079,Configure devices
+K0616,L079,resolve Microsoft 365 issues
+K0617,L079,manage Intune/SCCM/Jamf
+K0618,L079,support printers and VPNs
+K0619,L079,handle user access
+K0620,L079,deploy software
+K0621,L079,provide remote support.
+K0622,L080,Log tickets
+K0623,L080,reset passwords
+K0624,L080,resolve basic access/device/software issues
+K0625,L080,provide user guidance
+K0626,L080,use knowledge bases
+K0627,L080,route incidents
+K0628,L080,communicate status
+K0629,L080,document solutions.
+K0630,L081,Diagnose complex incidents
+K0631,L081,analyze logs
+K0632,L081,script support tasks
+K0633,L081,support servers/endpoints
+K0634,L081,manage monitoring
+K0635,L081,troubleshoot APIs/networks
+K0636,L081,improve runbooks
+K0637,L081,coordinate escalations.
+K0638,L082,Configure switches/routers
+K0639,L082,manage DHCP/DNS
+K0640,L082,maintain VPN and Wi-Fi
+K0641,L082,monitor networks
+K0642,L082,manage user access
+K0643,L082,handle incidents
+K0644,L082,maintain device configurations.
+K0645,L083,Define target architectures
+K0646,L083,plan routing/segmentation
+K0647,L083,design cloud connectivity
+K0648,L083,select network platforms
+K0649,L083,create standards
+K0650,L083,plan capacity
+K0651,L083,review network designs
+K0652,L083,guide migrations.
+K0653,L084,Implement routing/switching
+K0654,L084,configure firewalls and VPNs
+K0655,L084,troubleshoot BGP/OSPF/VLAN issues
+K0656,L084,automate device changes
+K0657,L084,monitor performance
+K0658,L084,support upgrades
+K0659,L084,document topology.
+K0660,L085,Triage connectivity tickets
+K0661,L085,troubleshoot DNS/DHCP/Wi-Fi/VPN
+K0662,L085,monitor alerts
+K0663,L085,perform basic configuration
+K0664,L085,collect diagnostics
+K0665,L085,communicate with users
+K0666,L085,escalate complex issues.
+K0667,L086,Pull and test cables
+K0668,L086,install switches/APs
+K0669,L086,rack equipment
+K0670,L086,label ports
+K0671,L086,replace hardware
+K0672,L086,test fibre
+K0673,L086,update asset records
+K0674,L086,perform basic connectivity checks.
+K0675,L087,Analyze CDRs
+K0676,L087,monitor service quality
+K0677,L087,assess carrier invoices
+K0678,L087,manage telecom inventories
+K0679,L087,prepare reports
+K0680,L087,gather telecom requirements
+K0681,L087,support vendor and contract decisions.
+K0682,L088,Configure PBX/SIP/SBC systems
+K0683,L088,troubleshoot voice quality
+K0684,L088,deploy unified communications
+K0685,L088,optimize QoS
+K0686,L088,support LTE/5G/fibre systems
+K0687,L088,test telecom integrations
+K0688,L088,manage carrier connectivity.
+K0689,L089,Define vision
+K0690,L089,conduct discovery
+K0691,L089,prioritize backlog
+K0692,L089,build roadmaps
+K0693,L089,write product requirements
+K0694,L089,analyze product metrics
+K0695,L089,align stakeholders
+K0696,L089,validate outcomes.
+K0697,L090,Build project plans
+K0698,L090,manage budget and schedule
+K0699,L090,track risks
+K0700,L090,coordinate teams/vendors
+K0701,L090,report status
+K0702,L090,manage dependencies
+K0703,L090,run governance
+K0704,L090,ensure delivery milestones.
+K0705,L091,Facilitate ceremonies
+K0706,L091,remove impediments
+K0707,L091,coach agile practices
+K0708,L091,track delivery metrics
+K0709,L091,support backlog refinement
+K0710,L091,improve team flow
+K0711,L091,run retrospectives
+K0712,L091,protect team focus.
+K0713,L092,Design gameplay
+K0714,L092,create levels
+K0715,L092,document rules
+K0716,L092,balance economies
+K0717,L092,prototype mechanics
+K0718,L092,analyze player feedback
+K0719,L092,collaborate with artists/developers
+K0720,L092,refine player journeys.
+K0721,L093,Create user flows
+K0722,L093,design wireframes
+K0723,L093,build prototypes
+K0724,L093,define IA
+K0725,L093,run usability reviews
+K0726,L093,maintain design systems
+K0727,L093,collaborate with product/development teams
+K0728,L093,improve journeys.
+K0729,L094,Plan research
+K0730,L094,conduct interviews
+K0731,L094,run surveys
+K0732,L094,facilitate usability studies
+K0733,L094,analyze results
+K0734,L094,synthesize insights
+K0735,L094,create personas/journeys
+K0736,L094,present recommendations.
+K0737,L095,Create UI screens
+K0738,L095,define visual hierarchy
+K0739,L095,build component libraries
+K0740,L095,manage tokens
+K0741,L095,prepare handoff
+K0742,L095,ensure responsive layouts
+K0743,L095,apply accessibility
+K0744,L095,maintain visual consistency.
+K0745,L096,Design pages
+K0746,L096,build CMS content
+K0747,L096,write HTML/CSS
+K0748,L096,optimize responsive behavior
+K0749,L096,apply SEO
+K0750,L096,manage assets
+K0751,L096,improve accessibility
+K0752,L096,monitor site presentation.
+K0753,L097,Develop Android features
+K0754,L097,design mobile UI
+K0755,L097,integrate APIs
+K0756,L097,manage local storage
+K0757,L097,implement push notifications
+K0758,L097,test apps
+K0759,L097,fix defects
+K0760,L097,publish to Google Play.
+K0761,L098,Develop APIs
+K0762,L098,implement services
+K0763,L098,design schemas
+K0764,L098,integrate systems
+K0765,L098,secure endpoints
+K0766,L098,optimize performance
+K0767,L098,write tests
+K0768,L098,deploy backend services.
+K0769,L099,Build cloud services
+K0770,L099,develop serverless functions
+K0771,L099,integrate managed databases/queues
+K0772,L099,deploy containers
+K0773,L099,automate delivery
+K0774,L099,instrument observability
+K0775,L099,optimize cloud resources.
+K0776,L100,Develop desktop UI
+K0777,L100,integrate local/system services
+K0778,L100,manage installers
+K0779,L100,implement updates
+K0780,L100,store local data
+K0781,L100,connect APIs
+K0782,L100,test on target operating systems
+K0783,L100,fix defects.
+K0784,L101,Implement UI components
+K0785,L101,consume APIs
+K0786,L101,manage client state
+K0787,L101,style responsive pages
+K0788,L101,improve accessibility
+K0789,L101,write frontend tests
+K0790,L101,optimize performance
+K0791,L101,fix browser defects.
+K0792,L102,Deliver end-to-end features
+K0793,L102,implement UI and APIs
+K0794,L102,design data models
+K0795,L102,integrate authentication
+K0796,L102,write tests
+K0797,L102,deploy applications
+K0798,L102,troubleshoot full application flows.
+K0799,L103,Make architecture decisions
+K0800,L103,define components and boundaries
+K0801,L103,design integration patterns
+K0802,L103,assess trade-offs
+K0803,L103,set standards
+K0804,L103,review designs
+K0805,L103,guide technical teams
+K0806,L103,manage technical debt.
+K0807,L104,Develop system services
+K0808,L104,write drivers or low-level code
+K0809,L104,optimize memory/concurrency
+K0810,L104,debug crashes
+K0811,L104,profile performance
+K0812,L104,work with kernels/runtimes
+K0813,L104,implement system interfaces.
+K0814,L105,Develop Swift/SwiftUI features
+K0815,L105,integrate APIs
+K0816,L105,implement mobile UI
+K0817,L105,manage data and notifications
+K0818,L105,test apps
+K0819,L105,optimize performance
+K0820,L105,handle App Store release processes.
+K0821,L106,Test keyboard navigation
+K0822,L106,use screen readers
+K0823,L106,audit WCAG criteria
+K0824,L106,identify ARIA issues
+K0825,L106,validate color/contrast
+K0826,L106,document defects
+K0827,L106,retest fixes
+K0828,L106,advise teams on accessible behavior.
+K0829,L107,Execute test cases
+K0830,L107,reproduce gameplay bugs
+K0831,L107,test game builds
+K0832,L107,validate progression
+K0833,L107,test platforms/devices
+K0834,L107,report defects
+K0835,L107,perform regression testing
+K0836,L107,support certification readiness.
+K0837,L108,Design integration tests
+K0838,L108,validate contracts
+K0839,L108,test APIs
+K0840,L108,prepare test data
+K0841,L108,simulate dependencies
+K0842,L108,verify message/data flows
+K0843,L108,troubleshoot failures
+K0844,L108,automate end-to-end checks.
+K0845,L109,Validate translations
+K0846,L109,test date/currency/number formats
+K0847,L109,inspect UI truncation
+K0848,L109,test RTL layouts
+K0849,L109,verify encoding
+K0850,L109,test locale switching
+K0851,L109,report localization defects
+K0852,L109,coordinate language validation.
+K0853,L110,Design load tests
+K0854,L110,generate traffic
+K0855,L110,measure latency/throughput
+K0856,L110,identify bottlenecks
+K0857,L110,analyze resource use
+K0858,L110,test capacity
+K0859,L110,report performance risks
+K0860,L110,validate optimization.
+K0861,L111,Write test plans/cases
+K0862,L111,execute tests
+K0863,L111,log defects
+K0864,L111,perform regression
+K0865,L111,validate requirements
+K0866,L111,manage test data
+K0867,L111,document results
+K0868,L111,collaborate on quality improvements.
+K0869,L112,Develop automated tests
+K0870,L112,maintain frameworks
+K0871,L112,integrate CI/CD
+K0872,L112,create test data/mocks
+K0873,L112,build reports
+K0874,L112,automate API/web/mobile checks
+K0875,L112,reduce flaky tests
+K0876,L112,improve coverage.
+K0877,L113,Plan usability sessions
+K0878,L113,recruit or guide participants
+K0879,L113,observe tasks
+K0880,L113,record findings
+K0881,L113,identify usability issues
+K0882,L113,prioritize recommendations
+K0883,L113,test prototypes
+K0884,L113,report experience improvements.
+K0885,L114,Develop smart contracts
+K0886,L114,integrate wallets
+K0887,L114,implement token/NFT logic
+K0888,L114,interact with blockchains
+K0889,L114,test contracts
+K0890,L114,secure decentralized applications
+K0891,L114,deploy contracts
+K0892,L114,monitor transactions.
+K0893,L115,Develop firmware
+K0894,L115,write drivers
+K0895,L115,implement RTOS tasks
+K0896,L115,integrate sensors
+K0897,L115,debug hardware interfaces
+K0898,L115,optimize memory/power
+K0899,L115,test embedded software
+K0900,L115,implement OTA updates.
+K0901,L116,Program game mechanics
+K0902,L116,build UI/animation systems
+K0903,L116,implement physics
+K0904,L116,optimize runtime performance
+K0905,L116,integrate multiplayer/services
+K0906,L116,debug builds
+K0907,L116,create developer tools
+K0908,L116,support platform release.
+K0909,L117,Develop device software
+K0910,L117,connect devices through MQTT/CoAP
+K0911,L117,implement provisioning
+K0912,L117,manage telemetry
+K0913,L117,integrate cloud services
+K0914,L117,build gateways
+K0915,L117,secure device communication
+K0916,L117,support OTA updates.
+K0917,L118,Analyze processes
+K0918,L118,design automation workflows
+K0919,L118,build robots
+K0920,L118,automate UI/API/document tasks
+K0921,L118,handle exceptions
+K0922,L118,orchestrate robot schedules
+K0923,L118,monitor runs
+K0924,L118,maintain automation documentation.

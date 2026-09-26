@@ -1,0 +1,77 @@
+{
+  "identity": {
+    "full_name": { "value": "Jane Doe", "confidence": "HIGH", "method": "HEADER_REGION_CANDIDATE", "reason_codes": ["HEADER_REGION", "LARGEST_HEADER_LINE"] },
+    "email": { "value": "jane@example.com", "confidence": "HIGH", "method": "REGEX", "reason_codes": [] }
+  },
+  "target": {
+    "desired_positions": [
+      { "raw": "Backend Developer", "normalized": "Backend Developer", "source_type": "CV_HEADLINE", "confidence": "HIGH" }
+    ],
+    "desired_contract_types": ["CDI"],
+    "desired_work_modes": ["REMOTE"]
+  },
+  "experience": {
+    "professional_months": 24,
+    "internship_months": 0,
+    "alternance_months": 0,
+    "freelance_months": 0,
+    "records": [
+      {
+        "id": "section_001_000",
+        "type": "PROFESSIONAL",
+        "title": "Backend Developer",
+        "start_date": { "year": 2023, "month": 1, "day": null, "precision": "MONTH" },
+        "end_date": null,
+        "is_current": true,
+        "raw_text": "Backend Developer, Acme Inc, 2023 - present",
+        "technologies": ["Python", "FastAPI"],
+        "confidence": "HIGH"
+      }
+    ]
+  },
+  "skills": {
+    "known": [
+      {
+        "canonical_name": "Python",
+        "category": "PROGRAMMING_LANGUAGE",
+        "raw_mentions": ["Python"],
+        "evidence": [{ "source_type": "SKILLS_SECTION", "source_id": "section_002_000", "raw_text": "Python" }]
+      },
+      {
+        "canonical_name": "FastAPI",
+        "category": "FRAMEWORK",
+        "raw_mentions": ["FastAPI"],
+        "evidence": [{ "source_type": "PROFESSIONAL_EXPERIENCE", "source_id": "section_001_000", "raw_text": "FastAPI" }]
+      }
+    ],
+    "unmapped_technology_candidates": [
+      {
+        "raw_name": "Sequelize",
+        "known": false,
+        "source_type": "PROJECT",
+        "evidence": [{ "source_type": "PROJECT", "source_id": "section_003_000", "raw_text": "Sequelize" }]
+      }
+    ]
+  },
+  "languages": [
+    { "language": "English", "raw_level": "C1", "normalized_level": "C1", "confidence": "HIGH" }
+  ],
+  "certifications": [
+    { "id": "section_004_000", "name": "AWS Certified Developer", "issuer": "AWS", "date": { "year": 2022, "month": null, "day": null, "precision": "YEAR" }, "technology_evidence": ["AWS"] }
+  ],
+  "parse_quality": { "status": "GOOD", "section_coverage": 0.95, "orphan_ratio": 0.02, "record_coherence": 0.98, "warnings": [] },
+  "review_items": [],
+  "meta": {
+    "parser_version": "3.0.0",
+    "page_count": 1,
+    "used_ocr": false,
+    "overall_page_state": "NATIVE_TEXT_GOOD",
+    "reading_strategy": "XY_CUT",
+    "parse_duration_ms": 120.5,
+    "word_count": 350,
+    "line_count": 60,
+    "block_count": 12,
+    "sections_found": 6,
+    "unknown_section_count": 0
+  }
+}

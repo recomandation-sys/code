@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-09-08",
+  "interpretation": "Analyst-curated product identity and functional category, checked against the listed primary documentation. Capabilities are product functions, not requirements of any particular job or evidence of candidate proficiency.",
+  "products": [
+    {"names":["PyTorch"],"category":"AI_ML","domains":["AI_ML"],"capability":"Build and train machine learning models with tensor computation and automatic differentiation.","url":"https://pytorch.org/"},
+    {"names":["TensorFlow"],"category":"AI_ML","domains":["AI_ML"],"capability":"Build, train and deploy machine learning models.","url":"https://www.tensorflow.org/"},
+    {"names":["MySQL"],"category":"DATABASE","domains":["DATA_STORAGE"],"capability":"Store and query relational data using a database server.","url":"https://www.mysql.com/"},
+    {"names":["PostgreSQL"],"category":"DATABASE","domains":["DATA_STORAGE"],"capability":"Store and query relational data with an extensible SQL database system.","url":"https://www.postgresql.org/about/"},
+    {"names":["Amazon Elastic Compute Cloud EC2","Amazon EC2"],"category":"CLOUD_SERVICE","domains":["CLOUD","SYSTEMS"],"capability":"Provision and operate virtual compute instances in AWS.","url":"https://aws.amazon.com/ec2/"},
+    {"names":["Amazon Web Services AWS CloudFormation","AWS CloudFormation"],"category":"INFRASTRUCTURE_AS_CODE","domains":["CLOUD","DEVOPS"],"capability":"Define and provision cloud resources from infrastructure templates.","url":"https://aws.amazon.com/cloudformation/"},
+    {"names":["Amazon Simple Storage Service S3","Amazon S3"],"category":"STORAGE","domains":["CLOUD","DATA_STORAGE"],"capability":"Store and retrieve objects through a cloud storage service.","url":"https://aws.amazon.com/s3/"},
+    {"names":["Docker"],"category":"CONTAINER","domains":["DEVOPS"],"capability":"Package and run applications in containers.","url":"https://docs.docker.com/get-started/docker-overview/"},
+    {"names":["Kubernetes"],"category":"CONTAINER_ORCHESTRATION","domains":["DEVOPS","CLOUD"],"capability":"Manage deployment, scaling and operation of containerized applications.","url":"https://kubernetes.io/docs/concepts/overview/"},
+    {"names":["Apache Airflow"],"category":"WORKFLOW_ORCHESTRATION","domains":["DATA_PIPELINES"],"capability":"Define, schedule and monitor batch-oriented workflows as code.","url":"https://airflow.apache.org/docs/apache-airflow/stable/index.html"},
+    {"names":["Apache Flink","Flink"],"category":"STREAM_PROCESSING","domains":["DATA_PIPELINES"],"capability":"Run stateful computations over bounded and unbounded data streams.","url":"https://flink.apache.org/"},
+    {"names":["Apache Spark","Spark"],"category":"DATA_PROCESSING","domains":["DATA_PIPELINES","ANALYTICS"],"capability":"Process large-scale data using a distributed analytics engine.","url":"https://spark.apache.org/"},
+    {"names":["Apache Kafka","Kafka"],"category":"STREAM_PROCESSING","domains":["DATA_PIPELINES"],"capability":"Publish, store and process streams of events.","url":"https://kafka.apache.org/"},
+    {"names":["Git"],"category":"VERSION_CONTROL","domains":["SOFTWARE_BUILD","DEVOPS"],"capability":"Track and coordinate changes to versioned project content.","url":"https://git-scm.com/"},
+    {"names":["React"],"category":"LIBRARY","domains":["WEB_UI"],"capability":"Build user interfaces from reusable components.","url":"https://react.dev/"},
+    {"names":["JavaScript Object Notation JSON","JSON"],"category":"DATA_SERIALIZATION_LANGUAGE","domains":["DATA_PIPELINES"],"capability":"Represent structured data in a text-based interchange format.","url":"https://www.json.org/json-en.html"}
+  ]
+}

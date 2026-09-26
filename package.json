@@ -1,0 +1,34 @@
+{
+  "name": "job-recommender-web",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Candidate CV upload & review web module (React + Express + PostgreSQL, on top of the existing Python cv_parser service).",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace apps/web",
+    "dev:api": "npm run dev --workspace apps/api",
+    "build": "npm run build --workspace packages/contracts && npm run build --workspace apps/api && npm run build --workspace apps/web",
+    "build:contracts": "npm run build --workspace packages/contracts",
+    "test": "npm run test --workspace apps/api && npm run test --workspace apps/web",
+    "test:api": "npm run test --workspace apps/api",
+    "test:web": "npm run test --workspace apps/web",
+    "lint": "npm run lint --workspace apps/api && npm run lint --workspace apps/web",
+    "typecheck": "npm run typecheck --workspace apps/api && npm run typecheck --workspace apps/web",
+    "prisma:migrate": "npm run prisma:migrate --workspace apps/api",
+    "prisma:generate": "npm run prisma:generate --workspace apps/api",
+    "prisma:studio": "npm run prisma:studio --workspace apps/api"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true,
+    "prisma@6.19.3": true
+  }
+}

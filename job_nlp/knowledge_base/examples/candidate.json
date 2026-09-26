@@ -1,0 +1,12 @@
+{
+  "synthetic_example": true,
+  "document_type": "candidate_cv",
+  "language": "en",
+  "title": "Software developer",
+  "skills": [
+    {"skill_id":"TECH::python","assertion":"possessed","evidence":"Developed Python services."},
+    {"skill_id":"TECH::postgresql","assertion":"possessed","evidence":"Maintained PostgreSQL databases."},
+    {"skill_id":"TECH::docker","assertion":"possessed","evidence":"Packaged services with Docker."},
+    {"namespace":"NESTA","external_id":"example_unmapped_id","label":"Teamwork","assertion":"possessed","evidence":"Collaborated with the development team."}
+  ]
+}

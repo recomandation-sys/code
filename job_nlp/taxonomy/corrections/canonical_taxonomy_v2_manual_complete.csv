@@ -1,0 +1,126 @@
+﻿family_id,family,parent_id,parent,leaf_id,leaf,scope,status,taxonomy_version
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ANALYSIS,Business and Systems Analysis,BUSINESS_ANALYST,IT Business Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ANALYSIS,Business and Systems Analysis,IT_CONSULTANT,IT Consultant,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ANALYSIS,Business and Systems Analysis,REQUIREMENTS_ENGINEER,Software Requirements Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ANALYSIS,Business and Systems Analysis,SYSTEMS_ANALYST,Systems Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ARCHITECTURE,Enterprise and Systems Architecture,SYSTEMS_ENGINEER,Computer Systems Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ARCHITECTURE,Enterprise and Systems Architecture,ENTERPRISE_ARCHITECT,Enterprise Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ARCHITECTURE,Enterprise and Systems Architecture,SOLUTION_ARCHITECT,Solution Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ARCHITECTURE,Enterprise and Systems Architecture,SYSTEMS_ARCHITECT,Systems Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+ARCHITECTURE_ANALYSIS,Architecture and Systems Analysis,SYSTEMS_ARCHITECTURE,Enterprise and Systems Architecture,INTEGRATION_ENGINEER,Systems Integration Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,CLOUD_ADMIN,Cloud Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,CLOUD_ARCHITECT,Cloud Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,CLOUD_ENGINEER,Cloud Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,DEVOPS_ENGINEER,DevOps Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,PLATFORM_ENGINEER,Platform Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,RELEASE_ENGINEER,Release Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",CLOUD_AND_PLATFORM,Cloud and Platform Engineering,SRE,Site Reliability Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,COMPUTER_OPERATOR,Computer and Systems Operator,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,DATACENTER_OPERATOR,Data Centre Operator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,DISASTER_RECOVERY,IT Disaster Recovery Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,STORAGE_ENGINEER,Storage Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,SUSTAINABLE_IT,Sustainable IT Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,SYSTEM_ADMIN,Systems Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,SYSTEM_CONFIG,Systems Configuration Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+PLATFORM_INFRASTRUCTURE,"Cloud, Platforms and IT Operations",SYSTEMS_OPERATIONS,Systems Administration and Operations,WEB_ADMIN,Web Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+COMPUTER_HARDWARE,Computer Hardware,HARDWARE_ENGINEERING,Computing Hardware Engineering,HARDWARE_ENGINEER,Computer Hardware Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+COMPUTER_HARDWARE,Computer Hardware,HARDWARE_ENGINEERING,Computing Hardware Engineering,HARDWARE_ENG_TECHNICIAN,Computer Hardware Engineering Technician,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+COMPUTER_HARDWARE,Computer Hardware,HARDWARE_ENGINEERING,Computing Hardware Engineering,HARDWARE_TEST,Computer Hardware Test Technician,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+COMPUTER_HARDWARE,Computer Hardware,HARDWARE_ENGINEERING,Computing Hardware Engineering,EMBEDDED_DESIGNER,Embedded System Designer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,APPSEC_ENGINEER,Application Security Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,CLOUD_SECURITY,Cloud Security Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,CRYPTOGRAPHER,Cryptography Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,EMBEDDED_SECURITY,Embedded and IoT Security Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,IAM_ENGINEER,Identity and Access Management Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,NETWORK_SECURITY,Network Security Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,SECURITY_ADMIN,Security Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,SECURITY_ARCHITECT,Security Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_ENGINEERING,Cybersecurity Engineering,SECURITY_ENGINEER,Security Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_GOVERNANCE,"Cybersecurity Governance, Risk and Compliance",SECURITY_CONSULTANT,Cybersecurity Consultant,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_GOVERNANCE,"Cybersecurity Governance, Risk and Compliance",SECURITY_GRC,Cybersecurity GRC Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_GOVERNANCE,"Cybersecurity Governance, Risk and Compliance",DATA_PRIVACY,Data Protection and Privacy Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_GOVERNANCE,"Cybersecurity Governance, Risk and Compliance",IT_AUDITOR,IT Auditor,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_GOVERNANCE,"Cybersecurity Governance, Risk and Compliance",IT_COMPLIANCE_SPECIALIST,IT Compliance Specialist,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_OPERATIONS,Cybersecurity Operations,INCIDENT_RESPONDER,Cyber Incident Responder,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_OPERATIONS,Cybersecurity Operations,THREAT_INTELLIGENCE,Cyber Threat Intelligence Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_OPERATIONS,Cybersecurity Operations,SECURITY_ANALYST,Cybersecurity Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_OPERATIONS,Cybersecurity Operations,SECURITY_SPECIALIST_GENERAL,Cybersecurity Specialist (General),core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,SECURITY_OPERATIONS,Cybersecurity Operations,DIGITAL_FORENSICS,Digital Forensics Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,OFFENSIVE_SECURITY,Offensive Security and Security Testing,PENETRATION_TESTER,Penetration Tester,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SECURITY,Cybersecurity,OFFENSIVE_SECURITY,Offensive Security and Security Testing,VULNERABILITY_ANALYST,Vulnerability Assessment Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",AI_ENGINEERING,AI and Machine Learning Engineering,AI_ENGINEER,Artificial Intelligence Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",AI_ENGINEERING,AI and Machine Learning Engineering,CV_ENGINEER,Computer Vision Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",AI_ENGINEERING,AI and Machine Learning Engineering,KNOWLEDGE_ENGINEER,Knowledge Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",AI_ENGINEERING,AI and Machine Learning Engineering,ML_ENGINEER,Machine Learning Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",AI_ENGINEERING,AI and Machine Learning Engineering,NLP_ENGINEER,Natural Language Processing Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ANALYSIS,Data Analysis and Business Intelligence,BI_ANALYST,Business Intelligence Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ANALYSIS,Data Analysis and Business Intelligence,BI_DEVELOPER,Business Intelligence Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ANALYSIS,Data Analysis and Business Intelligence,DATA_ANALYST,Data Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ANALYSIS,Data Analysis and Business Intelligence,DATA_QUALITY,Data Quality Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ENGINEERING,Data Engineering,ANALYTICS_ENGINEER,Analytics Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ENGINEERING,Data Engineering,DATA_ARCHITECT,Data Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ENGINEERING,Data Engineering,DATA_ENGINEER,Data Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ENGINEERING,Data Engineering,DATA_GOVERNANCE_SPECIALIST,Data Governance and Stewardship Specialist,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_ENGINEERING,Data Engineering,DATA_WAREHOUSE,Data Warehouse Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_SCIENCE_RESEARCH,Data Science and Computing Research,COMPUTER_SCIENTIST,Computer Research Scientist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_SCIENCE_RESEARCH,Data Science and Computing Research,DATA_SCIENTIST,Data Scientist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATA_SCIENCE_RESEARCH,Data Science and Computing Research,ML_RESEARCHER,Machine Learning Research Scientist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATABASE_ENGINEERING,Database Engineering,DATABASE_ADMIN,Database Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATABASE_ENGINEERING,Database Engineering,DATABASE_ARCHITECT,Database Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATABASE_ENGINEERING,Database Engineering,DATABASE_DEVELOPER,Database Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DATABASE_ENGINEERING,Database Engineering,DATABASE_INTEGRATOR,Database Integrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DOMAIN_INFORMATICS,Domain-specific Informatics,BIOINFORMATICS,Bioinformatics Specialist,conditional,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DOMAIN_INFORMATICS,Domain-specific Informatics,GIS_SPECIALIST,Geographic Information Systems Specialist,conditional,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+DATA_AI,"Data, Analytics and AI",DOMAIN_INFORMATICS,Domain-specific Informatics,HEALTH_INFORMATICS,Health Informatics Specialist,conditional,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,TECHNICAL_ENABLEMENT,Technical Documentation and Learning,DOCUMENT_MANAGEMENT_SPECIALIST,Digital Document Management Specialist,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,TECHNICAL_ENABLEMENT,Technical Documentation and Learning,TECHNICAL_ACCOUNT,IT Technical Account Specialist,conditional,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,TECHNICAL_ENABLEMENT,Technical Documentation and Learning,TECHNICAL_WRITER,IT Technical Writer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,TECHNICAL_ENABLEMENT,Technical Documentation and Learning,IT_TRAINER,IT Trainer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,APPLICATION_SUPPORT,Application Support Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,COMPUTER_TECHNICIAN,Computer Hardware Technician,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,DESKTOP_SUPPORT,Desktop Support Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,IT_GENERALIST,IT Generalist,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,HELPDESK,IT Help Desk Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SUPPORT,IT Support,USER_APPLICATION_SUPPORT,User and Application Support,SUPPORT_ENGINEER,IT Support Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,NETWORK_ENGINEERING,Computer Network Engineering,NETWORK_ADMIN,Network Administrator,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,NETWORK_ENGINEERING,Computer Network Engineering,NETWORK_ARCHITECT,Network Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,NETWORK_ENGINEERING,Computer Network Engineering,NETWORK_ENGINEER,Network Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,NETWORK_ENGINEERING,Computer Network Engineering,NETWORK_SUPPORT,Network Support Specialist,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,NETWORK_ENGINEERING,Computer Network Engineering,NETWORK_TECHNICIAN,Network Technician,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,TELECOM_ENGINEERING,Telecommunications Engineering,TELECOM_ANALYST,Telecommunications Analyst,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,TELECOM_ENGINEERING,Telecommunications Engineering,TELECOM_ENGINEER,Telecommunications Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+NETWORKS,Networks and Telecommunications,TELECOM_ENGINEERING,Telecommunications Engineering,TELECOM_SPECIALIST_GENERAL,Telecommunications Specialist (General),core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,AGILE_PRODUCT_AND_PROJECT_DELIVERY,Agile Product and Project Delivery,IT_PRODUCT_MANAGER,IT Product Manager,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,AGILE_PRODUCT_AND_PROJECT_DELIVERY,Agile Product and Project Delivery,IT_PROJECT_MANAGER,IT Project Manager,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,AGILE_PRODUCT_AND_PROJECT_DELIVERY,Agile Product and Project Delivery,SCRUM_MASTER,Scrum Master,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,DIGITAL_EXPERIENCE,Digital Interface and User Experience,GAME_DESIGNER,Digital Game Designer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,DIGITAL_EXPERIENCE,Digital Interface and User Experience,UX_DESIGNER,User Experience Designer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,DIGITAL_EXPERIENCE,Digital Interface and User Experience,UX_RESEARCHER,User Experience Researcher,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,DIGITAL_EXPERIENCE,Digital Interface and User Experience,UI_DESIGNER,User Interface Designer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,DIGITAL_EXPERIENCE,Digital Interface and User Experience,WEB_DESIGNER,Web Designer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,ANDROID_DEVELOPER,Android Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,APPLICATION_DEVELOPER,Application Developer,core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,BACKEND_DEVELOPER,Backend Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,CLOUD_SOFTWARE_DEVELOPER,Cloud Software Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,DESKTOP_DEVELOPER,Desktop Application Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,FRONTEND_DEVELOPER,Frontend Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,FULLSTACK_DEVELOPER,Full-stack Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,MOBILE_DEVELOPER,Mobile Application Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,SOFTWARE_ARCHITECT,Software Architect,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,APPLICATION_DEVELOPER,Software Developer / Engineer (General),core,proposed_manual,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,SYSTEMS_PROGRAMMER,Systems Programmer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,WEB_DEVELOPER,Web Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_DEVELOPMENT,Software Development,IOS_DEVELOPER,iOS Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,ACCESSIBILITY_TESTER,Accessibility Tester,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,GAME_TESTER,Game Tester,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,INTEGRATION_TESTER,Integration Test Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,LOCALIZATION_TESTER,Localization Tester,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,PERFORMANCE_TESTER,Performance Test Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,SOFTWARE_TESTER,Software Test Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,TEST_AUTOMATION,Test Automation Engineer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SOFTWARE_TESTING,Software Quality and Testing,USABILITY_TESTER,Usability Tester,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SPECIALIZED_DEVELOPMENT,Specialized Software Development,BLOCKCHAIN_DEVELOPER,Blockchain Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SPECIALIZED_DEVELOPMENT,Specialized Software Development,EMBEDDED_DEVELOPER,Embedded Software Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SPECIALIZED_DEVELOPMENT,Specialized Software Development,GAME_DEVELOPER,Game Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SPECIALIZED_DEVELOPMENT,Specialized Software Development,IOT_DEVELOPER,IoT Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION
+SOFTWARE,Software Engineering,SPECIALIZED_DEVELOPMENT,Specialized Software Development,RPA_DEVELOPER,RPA Developer,core,proposed,IT_KB_2.5.1_MANAGEMENT_ABSTENTION

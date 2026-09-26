@@ -1,0 +1,457 @@
+{
+  "schema_version": "custom_leaf_profile_batch_v1",
+  "batch_id": "leaf_profile_batch_04_final_unprofiled",
+  "source": {
+    "source_id": "CUSTOM_LEAF_PROFILE",
+    "name": "Analyst-curated IT leaf evidence",
+    "version": "0.1.0",
+    "language": "en",
+    "type": "custom_curated",
+    "official_source_status": "not_official",
+    "description": "Curated role evidence used only to close reviewed taxonomy gaps. It is kept separate from ESCO, O*NET, ISCO and OSCA evidence until independently reviewed."
+  },
+  "review_policy": {
+    "review_status": "REVIEW_REQUIRED",
+    "vector_status": "NOT_INCLUDED_UNTIL_APPROVED",
+    "basis": [
+      "canonical family/parent/leaf definition",
+      "reviewed title examples already present in the KB",
+      "analyst role-boundary and technology knowledge"
+    ],
+    "required_before_approval": [
+      "independent reviewer confirms the scope boundary",
+      "at least one external source or source occupation is attached",
+      "task and technology lists are checked for generic or adjacent-role leakage",
+      "three sibling hard-negative rules are reviewed"
+    ]
+  },
+  "profiles": [
+    {
+      "leaf_id": "SRE",
+      "description": "Applies software engineering and operations practices to the reliability of production services, owning service-level objectives, observability, incident response, automation, capacity and safe change. The defining evidence is sustained production reliability ownership.",
+      "primary_outcome": "Available, observable and recoverable production services within agreed SLOs.",
+      "in_scope": [
+        "SLO and error-budget practice",
+        "production observability",
+        "incident response",
+        "reliability automation",
+        "capacity and performance",
+        "safe service delivery"
+      ],
+      "out_of_scope": [
+        "one-off performance testing only",
+        "basic server administration without service ownership",
+        "release coordination without reliability ownership",
+        "software features unrelated to operations"
+      ],
+      "tasks": [
+        "Define and maintain service-level indicators, objectives and error budgets.",
+        "Build dashboards, alerts, tracing and actionable operational telemetry.",
+        "Participate in incident response, diagnosis, mitigation and post-incident learning.",
+        "Automate repetitive operations, recovery, scaling and toil reduction.",
+        "Assess capacity, performance, resilience and failure modes before changes.",
+        "Partner with developers to improve deployment safety, runbooks and service ownership."
+      ],
+      "professional_skills": [
+        "site reliability engineering",
+        "observability",
+        "incident management",
+        "distributed-systems troubleshooting",
+        "automation",
+        "capacity planning",
+        "resilience engineering",
+        "service-level management"
+      ],
+      "technologies": [
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "PagerDuty",
+        "Python",
+        "Linux"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "DEVOPS_ENGINEER",
+          "rule": "Use SRE when production reliability, SLOs, incidents and service health are central; use DEVOPS_ENGINEER for delivery and infrastructure automation without reliability ownership."
+        },
+        {
+          "sibling_leaf_id": "PLATFORM_ENGINEER",
+          "rule": "Use PLATFORM_ENGINEER when an internal developer platform is the product; SRE owns reliability of user-facing or internal services."
+        },
+        {
+          "sibling_leaf_id": "PERFORMANCE_TESTER",
+          "rule": "Controlled load and capacity validation belongs to PERFORMANCE_TESTER; ongoing production service reliability belongs to SRE."
+        }
+      ]
+    },
+    {
+      "leaf_id": "STORAGE_ENGINEER",
+      "description": "Designs, operates and improves enterprise storage platforms, including block, file and object storage, replication, backup integration, performance, capacity and recovery. The role owns storage infrastructure rather than database schemas or generic server administration.",
+      "primary_outcome": "Available, performant, protected and recoverable data-storage services.",
+      "in_scope": [
+        "storage architecture",
+        "SAN/NAS/object administration",
+        "capacity and performance",
+        "replication and snapshots",
+        "storage resilience",
+        "storage incident recovery"
+      ],
+      "out_of_scope": [
+        "database administration as the primary work",
+        "application data modelling",
+        "physical cable installation",
+        "generic server support without storage ownership"
+      ],
+      "tasks": [
+        "Provision and manage block, file and object storage for application workloads.",
+        "Configure volumes, shares, access policies, snapshots and replication.",
+        "Monitor latency, throughput, utilization, failure state and capacity trends.",
+        "Plan migrations, tiering, expansion, decommissioning and lifecycle controls.",
+        "Test backup, restore and disaster-recovery procedures for storage services.",
+        "Troubleshoot storage incidents and coordinate with systems, network and database teams."
+      ],
+      "professional_skills": [
+        "storage administration",
+        "capacity planning",
+        "performance analysis",
+        "backup and recovery",
+        "disaster recovery",
+        "systems troubleshooting",
+        "access control",
+        "infrastructure documentation"
+      ],
+      "technologies": [
+        "NetApp ONTAP",
+        "Dell EMC",
+        "Pure Storage",
+        "Ceph",
+        "Amazon S3",
+        "Azure Blob Storage",
+        "VMware vSAN",
+        "SAN/NAS"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SYSTEM_ADMIN",
+          "rule": "Use STORAGE_ENGINEER when storage platforms, replication and capacity are central; general OS and server administration belongs to SYSTEM_ADMIN."
+        },
+        {
+          "sibling_leaf_id": "DATABASE_ADMIN",
+          "rule": "Use DATABASE_ADMIN for database engines, schemas and query operations; storage infrastructure beneath databases belongs to STORAGE_ENGINEER."
+        },
+        {
+          "sibling_leaf_id": "CLOUD_ADMIN",
+          "rule": "Use CLOUD_ADMIN for broad cloud environment administration; use STORAGE_ENGINEER when enterprise storage technology and data protection dominate."
+        }
+      ]
+    },
+    {
+      "leaf_id": "SYSTEMS_ENGINEER",
+      "description": "Integrates complex IT systems and defines their technical behavior across components, interfaces, constraints, verification and lifecycle. This taxonomy leaf means systems integration and model-based engineering; infrastructure administration titles should route to systems operations instead.",
+      "primary_outcome": "Coherent, verified and interoperable system solutions.",
+      "in_scope": [
+        "system decomposition",
+        "interface and integration design",
+        "requirements traceability",
+        "technical trade studies",
+        "verification planning",
+        "lifecycle and configuration reasoning"
+      ],
+      "out_of_scope": [
+        "routine Linux or Windows administration",
+        "single-application coding",
+        "pure project management",
+        "physical hardware repair or installation"
+      ],
+      "tasks": [
+        "Decompose stakeholder needs into system functions, interfaces and technical requirements.",
+        "Define component interactions, data flows, constraints and integration boundaries.",
+        "Evaluate trade-offs across performance, reliability, security, cost and lifecycle.",
+        "Plan integration, verification, validation and acceptance evidence.",
+        "Investigate cross-component failures and coordinate corrective engineering actions.",
+        "Maintain architecture models, interface control documents and requirement traceability."
+      ],
+      "professional_skills": [
+        "systems engineering",
+        "systems integration",
+        "requirements traceability",
+        "interface analysis",
+        "technical trade studies",
+        "verification and validation",
+        "architecture modelling",
+        "cross-domain troubleshooting"
+      ],
+      "technologies": [
+        "UML",
+        "SysML",
+        "Modelio",
+        "C4 model",
+        "REST APIs",
+        "MQTT",
+        "Git",
+        "Jira"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SYSTEM_ADMIN",
+          "rule": "Server provisioning, patching and operations belong to SYSTEM_ADMIN; SYSTEMS_ENGINEER requires integration, interfaces or system verification evidence."
+        },
+        {
+          "sibling_leaf_id": "SOLUTION_ARCHITECT",
+          "rule": "Use SOLUTION_ARCHITECT for target solution design and architecture decisions; use SYSTEMS_ENGINEER for cross-component integration and verification ownership."
+        },
+        {
+          "sibling_leaf_id": "EMBEDDED_DEVELOPER",
+          "rule": "Firmware implementation belongs to EMBEDDED_DEVELOPER; systems integration and interface verification are SYSTEMS_ENGINEER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "SYSTEMS_PROGRAMMER",
+      "description": "Develops low-level software that interfaces with operating systems, runtimes, compilers, kernels, drivers or system resources. The role focuses on performance, portability and resource control below ordinary business application development.",
+      "primary_outcome": "Correct and efficient low-level software components and system interfaces.",
+      "in_scope": [
+        "systems software",
+        "runtime and OS interfaces",
+        "drivers and utilities",
+        "compiler or toolchain components",
+        "concurrency and resource control",
+        "low-level debugging"
+      ],
+      "out_of_scope": [
+        "generic web or business application development",
+        "routine system administration",
+        "microcontroller firmware when embedded specialization dominates",
+        "hardware circuit design"
+      ],
+      "tasks": [
+        "Implement low-level utilities, services, libraries, drivers or runtime components.",
+        "Work with processes, threads, memory, filesystems, IPC and system calls.",
+        "Optimize latency, throughput, memory use and resource behavior.",
+        "Debug crashes, deadlocks, race conditions and platform-specific failures.",
+        "Port software across operating systems, architectures or toolchains.",
+        "Create tests, diagnostics and technical documentation for system components."
+      ],
+      "professional_skills": [
+        "systems programming",
+        "concurrency",
+        "memory and resource management",
+        "performance optimization",
+        "operating-system interfaces",
+        "low-level debugging",
+        "portable software design",
+        "toolchain development"
+      ],
+      "technologies": [
+        "C",
+        "C++",
+        "Rust",
+        "Linux",
+        "POSIX",
+        "GDB",
+        "CMake",
+        "GCC/Clang"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "EMBEDDED_DEVELOPER",
+          "rule": "Use EMBEDDED_DEVELOPER for firmware and RTOS on embedded devices; use SYSTEMS_PROGRAMMER for host OS, runtime and systems software."
+        },
+        {
+          "sibling_leaf_id": "SYSTEM_ADMIN",
+          "rule": "Writing low-level system software belongs to SYSTEMS_PROGRAMMER; configuring and operating servers belongs to SYSTEM_ADMIN."
+        },
+        {
+          "sibling_leaf_id": "BACKEND_DEVELOPER",
+          "rule": "Use SYSTEMS_PROGRAMMER for OS, runtime, driver or compiler-level code; business APIs and application services belong to BACKEND_DEVELOPER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "THREAT_INTELLIGENCE",
+      "description": "Collects, evaluates and operationalizes information about adversaries, campaigns, indicators and emerging threats to support defensive decisions. The role turns intelligence into detections, prioritization and briefings rather than performing generic alert monitoring alone.",
+      "primary_outcome": "Actionable intelligence that improves defensive prioritization and preparedness.",
+      "in_scope": [
+        "threat collection",
+        "adversary and campaign analysis",
+        "indicator assessment",
+        "intelligence reporting",
+        "detection and hunting support",
+        "threat-informed risk prioritization"
+      ],
+      "out_of_scope": [
+        "generic SOC alert triage",
+        "authorized penetration testing",
+        "pure vulnerability scanning",
+        "political or non-technical intelligence without cyber relevance"
+      ],
+      "tasks": [
+        "Collect and evaluate open, commercial, internal and incident-derived threat information.",
+        "Profile adversaries, campaigns, techniques, infrastructure and likely targeting.",
+        "Assess indicators for relevance, confidence, timeliness and false-positive risk.",
+        "Produce intelligence reports, briefs, warnings and executive or technical assessments.",
+        "Translate findings into detection content, hunt hypotheses and defensive priorities.",
+        "Maintain intelligence requirements, source records, analytic judgments and feedback loops."
+      ],
+      "professional_skills": [
+        "cyber threat intelligence",
+        "adversary analysis",
+        "analytic reasoning",
+        "indicator assessment",
+        "intelligence writing",
+        "threat hunting support",
+        "source evaluation",
+        "security briefing"
+      ],
+      "technologies": [
+        "MISP",
+        "OpenCTI",
+        "STIX/TAXII",
+        "MITRE ATT&CK",
+        "Splunk",
+        "YARA",
+        "VirusTotal",
+        "Python"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "SECURITY_OPERATIONS",
+          "rule": "Use THREAT_INTELLIGENCE for adversary and campaign analysis that informs defense; routine event triage and response belong to SECURITY_OPERATIONS."
+        },
+        {
+          "sibling_leaf_id": "THREAT_HUNTER",
+          "rule": "Use THREAT_HUNTER when proactive endpoint or network investigation is the primary activity; intelligence production and threat assessment are THREAT_INTELLIGENCE."
+        },
+        {
+          "sibling_leaf_id": "VULNERABILITY_ANALYST",
+          "rule": "Asset weakness discovery and remediation prioritization belong to VULNERABILITY_ANALYST; adversary intelligence belongs to THREAT_INTELLIGENCE."
+        }
+      ]
+    },
+    {
+      "leaf_id": "UX_RESEARCHER",
+      "description": "Studies user goals, behaviors and context to generate evidence that guides product and service decisions. The role plans and conducts qualitative and quantitative research, synthesizes findings and validates designs rather than implementing production interfaces.",
+      "primary_outcome": "Actionable user evidence that reduces product and experience uncertainty.",
+      "in_scope": [
+        "user interviews",
+        "usability testing",
+        "research planning",
+        "survey and behavioral analysis",
+        "persona and journey evidence",
+        "research synthesis"
+      ],
+      "out_of_scope": [
+        "visual UI design as the primary role",
+        "frontend implementation",
+        "product roadmap ownership",
+        "marketing research unrelated to digital product use"
+      ],
+      "tasks": [
+        "Frame research questions and select appropriate qualitative or quantitative methods.",
+        "Recruit or screen participants and prepare interview, survey or test protocols.",
+        "Conduct interviews, usability sessions, field studies and behavioral research.",
+        "Analyze observations, responses and usage data to identify patterns and unmet needs.",
+        "Synthesize findings into journeys, evidence-backed insights and prioritized recommendations.",
+        "Communicate research limitations and validate product changes with follow-up studies."
+      ],
+      "professional_skills": [
+        "UX research",
+        "qualitative research",
+        "usability testing",
+        "research synthesis",
+        "survey design",
+        "behavioral analysis",
+        "interview facilitation",
+        "insight communication"
+      ],
+      "technologies": [
+        "UserTesting",
+        "Dovetail",
+        "Lookback",
+        "Figma",
+        "Qualtrics",
+        "Google Analytics",
+        "Hotjar",
+        "Excel"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "UX_DESIGNER",
+          "rule": "Use UX_RESEARCHER for evidence collection and behavioral insight; interaction and visual solution design belong to UX_DESIGNER."
+        },
+        {
+          "sibling_leaf_id": "PRODUCT_MANAGER",
+          "rule": "Use PRODUCT_MANAGER for product strategy and prioritization; UX_RESEARCHER supplies user evidence rather than owning the roadmap."
+        },
+        {
+          "sibling_leaf_id": "FRONTEND_DEVELOPER",
+          "rule": "Production UI implementation belongs to FRONTEND_DEVELOPER; research and validation belong to UX_RESEARCHER."
+        }
+      ]
+    },
+    {
+      "leaf_id": "VULNERABILITY_ANALYST",
+      "description": "Discovers, validates, prioritizes and tracks technical vulnerabilities across systems and applications, turning scanner and assessment results into risk-based remediation. The role is vulnerability management and analysis, not a general penetration-testing engagement.",
+      "primary_outcome": "Prioritized, validated and remediated vulnerability exposure.",
+      "in_scope": [
+        "vulnerability scanning",
+        "finding validation",
+        "risk prioritization",
+        "remediation tracking",
+        "exposure reporting",
+        "rescan and closure verification"
+      ],
+      "out_of_scope": [
+        "full adversarial penetration tests as the primary service",
+        "SOC alert monitoring",
+        "application secure coding",
+        "policy-only risk governance"
+      ],
+      "tasks": [
+        "Run or coordinate authenticated and unauthenticated vulnerability assessments.",
+        "Validate findings, remove false positives and assess exploitability and exposure.",
+        "Prioritize remediation using asset criticality, threat context and compensating controls.",
+        "Create actionable findings with affected assets, evidence and recommended fixes.",
+        "Track owners, deadlines, exceptions and remediation status across teams.",
+        "Rescan and verify fixes and publish exposure, aging and risk trend reports."
+      ],
+      "professional_skills": [
+        "vulnerability assessment",
+        "finding validation",
+        "risk-based prioritization",
+        "remediation coordination",
+        "security reporting",
+        "asset analysis",
+        "security testing",
+        "technical communication"
+      ],
+      "technologies": [
+        "Tenable Nessus",
+        "Qualys",
+        "Rapid7 InsightVM",
+        "OpenVAS",
+        "Burp Suite",
+        "Nmap",
+        "CVSS",
+        "Jira"
+      ],
+      "sibling_disambiguators": [
+        {
+          "sibling_leaf_id": "PENETRATION_TESTER",
+          "rule": "Use PENETRATION_TESTER for authorized exploitation and adversarial assessment; use VULNERABILITY_ANALYST for scanning, validation and remediation lifecycle."
+        },
+        {
+          "sibling_leaf_id": "APPSEC_ENGINEER",
+          "rule": "Use APPSEC_ENGINEER for secure design, code and SDLC controls; use VULNERABILITY_ANALYST for cross-asset exposure and remediation."
+        },
+        {
+          "sibling_leaf_id": "THREAT_INTELLIGENCE",
+          "rule": "Use THREAT_INTELLIGENCE for adversary and campaign analysis; vulnerability discovery and closure tracking are VULNERABILITY_ANALYST."
+        }
+      ]
+    }
+  ]
+}
