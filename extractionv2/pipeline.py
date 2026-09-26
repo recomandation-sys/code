@@ -1,9 +1,10 @@
-"""English gate, then the frozen leaf, then the existing enum mappers."""
+"""English gate, website-selected job text, then configurable leaf extraction."""
 from __future__ import annotations
 
 import csv
 import importlib.util
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -13,10 +14,8 @@ JOBNLP = ROOT / "jobnlpv2"
 LEAVES = JOBNLP / "leaf" / "inputs" / "leaves_best.csv"
 RAW_PATH = ROOT / "ingestionv2" / "output" / "rekrute_raw.jsonl"
 OUT_PATH = Path(__file__).resolve().parent / "output" / "rekrute_it.jsonl"
-
 if str(JOBNLP) not in sys.path:
     sys.path.insert(0, str(JOBNLP))
-
 from gate import ACCEPT, GateInput, PLAIN_TEXT, open_predictor, run_gate  # noqa: E402
 
 
@@ -60,7 +59,6 @@ def stored_ids(path: Path = OUT_PATH) -> set[str]:
         offer_id = row.get("job_id")
         if not offer_id and row.get("url"):
             from jobnlpv2.visible import job_id_from_url
-
             offer_id = job_id_from_url(row["url"])
         if offer_id:
             found.add(str(offer_id))
@@ -68,16 +66,10 @@ def stored_ids(path: Path = OUT_PATH) -> set[str]:
 
 
 def _refuse(record: dict, reason: str) -> dict:
-    return {
-        "url": record.get("url"),
-        "title": record.get("title"),
-        "decision": "REFUSE",
-        "reason": reason,
-    }
+    return {"url": record.get("url"), "title": record.get("title"), "decision": "REFUSE", "reason": reason}
 
 
 def _experience(line: str | None) -> str:
-    """Bracket the lowest figure on the page experience line."""
     module = _module("experience", "seniority_experience_extractor.py", "jobnlpv2_experience")
     months = []
     for match in module._TENURE.finditer(line or ""):
@@ -91,19 +83,12 @@ def _experience(line: str | None) -> str:
 
 def _fields(record: dict, description: str) -> dict:
     from education.extractor import EducationExtractor
-
     contract = _module("contract", "contract_type_extractor.py", "jobnlpv2_contract")
     work = _module("work_mode", "work_mode_extractor.py", "jobnlpv2_work_mode")
     technology = _module("technologies", "technology_v2.py", "jobnlpv2_technology")
-    levels = EducationExtractor().extract(
-        record.get("title") or "", record.get("education") or "",
-    ).to_dict()["required_education_levels"]
-    kinds = contract.ContractTypeExtractor().extract(
-        record.get("title") or "", record.get("contract") or "",
-    ).to_dict()["contract_types"]
-    modes = work.WorkModeExtractor().extract(
-        record.get("title") or "", description, workplace=record.get("teleworking"),
-    ).to_dict()["work_modes"]
+    levels = EducationExtractor().extract(record.get("title") or "", record.get("education") or "").to_dict()["required_education_levels"]
+    kinds = contract.ContractTypeExtractor().extract(record.get("title") or "", record.get("contract") or "").to_dict()["contract_types"]
+    modes = work.WorkModeExtractor().extract(record.get("title") or "", description, workplace=record.get("teleworking")).to_dict()["work_modes"]
     names: list[str] = []
     seen: set[str] = set()
     for hit in technology.recover_full_text(description):
@@ -111,64 +96,42 @@ def _fields(record: dict, description: str) -> dict:
             continue
         seen.add(hit.canonical)
         names.append(hit.canonical)
-    return {
-        "education": levels,
-        "education_raw": record.get("education"),
-        "contract_type": kinds[0] if kinds else "UNKNOWN",
-        "contract_raw": record.get("contract"),
-        "work_mode": modes[0] if modes else None,
-        "teleworking_raw": record.get("teleworking"),
-        "experience": _experience(record.get("experience")),
-        "experience_raw": record.get("experience"),
-        "technologies": names,
-    }
+    return {"education": levels, "education_raw": record.get("education"), "contract_type": kinds[0] if kinds else "UNKNOWN", "contract_raw": record.get("contract"), "work_mode": modes[0] if modes else None, "teleworking_raw": record.get("teleworking"), "experience": _experience(record.get("experience")), "experience_raw": record.get("experience"), "technologies": names}
 
 
 def normalize(record: dict, predictor, assign) -> dict:
     offer_id = str(record.get("job_id") or "")
-    gated = run_gate(
-        GateInput(
-            source="rekrute",
-            description=record.get("description"),
-            description_mode=PLAIN_TEXT,
-            source_job_id=offer_id or None,
-            canonical_url=record.get("url"),
-            title=record.get("title") or "",
-            company=record.get("company"),
-        ),
-        predictor,
-    )
+    gated = run_gate(GateInput(source="rekrute", description=record.get("description"), description_mode=PLAIN_TEXT, source_job_id=offer_id or None, canonical_url=record.get("url"), title=record.get("title") or "", company=record.get("company")), predictor)
     if gated.decision != ACCEPT:
         return _refuse(record, gated.reason)
-    name = assign(record.get("title") or "", gated.clean_description or "")
+    prediction = assign(record.get("title") or "", gated.clean_description or "")
+    if isinstance(prediction, dict):
+        status = prediction.get("status")
+        if status == "REVIEW_AMBIGUOUS":
+            return {"job_id": offer_id, "url": record.get("url"), "title": record.get("title"), "decision": "REVIEW", "reason": "REVIEW_AMBIGUOUS", "leaf_candidates": prediction.get("candidates", []), "leaf_margin": prediction.get("margin")}
+        if status != "SELECTED":
+            return {**_refuse(record, "NO_LEAF"), "leaf_candidates": prediction.get("candidates", [])}
+        name = prediction.get("leaf")
+    else:
+        name = prediction
     row = leaf_row(name)
     if row is None:
         return _refuse(record, "NO_LEAF")
-    accepted = {
-        "job_id": offer_id,
-        "url": record.get("url"),
-        "title": record.get("title"),
-        "company": record.get("company"),
-        "company_logo": record.get("company_logo"),
-        "country": record.get("country"),
-        "date_posted": record.get("date_posted"),
-        "deadline": record.get("deadline"),
-        "description": gated.clean_description,
-        "family": row["family_name"],
-        "parent": row["parent_name"],
-        "leaf": row["leaf_name"],
-        "decision": ACCEPT,
-    }
+    accepted = {"job_id": offer_id, "url": record.get("url"), "title": record.get("title"), "company": record.get("company"), "company_logo": record.get("company_logo"), "country": record.get("country"), "date_posted": record.get("date_posted"), "deadline": record.get("deadline"), "description": gated.clean_description, "family": row["family_name"], "parent": row["parent_name"], "leaf": row["leaf_name"], "decision": ACCEPT}
     accepted.update(_fields(record, gated.clean_description or ""))
     return accepted
 
 
-def default_assign(title: str, description: str) -> str:
-    leaf = JOBNLP / "leaf"
-    if str(leaf) not in sys.path:
-        sys.path.insert(0, str(leaf))
+def default_assign(title: str, description: str) -> str | dict:
+    leaf_dir = JOBNLP / "leaf"
+    if str(leaf_dir) not in sys.path:
+        sys.path.insert(0, str(leaf_dir))
+    if os.getenv("LEAF_CLASSIFIER_V2", "off").strip().lower() in {"1", "true", "on"}:
+        from support import sections
+        from evidence_classifier import classify_leaf
+        duties, _, _ = sections(description)
+        return classify_leaf(title, duties or description, technology_text=description)
     from it_leaf_pipeline_tech15 import assign_leaf
-
     return assign_leaf(title, description)
 
 
@@ -198,6 +161,5 @@ def extract(raw_path: Path = RAW_PATH, out_path: Path = OUT_PATH, predictor=None
 
 def run() -> int:
     from ingestionv2.crawl import crawl
-
     crawl()
     return extract()
